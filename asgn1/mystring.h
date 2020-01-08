@@ -12,21 +12,22 @@ class MyString {
         static bool printAsUppercase; // initialize to false. if true, outputs
                                       // all strings as uppercase
     public:
-        MyString();
-        MyString(char*);
+        MyString(); // done
+        MyString(char*); //done
         MyString(MyString&);
         ~MyString();
-        void uppercase();
-        int getLength();
-        static void setPrintAsUppercase(bool);
-        MyString operator+(const MyString&);
+        void uppercase(); //done
+        int getLength(); //done
+        static void setPrintAsUppercase(bool); //done
+        MyString operator+(const MyString&); //done?
         MyString operator--();
         MyString operator--(int);
         MyString& operator=(const MyString&);
+        int stringLength(char*); //done
         friend bool operator==(const MyString&, const MyString&);
         friend bool operator>(const MyString&, const MyString&);
         friend bool operator<(const MyString&, const MyString&);
-        friend ostream& operator <<(ostream&, const MyString&);
+        friend ostream& operator <<(ostream&, const MyString&); //done
         friend istream& operator >>(istream&, MyString&);
 };
 #endif
