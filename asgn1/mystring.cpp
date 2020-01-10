@@ -123,6 +123,38 @@ bool operator==(const MyString& str1, const MyString& str2) {
     return true;
 }
 
+bool operator>(const MyString& str1, const MyString& str2) {
+    const char* s1 = str1.data;
+    const char* s2 = str2.data;
+
+    while (*s1 == *s2) {
+        ++s1;
+        ++s2;
+    }
+    int cmp = *s1 - *s2;
+    cout << "Difference " << cmp << endl;
+    if (cmp > 0) {
+        return true;
+    }
+    return false;
+}
+
+bool operator<(const MyString& str1, const MyString& str2) {
+    const char* s1 = str1.data;
+    const char* s2 = str2.data;
+
+    while (*s1 == *s2) {
+        ++s1;
+        ++s2;
+    }
+    int cmp = *s1 - *s2;
+    cout << "Difference " << cmp << endl;
+    if (cmp < 0) {
+        return true;
+    }
+    return false;
+}
+
 int main() {
     char foo[] = "foo";
     char bar[] = "bar";
@@ -147,6 +179,21 @@ int main() {
     if (!(n == m)) {
         cout << "Strings aren't equal" << endl;
     }
+
+    cout << "n: " << n << endl;
+    cout << "m: " << m << endl;
+    if (n > m) {
+        cout << "n is greater than m" << endl;
+    } else {
+        cout << "m is greater than n" << endl;
+    }
+
+    if (n < m) {
+        cout << "n is less than m" << endl;
+    } else {
+        cout << "m is less than n" << endl;
+    }
+
     //cout << "Enter a string: ";
     //cin >> s;
     //cout << s << endl;

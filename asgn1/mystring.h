@@ -11,6 +11,7 @@ class MyString {
         int length;
         static bool printAsUppercase; // initialize to false. if true, outputs
                                       // all strings as uppercase
+        int strcmp(const char*, const char*);
     public:
         MyString(); // done
         MyString(char*); //done
