@@ -84,9 +84,10 @@ ostream& operator<<(ostream& os, const MyString& str) {
             upper[i] = str.data[i] & ~0x20;
         }
         os << upper << "(" << str.length << ")";
+        delete [] upper;
         return os;
     }
-    
+
     os << str.data << "(" << str.length << ")";
     return os;
 }
@@ -97,6 +98,29 @@ istream& operator >>(istream& is, MyString& str) {
     str.data = name;
     str.length = 3;
     return is;
+}
+
+bool operator==(const MyString& str1, const MyString& str2) {
+    // is there anything to compare?
+    if (!str1.data || !str1.data) {
+        // if they're both NULL, they're equal
+        if (str1.data == NULL && str2.data == NULL) {
+            return true;
+        }
+        return false;
+    }
+
+    // are they at least the same length?
+    if (str1.length != str2.length) {
+        return false;
+    }
+
+    for (int i = 0; i < str1.length; ++i) {
+        if (str1.data[i] != str2.data[i]) {
+            return false;
+        }
+    }
+    return true;
 }
 
 int main() {
@@ -115,6 +139,14 @@ int main() {
     cout << n << endl;
     cout << m + n << endl;
     cout << --m << endl;
+
+    if (n == m) {
+        cout << "Strings are equal" << endl;
+    }
+
+    if (!(n == m)) {
+        cout << "Strings aren't equal" << endl;
+    }
     //cout << "Enter a string: ";
     //cin >> s;
     //cout << s << endl;
