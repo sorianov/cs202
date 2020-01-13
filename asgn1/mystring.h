@@ -12,23 +12,23 @@ class MyString {
         static bool printAsUppercase; // initialize to false. if true, outputs
                                       // all strings as uppercase
     public:
-        MyString(); // done
-        MyString(char*); //done
-        MyString(MyString&); //done
-        ~MyString(); //done
-        void uppercase(); //done
-        int getLength(); //done
-        static void setPrintAsUppercase(bool); //done
-        MyString operator+(const MyString&); //done?
-        MyString operator--(); //done
-        MyString operator--(int); //done
-        MyString& operator=(const MyString&); //done
-        static int stringComp(const char*, const char*); //done
-        int stringLength(char*); //done
-        friend bool operator==(const MyString&, const MyString&); //done
-        friend bool operator>(const MyString&, const MyString&); //done
-        friend bool operator<(const MyString&, const MyString&); //done
-        friend ostream& operator <<(ostream&, const MyString&); //done
+        MyString();
+        MyString(char*);
+        MyString(MyString&);
+        ~MyString();
+        MyString operator+(const MyString&);
+        MyString operator--();
+        MyString operator--(int);
+        MyString& operator=(const MyString&);
+        static void setPrintAsUppercase(bool);
+        static int stringComp(const char*, const char*);
+        static int stringLength(char*);
+        friend bool operator==(const MyString&, const MyString&);
+        friend bool operator>(const MyString&, const MyString&);
+        friend bool operator<(const MyString&, const MyString&);
+        friend ostream& operator <<(ostream&, const MyString&);
         friend istream& operator >>(istream&, MyString&);
+        void uppercase();
+        int getLength();
 };
 #endif

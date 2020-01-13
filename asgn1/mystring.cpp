@@ -12,7 +12,7 @@ MyString::MyString() {
 }
 
 MyString::MyString(char* name) {
-    int length = stringLength(name);
+    int length = MyString::stringLength(name);
     data = new char[length+1];
     for (int i = 0; i < length+1; ++i) {
         data[i] = name[i];
@@ -76,6 +76,9 @@ MyString MyString::operator+(const MyString& m) {
 }
 
 MyString MyString::operator--() {
+    if (length == 0) {
+        return *this;
+    }
     length = length - 1;
     char* str = new char[length+1];
     for (int i = 0; i < length; ++i) {
@@ -88,6 +91,9 @@ MyString MyString::operator--() {
 }
 
 MyString MyString::operator--(int i) {
+    if (length == 0) {
+        return *this;
+    }
     MyString temp = *this;
     length = length - 1;
     char* str = new char[length+1];
@@ -229,6 +235,9 @@ int main(int argc, char* argv[]) {
         cout << argv[i] << endl;
     }
     */
+    if (argc < 2) {
+        return 0;
+    }
     MyString* strings = new MyString[argc - 1];
     for (int i = 0; i < argc-1; ++i) {
         strings[i] = MyString(argv[i+1]);
@@ -240,10 +249,10 @@ int main(int argc, char* argv[]) {
     MyString first(strings[0]);
     MyString last(strings[argc - 2]);
     if (first < last) {
-        //cout << "The first string (" << argv[1] << ") ";
-        cout << "The first string (" << first << ") ";
-        //cout << "is less than the last string (" << argv[argc - 1] << ").";
-        cout << "is less than the last string (" << last << ").";
+        cout << "The first string (" << argv[1] << ") ";
+        //cout << "The first string (" << first << ") ";
+        cout << "is less than the last string (" << argv[argc - 1] << ").";
+        //cout << "is less than the last string (" << last << ").";
         cout << endl;
     } else if (first > last) {
         cout << "The first string (" << argv[1] << ") ";
@@ -269,8 +278,8 @@ int main(int argc, char* argv[]) {
     }
     cout << endl;
 
-    cout << strings[0] << endl;
-    cout << strings[argc - 2] << endl;
+    //cout << strings[0] << endl;
+    //cout << strings[argc - 2] << endl;
 
     /*
     char foo[] = "foo";
