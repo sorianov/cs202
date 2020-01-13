@@ -46,8 +46,30 @@ class MyString {
          *                  string as its data member
          */
         MyString operator+(const MyString&);
+        /**
+         * Pre-decrement operator overload. Will remove the last character from
+         * the data member and return a reference to the class.
+         *
+         * @return MyString A reference to the modified class.
+         */
         MyString operator--();
+        /**
+         * Post-decrement operator overload. Will remove the last character
+         * from the data member and return a reference to the previous state of
+         * the class before it was modified.
+         *
+         * @return MyString A reference to the previous, unmodified state of
+         * the class.
+         */
         MyString operator--(int);
+        /**
+         * Assignment operator overload. Will deep copy the members of the
+         * right hand side of the operator to this.
+         *
+         * @param const MyString& A reference to the object to deep copy.
+         *
+         * @return MyString& A reference to this which should be modified.
+         */
         MyString& operator=(const MyString&);
         static void setPrintAsUppercase(bool);
         static int stringComp(const char*, const char*);
