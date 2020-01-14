@@ -8,29 +8,27 @@ bool MyString::printAsUppercase = false;
 MyString::MyString() {
     data = nullptr;
     length = 0;
-    printAsUppercase = false;
 }
 
 MyString::MyString(char* name) {
     int length = MyString::stringLength(name);
-    data = new char[length+1];
-    for (int i = 0; i < length+1; ++i) {
+    data = new char[length];
+    for (int i = 0; i < length; ++i) {
         data[i] = name[i];
     }
+
     this->length = length;
-    printAsUppercase = false;
 }
 
 MyString::MyString(MyString& m) {
-    data = new char[m.length+1];
+    data = new char[m.length];
     length = m.length;
-    printAsUppercase = m.printAsUppercase;
-    for (int i = 0; i < length+1; ++i) {
+    for (int i = 0; i < length; ++i) {
         data[i] = m.data[i];
     }
 }
 MyString::~MyString() {
-    if (data != nullptr) {
+    if (data) {
         delete [] data;
         data = nullptr;
     }
@@ -41,7 +39,7 @@ int MyString::getLength() {
 }
 
 void MyString::uppercase() {
-    for (int i = 0; data[i] != '\0'; ++i) {
+    for (int i = 0; i < length; ++i) {
         data[i] = data[i] & ~0x20;
     }
     return;
@@ -59,15 +57,14 @@ int MyString::stringLength(char* str) {
 }
 
 MyString MyString::operator+(const MyString& m) {
-    int mLength = this->stringLength(m.data);
-    int totalLength = mLength + this->length;
+    int totalLength = m.length + this->length;
     char* str = new char[totalLength];
     int i = 0;
     for (int j = 0; j < this->length; ++j) {
         str[i] = this->data[j];
         ++i;
     }
-    for (int k = 0; k < mLength+1; ++k) {
+    for (int k = 0; k < m.length; ++k) {
         str[i] = m.data[k];
         ++i;
     }
@@ -80,11 +77,10 @@ MyString MyString::operator--() {
         return *this;
     }
     length = length - 1;
-    char* str = new char[length+1];
+    char* str = new char[length];
     for (int i = 0; i < length; ++i) {
         str[i] = data[i];
     }
-    str[length] = '\0';
     delete [] data;
     data = str;
     return *this;
@@ -96,11 +92,10 @@ MyString MyString::operator--(int i) {
     }
     MyString temp = *this;
     length = length - 1;
-    char* str = new char[length+1];
+    char* str = new char[length];
     for (int i = 0; i < length; ++i) {
         str[i] = data[i];
     }
-    str[length] = '\0';
     delete [] data;
     data = str;
     return temp;
@@ -113,8 +108,8 @@ MyString& MyString::operator=(const MyString& m) {
     }
     length = m.length;
     printAsUppercase = m.printAsUppercase;
-    data = new char[length+1];
-    for (int i = 0; i < length+1; ++i) {
+    data = new char[length];
+    for (int i = 0; i < length; ++i) {
         data[i] = m.data[i];
     }
     return *this;
@@ -122,21 +117,25 @@ MyString& MyString::operator=(const MyString& m) {
 
 ostream& operator<<(ostream& os, const MyString& str) {
     if (MyString::printAsUppercase) {
-        char* upper = new char[str.length+1];
+        char upper;
         for (int i = 0; i < str.length; ++i) {
-            upper[i] = str.data[i] & ~0x20;
+            //upper[i] = str.data[i] & ~0x20;
+            upper = str.data[i] & ~0x20;
+            os << upper;
         }
-        upper[str.length] = '\0';
-        os << upper << "(" << str.length << ")";
-        delete [] upper;
+        //os << upper << "(" << str.length << ")";
+        os << "(" << str.length << ")";
         return os;
     }
-
-    os << str.data << "(" << str.length << ")";
+    for (int i = 0; i < str.length; ++i) {
+        os << str.data[i];
+    }
+    //os << str.data << "(" << str.length << ")";
+    os << "(" << str.length << ")";
     return os;
 }
 
-istream& operator >>(istream& is, MyString& str) {
+istream& operator>>(istream& is, MyString& str) {
     const unsigned int maxLength = 255;
     char* buffer = new char[maxLength];
     if (str.data) {
@@ -156,9 +155,8 @@ istream& operator >>(istream& is, MyString& str) {
         buffer[i] = m;
         ++i;
     }
-    buffer[i] = '\0';
-    str.data = new char[i+1];
-    for (int k = 0; k < i+1; ++k) {
+    str.data = new char[i];
+    for (int k = 0; k < i; ++k) {
         str.data[k] = buffer[k];
     }
     str.length = i;
@@ -191,6 +189,7 @@ bool operator==(const MyString& str1, const MyString& str2) {
 }
 
 int MyString::stringComp(const char* str1, const char* str2) {
+    //TODO don't use null terminated strings, add length params.
     // compares c1 to c2
     char c1 = *str1;
     char c2 = *str2;
@@ -249,18 +248,18 @@ int main(int argc, char* argv[]) {
     MyString first(strings[0]);
     MyString last(strings[argc - 2]);
     if (first < last) {
-        cout << "The first string (" << argv[1] << ") ";
+        cout << "The first string (" << first << ") ";
         //cout << "The first string (" << first << ") ";
-        cout << "is less than the last string (" << argv[argc - 1] << ").";
+        cout << "is less than the last string (" << last << ").";
         //cout << "is less than the last string (" << last << ").";
         cout << endl;
     } else if (first > last) {
-        cout << "The first string (" << argv[1] << ") ";
-        cout << "is greater than the last string (" << argv[argc - 1] << ").";
+        cout << "The first string (" << first << ") ";
+        cout << "is greater than the last string (" << last << ").";
         cout << endl;
     } else if (first == last) {
-        cout << "The first string (" << argv[1] << ") ";
-        cout << "is equal to the last string (" << argv[argc - 1] << ").";
+        cout << "The first string (" << first << ") ";
+        cout << "is equal to the last string (" << last << ").";
         cout << endl;
     }
     for (int i = 0; i < argc-1; ++i) {
