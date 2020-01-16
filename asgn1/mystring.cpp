@@ -1,3 +1,10 @@
+//----------------------------------------------------------------------------
+// Author: Victor Soriano Mendoza
+// Instructor: Rich Albers
+// Date: 2020-01-15
+// Title: Assignment 1: Operator Overloading
+// Description: A basic string class
+//----------------------------------------------------------------------------
 #include "mystring.h"
 #include <iostream>
 
@@ -76,14 +83,14 @@ MyString MyString::operator+(const MyString& m) {
         ++strIter;
         ++dataIter;
     }
-    
+
     dataIter = m.data;
     for (int k = 0; k < m.length; ++k) {
         *strIter = *dataIter;
         ++strIter;
         ++dataIter;
     }
-    
+
     MyString combined(str);
     return combined;
 }
@@ -139,7 +146,6 @@ MyString& MyString::operator=(const MyString& m) {
         *dataIter1 = *dataIter2;
         ++dataIter1;
         ++dataIter2;
-        //data[i] = m.data[i];
     }
     return *this;
 }
@@ -149,12 +155,10 @@ ostream& operator<<(ostream& os, const MyString& str) {
     if (MyString::printAsUppercase) {
         char upper;
         for (int i = 0; i < str.length; ++i) {
-            //upper[i] = str.data[i] & ~0x20;
             upper = *dataIter & ~0x20;
             ++dataIter;
             os << upper;
         }
-        //os << upper << "(" << str.length << ")";
         os << "(" << str.length << ")";
         return os;
     }
@@ -163,7 +167,6 @@ ostream& operator<<(ostream& os, const MyString& str) {
         os << *dataIter;
         ++dataIter;
     }
-    //os << str.data << "(" << str.length << ")";
     os << "(" << str.length << ")";
     return os;
 }
@@ -197,7 +200,6 @@ istream& operator>>(istream& is, MyString& str) {
         *dataIter = *bufIter;
         ++dataIter;
         ++bufIter;
-        //str.data[k] = buffer[k];
     }
     str.length = i;
 
@@ -205,7 +207,6 @@ istream& operator>>(istream& is, MyString& str) {
 }
 
 bool operator==(const MyString& str1, const MyString& str2) {
-    //TODO reimplement this using MyString::stringComp
     // is there anything to compare?
     if (!str1.data || !str1.data) {
         // if they're both NULL, they're equal
@@ -272,12 +273,11 @@ bool operator<(const MyString& str1, const MyString& str2) {
     return MyString::stringComp(str1.data, str2.data) < 0;
 }
 
+/*
 int main(int argc, char* argv[]) {
-    /*
     for (int i = 1; i < argc; ++i) {
         cout << argv[i] << endl;
     }
-    */
     if (argc < 2) {
         return 0;
     }
@@ -295,20 +295,15 @@ int main(int argc, char* argv[]) {
     stringsIter = strings;
     for (int i = 0; i < argc-1; ++i) {
         cout << *stringsIter << " ";
-        //cout << strings[i] << " ";
         ++stringsIter;
     }
     cout << endl;
     stringsIter = strings;
-    //MyString first(strings[0]);
-    //MyString last(strings[argc - 2]);
     MyString first(*stringsIter);
     MyString last(*lastString);
     if (first < last) {
         cout << "The first string (" << first << ") ";
-        //cout << "The first string (" << first << ") ";
         cout << "is less than the last string (" << last << ").";
-        //cout << "is less than the last string (" << last << ").";
         cout << endl;
     } else if (first > last) {
         cout << "The first string (" << first << ") ";
@@ -322,7 +317,6 @@ int main(int argc, char* argv[]) {
     for (int i = 0; i < argc-1; ++i) {
         cout << --(*stringsIter) << " ";
         ++stringsIter;
-        //cout << --strings[i] << " ";
     }
     cout << endl;
     MyString combined;
@@ -336,14 +330,9 @@ int main(int argc, char* argv[]) {
     for (int i = 0; i < argc-1; ++i) {
         cout << *stringsIter << " ";
         ++stringsIter;
-        //cout << strings[i] << " ";
     }
     cout << endl;
 
-    //cout << strings[0] << endl;
-    //cout << strings[argc - 2] << endl;
-
-    /*
     char foo[] = "foo";
     char bar[] = "bar";
     MyString m(foo);
@@ -394,6 +383,6 @@ int main(int argc, char* argv[]) {
     //cin >> s;
     //cout << s << endl;
     return 0;
-    */
 
 }
+*/
