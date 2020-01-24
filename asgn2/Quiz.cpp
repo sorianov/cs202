@@ -20,7 +20,7 @@ std::vector<std::string> Quiz::parts(std::string str, char delimiter='|') {
     std::string token;
     std::vector<std::string> parts;
     while(std::getline(ss, token, delimiter)) {
-        std::cout << token << std::endl;
+        //std::cout << token << std::endl;
         parts.push_back(token);
     }
     return parts;
