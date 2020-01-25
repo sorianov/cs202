@@ -4,16 +4,16 @@
 
 int main(int argc, char* argv[]) {
     if (argc < 2) {
-        std::cout << "Usage: quiz filename [-d]";
-        std:: cout << std::endl;
+        std::cerr << "Usage: quiz filename [-d]";
+        std::cerr << std::endl;
         return 1;
     }
     std::string filename = argv[1];
     Quiz quiz;
 
     if (!quiz.loadQuestions(filename)) {
-        std::cout << "Questions could not be loaded";
-        std::cout << std::endl;
+        std::cerr << "Questions could not be loaded";
+        std::cerr << std::endl;
     }
 
     if (argc == 3) {
@@ -23,6 +23,8 @@ int main(int argc, char* argv[]) {
             return 0;
         }
     }
+
+    quiz.deliverQuiz();
     return 0;
 }
 

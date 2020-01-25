@@ -17,5 +17,4 @@ class Quiz {
         std::vector<Question> questions;
 };
 
-
 #endif
