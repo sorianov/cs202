@@ -2,10 +2,14 @@
 #include "Question.h"
 #include <iostream>
 
+void printUsage() {
+    std::cerr << "Usage: quiz filename [-d]";
+    std::cerr << std::endl;
+}
+
 int main(int argc, char* argv[]) {
     if (argc < 2) {
-        std::cerr << "Usage: quiz filename [-d]";
-        std::cerr << std::endl;
+        printUsage();
         return 1;
     }
     std::string filename = argv[1];
@@ -21,6 +25,9 @@ int main(int argc, char* argv[]) {
         if (dumpFlag == "-d") {
             quiz.dumpQuestions();
             return 0;
+        } else {
+            printUsage();
+            return 2;
         }
     }
 
