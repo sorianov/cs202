@@ -8,7 +8,6 @@
 //----------------------------------------------------------------------------
 #include "Question.h"
 #include <iostream>
-#include <cctype>
 
 Question::Question() {
     std::string questionText;

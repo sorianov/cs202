@@ -87,8 +87,9 @@ void Quiz::dumpQuestions() {
 }
 
 bool Quiz::loadQuestions(std::string filename) {
+    const char* fn = filename.c_str();
     std::ifstream f;
-    f.open(filename);
+    f.open(fn);
     std::string line;
     std::string question;
     std::string answer;
@@ -101,8 +102,9 @@ bool Quiz::loadQuestions(std::string filename) {
             Question q(question, answer);
             questions.push_back(q);
         }
+        f.close();
         return true;
     }
-
+    f.close();
     return false;
 }

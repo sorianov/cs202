@@ -26,6 +26,7 @@ int main(int argc, char* argv[]) {
     if (!quiz.loadQuestions(filename)) {
         std::cerr << "Questions could not be loaded";
         std::cerr << std::endl;
+        return 3;
     }
 
     if (argc == 3) {
