@@ -1,3 +1,11 @@
+//----------------------------------------------------------------------------
+// Author: Victor Soriano Mendoza
+// Instructor: Rich Albers
+// Date: 2020-01-24
+// Title: Assignment 2: Inheritance and Polymorphism part 1
+// Description: Create a basic quiz application that can extended via
+// inheritance in the future.
+//----------------------------------------------------------------------------
 #include "Question.h"
 #include <iostream>
 #include <cctype>
@@ -16,14 +24,10 @@ Question::Question(std::string question, std::string answer) {
 
 void Question::showQuestion() {
     std::cout << questionText << std::endl;
-    return;
 }
 
 bool Question::checkAnswer(std::string givenAnswer) {
-    if (answerText == givenAnswer) {
-        return true;
-    }
-    return false;
+    return answerText == givenAnswer;
 }
 
 bool Question::isCorrect() {
@@ -32,19 +36,8 @@ bool Question::isCorrect() {
 
 void Question::showAnswer() {
     std::cout << answerText << std::endl;
-    return;
 }
 
 void Question::markCorrect() {
     correct = true;
-    return;
-}
-
-std::string toLower(std::string source) {
-    std::string dest;
-    dest.resize(source.size());
-    for (unsigned int i = 0; i < source.size(); ++i) {
-        dest[i] = std::tolower(source[i]);
-    }
-    return dest;
 }

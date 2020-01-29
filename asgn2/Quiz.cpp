@@ -1,3 +1,11 @@
+//----------------------------------------------------------------------------
+// Author: Victor Soriano Mendoza
+// Instructor: Rich Albers
+// Date: 2020-01-24
+// Title: Assignment 2: Inheritance and Polymorphism part 1
+// Description: Create a basic quiz application that can extended via
+// inheritance in the future.
+//----------------------------------------------------------------------------
 #include "Quiz.h"
 #include "Question.h"
 #include <iostream>
@@ -32,6 +40,7 @@ int Quiz::deliverQuiz() {
     std::cout << "Hope your brain's warmed up, it's Quiz time!!!" << std::endl;
     std::cout << "After each answer is displayed, press enter to see the ";
     std::cout << "next question." << std::endl;
+    std::cout << std::endl;
 
     for (std::vector<Question>::iterator it = questions.begin();
             it != questions.end();
@@ -41,6 +50,7 @@ int Quiz::deliverQuiz() {
         std::cin >> answer;
         if((*it).checkAnswer(answer)) {
             std::cout << "Correct! Great job!" << std::endl;
+            std::cout << std::endl;
             (*it).markCorrect();
             ++correct;
         } else {
@@ -50,14 +60,19 @@ int Quiz::deliverQuiz() {
         }
     }
 
+    int totalQuestions = static_cast<int>(questions.size());
     float correctF = static_cast<float>(correct * 100);
-    float totalF = static_cast<float>(questions.size() * 100);
+    float totalF = static_cast<float>(totalQuestions * 100);
     float percentage = (correctF / totalF) * 100.0;
 
     std::cout << std::fixed;
     std::cout << std::setprecision(0);
     std::cout << "You got " << correct << " of " << questions.size() << " ";
-    std::cout << "correct: " << percentage << "%." << std::endl;
+    std::cout << "correct: " << percentage << "%. ";
+    if (correct < totalQuestions) {
+        std::cout << "Better study more!";
+    }
+    std::cout << std::endl;
 
     return correct;
 }
@@ -66,6 +81,7 @@ void Quiz::dumpQuestions() {
     for (std::vector<Question>::iterator it = questions.begin();
             it != questions.end(); ++it) {
         (*it).showQuestion();
+        std::cout << "> ";
         (*it).showAnswer();
     }
 }

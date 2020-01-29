@@ -1,3 +1,2 @@
-S|1|What is the capital of Oregon|Salem
-M|1|What is the capital of Oregon|*Salem|Sacramento|Portland|Boise
-T|1|The capital of Oregon is Salem|True
+S|1|What is the capital of Italy|Rome
+S|1|What is the capital of France|Paris
