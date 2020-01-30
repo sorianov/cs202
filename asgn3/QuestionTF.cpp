@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 #include <cctype>
 #include "Question.h"
 #include "QuestionTF.h"
@@ -16,8 +17,23 @@ QuestionTF::QuestionTF(std::string question, std::string answer) {
     correct = false;
 }
 
+QuestionTF::QuestionTF(std::vector<std::string> lineParts) {
+    if (lineParts.size() != 4) {
+        std::cerr << "Invalid number of true/false question parameters";
+        std::cerr << std::endl;
+        questionText = "";
+        answerText = "";
+        correct = false;
+    } else {
+        questionText = lineParts[2];
+        answerText = lineParts[3];
+        correct = false;
+    }
+}
+
 void QuestionTF::showQuestion() {
-    std::cout << questionText << std::endl;
+    std::cout << questionText << ". (True or False?)";
+    std::cout << std::endl;
     return;
 }
 

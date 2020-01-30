@@ -2,15 +2,17 @@
 #define QUESTIONTF_H
 
 #include <string>
+#include <vector>
 #include "Question.h"
 
 class QuestionTF : public Question {
     public:
         QuestionTF();
         QuestionTF(std::string, std::string);
-        void showQuestion();
-        void showAnswer();
-        bool checkAnswer(std::string);
+        QuestionTF(std::vector<std::string>);
+        virtual void showQuestion();
+        virtual void showAnswer();
+        virtual bool checkAnswer(std::string);
 };
 
 #endif
