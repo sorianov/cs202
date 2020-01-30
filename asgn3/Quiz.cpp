@@ -6,14 +6,16 @@
 // Description: Create a basic quiz application that can extended via
 // inheritance in the future.
 //----------------------------------------------------------------------------
-#include "Quiz.h"
-#include "Question.h"
 #include <iostream>
 #include <vector>
 #include <fstream>
 #include <sstream>
 #include <string>
 #include <iomanip>
+#include "Quiz.h"
+#include "Question.h"
+#include "QuestionTF.h"
+#include "QuestionMC.h"
 
 Quiz::Quiz() {
     questions = std::vector<Question*>();
@@ -22,6 +24,33 @@ Quiz::Quiz() {
 Quiz::Quiz(std::string filename) {
     questions = std::vector<Question*>();
     loadQuestions(filename);
+}
+
+Quiz::~Quiz() {
+    for (std::vector<Question*>::iterator it = questions.begin();
+            it != questions.end();
+            ++it) {
+        //TODO add virtual destructors to child classes
+        delete (*it);
+    }
+    questions.clear();
+}
+
+Quiz::Quiz(Quiz& q) {
+    for (std::vector<Question*>::iterator it = q.questions.begin();
+            it != q.questions.end();
+            ++it) {
+        questions.push_back((*it));
+    }
+}
+
+Quiz& Quiz::operator=(const Quiz& q) {
+    for (std::vector<Question*>::const_iterator it = q.questions.begin();
+            it != q.questions.end();
+            ++it) {
+        questions.push_back((*it));
+    }
+    return *this;
 }
 
 std::vector<std::string> Quiz::parts(std::string str, char delimiter='|') {
@@ -115,10 +144,10 @@ bool Quiz::loadQuestions(std::string filename) {
                 ptr = new Question(lineParts);
             } else if (type == "T") {
                 // True/False questions
-                ptr = new Question(lineParts);
+                ptr = new QuestionTF(lineParts);
             } else if (type == "M") {
                 // Multiple choice questions
-                ptr = new Question(lineParts);
+                ptr = new QuestionMC(lineParts);
             } else {
                 std::cerr << "Couldn't determine question type";
                 std::cerr << std::endl;

@@ -45,6 +45,9 @@ class Quiz {
          * @param std::string   Name of file to load questions from.
          */
         Quiz(std::string);
+        ~Quiz();
+        Quiz(Quiz&);
+        Quiz& operator=(const Quiz&);
     private:
         /**
          * Parses a string and separates contents by a passed delimiter and
