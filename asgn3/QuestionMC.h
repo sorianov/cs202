@@ -9,10 +9,12 @@ class QuestionMC : public Question {
     public:
         QuestionMC();
         QuestionMC(std::string, std::string);
-        void showQuestion();
-        void showAnswer();
-        bool checkAnswer(std::string);
+        QuestionMC(std::vector<std::string>);
+        virtual void showQuestion();
+        virtual void showAnswer();
+        virtual bool checkAnswer(std::string);
     private:
+        std::vector<std::string> parts(std::string, char=':');
         std::vector<std::string> choices;
 };
 
