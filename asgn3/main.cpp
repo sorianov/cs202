@@ -17,6 +17,7 @@ void printUsage() {
 }
 
 int main(int argc, char* argv[]) {
+    /*
     QuestionTF qt("True or False", "True");
     std::string fakeAnswer = "t";
     qt.showQuestion();
@@ -27,6 +28,7 @@ int main(int argc, char* argv[]) {
         std::cout << "wrong" << std::endl;
     }
     return 0;
+    */
     if (argc < 2) {
         printUsage();
         return 1;

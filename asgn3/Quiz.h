@@ -59,7 +59,7 @@ class Quiz {
          *
          */
         std::vector<std::string> parts(std::string, char);
-        std::vector<Question> questions;
+        std::vector<Question*> questions;
 };
 
 #endif

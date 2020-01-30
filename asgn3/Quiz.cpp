@@ -16,11 +16,11 @@
 #include <iomanip>
 
 Quiz::Quiz() {
-    std::vector<Question> questions;
+    questions = std::vector<Question*>();
 }
 
 Quiz::Quiz(std::string filename) {
-    std::vector<Question> questions;
+    questions = std::vector<Question*>();
     loadQuestions(filename);
 }
 
@@ -42,20 +42,20 @@ int Quiz::deliverQuiz() {
     std::cout << "next question." << std::endl;
     std::cout << std::endl;
 
-    for (std::vector<Question>::iterator it = questions.begin();
+    for (std::vector<Question*>::iterator it = questions.begin();
             it != questions.end();
             ++it) {
-        (*it).showQuestion();
+        (*it)->showQuestion();
         std::cout << "> ";
         std::cin >> answer;
-        if((*it).checkAnswer(answer)) {
+        if((*it)->checkAnswer(answer)) {
             std::cout << "Correct! Great job!" << std::endl;
             std::cout << std::endl;
-            (*it).markCorrect();
+            (*it)->markCorrect();
             ++correct;
         } else {
             std::cout << "Sorry, the answer is ";
-            (*it).showAnswer();
+            (*it)->showAnswer();
             std::cout << std::endl;
         }
     }
@@ -78,11 +78,11 @@ int Quiz::deliverQuiz() {
 }
 
 void Quiz::dumpQuestions() {
-    for (std::vector<Question>::iterator it = questions.begin();
+    for (std::vector<Question*>::iterator it = questions.begin();
             it != questions.end(); ++it) {
-        (*it).showQuestion();
+        (*it)->showQuestion();
         std::cout << "> ";
-        (*it).showAnswer();
+        (*it)->showAnswer();
     }
 }
 
@@ -90,17 +90,48 @@ bool Quiz::loadQuestions(std::string filename) {
     const char* fn = filename.c_str();
     std::ifstream f;
     f.open(fn);
+    std::string type;
     std::string line;
-    std::string question;
-    std::string answer;
     std::vector<std::string> lineParts;
     if (f.is_open()) {
         while (std::getline(f, line)) {
             lineParts = parts(line);
-            question = lineParts[2];
-            answer = lineParts[3];
-            Question q(question, answer);
-            questions.push_back(q);
+
+            if (lineParts.size() == 0) {
+                std::cerr << "There was an issue loading questions";
+                std::cerr << std::endl;
+                return false;
+            }
+
+            type = lineParts[0];
+            if (type.length() != 1) {
+                std::cerr << "Couldn't determine question type";
+                std::cerr << std::endl;
+                return false;
+            }
+
+            Question* ptr = NULL;
+            if (type == "S") {
+                ptr = new Question(lineParts);
+            } else if (type == "T") {
+                // True/False questions
+                ptr = new Question(lineParts);
+            } else if (type == "M") {
+                // Multiple choice questions
+                ptr = new Question(lineParts);
+            } else {
+                std::cerr << "Couldn't determine question type";
+                std::cerr << std::endl;
+                return false;
+            }
+
+            if (ptr == NULL) {
+                std::cerr << "Couldn't add question to quiz.";
+                std::cerr << std::endl;
+                return false;
+            }
+
+            questions.push_back(ptr);
         }
         f.close();
         return true;

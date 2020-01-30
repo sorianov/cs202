@@ -10,6 +10,7 @@
 #define QUESTION_H
 
 #include <string>
+#include <vector>
 
 class Question {
     public:
@@ -48,6 +49,7 @@ class Question {
          * @param std::string   String to use as answerText.
          */
         Question(std::string, std::string);
+        Question(std::vector<std::string>);
     protected:
         std::string questionText;
         std::string answerText;

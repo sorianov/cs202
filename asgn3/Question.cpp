@@ -21,6 +21,20 @@ Question::Question(std::string question, std::string answer) {
     correct = false;
 }
 
+Question::Question(std::vector<std::string> lineParts) {
+    if (lineParts.size() != 4) {
+        std::cerr << "Invalid number of short answer question parameters";
+        std::cerr << std::endl;
+        questionText = "";
+        answerText = "";
+        correct = false;
+    } else {
+        questionText = lineParts[2];
+        answerText = lineParts[3];
+        correct = false;
+    }
+}
+
 void Question::showQuestion() {
     std::cout << questionText << std::endl;
 }
