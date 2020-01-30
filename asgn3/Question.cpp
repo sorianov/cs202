@@ -36,7 +36,7 @@ Question::Question(std::vector<std::string> lineParts) {
 }
 
 void Question::showQuestion() {
-    std::cout << questionText << std::endl;
+    std::cout << questionText << "?" << std::endl;
 }
 
 bool Question::checkAnswer(std::string givenAnswer) {

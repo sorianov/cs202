@@ -17,13 +17,13 @@ class Question {
         /**
          * Prints questionText to stdout.
          */
-        void showQuestion();
+        virtual void showQuestion();
         /**
          * Compares the parameter to answerText
          *
          * @param std::string   The string to compare against answerText
          */
-        bool checkAnswer(std::string);
+        virtual bool checkAnswer(std::string);
         /**
          * Returns value of correct private member variable
          *
@@ -33,7 +33,7 @@ class Question {
         /**
          * Prints answerText to stdout
          */
-        void showAnswer();
+        virtual void showAnswer();
         /**
          * Changes value of the correct private member variable to true.
          */
