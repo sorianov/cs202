@@ -1,0 +1,6 @@
+*.o
+*.json
+*.swp
+
+stringTest
+quiz
