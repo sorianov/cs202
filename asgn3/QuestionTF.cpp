@@ -31,6 +31,22 @@ QuestionTF::QuestionTF(std::vector<std::string> lineParts) {
     }
 }
 
+QuestionTF::QuestionTF(const QuestionTF& q) {
+    questionText = q.questionText;
+    answerText = q.answerText;
+    correct = q.correct;
+}
+
+QuestionTF& QuestionTF::operator=(const QuestionTF& q) {
+    questionText = q.questionText;
+    answerText = q.answerText;
+    correct = q.correct;
+
+    return *this;
+}
+
+QuestionTF::~QuestionTF() { }
+
 void QuestionTF::showQuestion() {
     std::cout << questionText << ". (True or False?)";
     std::cout << std::endl;

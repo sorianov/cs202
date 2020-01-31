@@ -32,11 +32,25 @@ QuestionMC::QuestionMC(std::vector<std::string> lineParts) {
     }
 }
 
+QuestionMC::QuestionMC(const QuestionMC& q) {
+    answerText = q.questionText;
+    questionText = q.answerText;
+    correct = q.correct;
+
+    for (unsigned int i = 0; i < q.choices.size(); ++i) {
+        choices.push_back(q.choices[i]);
+    }
+}
+
+QuestionMC::~QuestionMC() { }
+
 void QuestionMC::showQuestion() {
     char optionChar = 'a';
-    std::cout << questionText << std::endl;
+    std::cout << questionText;
+    std::cout << "?";
+    std::cout << std::endl;
     for (unsigned int i = 0; i < choices.size(); ++i) {
-        std::cout << std::setw(5);
+        std::cout << std::setw(3);
         std::cout << optionChar << ") ";
         std::cout << choices[i] << std::endl;
         ++optionChar;
@@ -44,7 +58,7 @@ void QuestionMC::showQuestion() {
 }
 
 void QuestionMC::showAnswer() {
-    std::cout << answerText << "?" << std::endl;
+    std::cout << answerText << std::endl;
 }
 
 bool QuestionMC::checkAnswer(std::string answer) {

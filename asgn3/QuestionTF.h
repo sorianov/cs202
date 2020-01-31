@@ -10,6 +10,9 @@ class QuestionTF : public Question {
         QuestionTF();
         QuestionTF(std::string, std::string);
         QuestionTF(std::vector<std::string>);
+        QuestionTF(const QuestionTF&);
+        QuestionTF& operator=(const QuestionTF&);
+        virtual ~QuestionTF();
         virtual void showQuestion();
         virtual void showAnswer();
         virtual bool checkAnswer(std::string);

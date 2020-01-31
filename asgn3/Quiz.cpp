@@ -30,7 +30,6 @@ Quiz::~Quiz() {
     for (std::vector<Question*>::iterator it = questions.begin();
             it != questions.end();
             ++it) {
-        //TODO add virtual destructors to child classes
         delete (*it);
     }
     questions.clear();
@@ -101,6 +100,11 @@ int Quiz::deliverQuiz() {
     if (correct < totalQuestions) {
         std::cout << "Better study more!";
     }
+
+    if (correct == totalQuestions) {
+        std::cout << "Motivational text.";
+    }
+
     std::cout << std::endl;
 
     return correct;

@@ -50,6 +50,9 @@ class Question {
          */
         Question(std::string, std::string);
         Question(std::vector<std::string>);
+        virtual ~Question();
+        Question(Question&);
+        Question& operator=(Question&);
     protected:
         std::string questionText;
         std::string answerText;
