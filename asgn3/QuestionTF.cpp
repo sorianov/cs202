@@ -1,3 +1,11 @@
+//----------------------------------------------------------------------------
+// Author: Victor Soriano Mendoza
+// Instructor: Rich Albers
+// Date: 2020-01-29
+// Title: Assignment 2: Inheritance and Polymorphism part 2
+// Description: Create a basic quiz application that can extended via
+// inheritance in the future.
+//----------------------------------------------------------------------------
 #include <iostream>
 #include <string>
 #include <vector>

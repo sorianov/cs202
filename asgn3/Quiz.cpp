@@ -1,8 +1,8 @@
 //----------------------------------------------------------------------------
 // Author: Victor Soriano Mendoza
 // Instructor: Rich Albers
-// Date: 2020-01-24
-// Title: Assignment 2: Inheritance and Polymorphism part 1
+// Date: 2020-01-29
+// Title: Assignment 2: Inheritance and Polymorphism part 2
 // Description: Create a basic quiz application that can extended via
 // inheritance in the future.
 //----------------------------------------------------------------------------
@@ -75,7 +75,7 @@ int Quiz::deliverQuiz() {
             ++it) {
         (*it)->showQuestion();
         std::cout << "> ";
-        std::cin >> answer;
+        std::getline(std::cin, answer);
         if((*it)->checkAnswer(answer)) {
             std::cout << "Correct! Great job!" << std::endl;
             std::cout << std::endl;
@@ -145,6 +145,7 @@ bool Quiz::loadQuestions(std::string filename) {
 
             Question* ptr = NULL;
             if (type == "S") {
+                // Short answer questions
                 ptr = new Question(lineParts);
             } else if (type == "T") {
                 // True/False questions

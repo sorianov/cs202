@@ -1,17 +1,17 @@
 //----------------------------------------------------------------------------
 // Author: Victor Soriano Mendoza
 // Instructor: Rich Albers
-// Date: 2020-01-24
-// Title: Assignment 2: Inheritance and Polymorphism part 1
+// Date: 2020-01-29
+// Title: Assignment 2: Inheritance and Polymorphism part 2
 // Description: Create a basic quiz application that can extended via
 // inheritance in the future.
 //----------------------------------------------------------------------------
 #ifndef QUIZ_H
 #define QUIZ_H
 
-#include "Question.h"
 #include <vector>
 #include <string>
+#include "Question.h"
 
 class Quiz {
     public:
@@ -45,8 +45,24 @@ class Quiz {
          * @param std::string   Name of file to load questions from.
          */
         Quiz(std::string);
+        /**
+         * Destructor. Will delete and clear pointers in the questions member
+         * variable.
+         */
         ~Quiz();
+        /**
+         * Copy constructor.
+         *
+         * @param Quiz& Reference to object we will copy.
+         */
         Quiz(Quiz&);
+        /**
+         * Assignment operator overload.
+         *
+         * @param const Quiz&   Reference to object we will copy.
+         *
+         * @return Quiz&    A reference to this object.
+         */
         Quiz& operator=(const Quiz&);
     private:
         /**

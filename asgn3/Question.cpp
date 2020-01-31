@@ -1,13 +1,17 @@
 //----------------------------------------------------------------------------
 // Author: Victor Soriano Mendoza
 // Instructor: Rich Albers
-// Date: 2020-01-24
-// Title: Assignment 2: Inheritance and Polymorphism part 1
+// Date: 2020-01-29
+// Title: Assignment 2: Inheritance and Polymorphism part 2
 // Description: Create a basic quiz application that can extended via
 // inheritance in the future.
 //----------------------------------------------------------------------------
-#include "Question.h"
 #include <iostream>
+#include <algorithm>
+#include <string>
+#include <cctype>
+#include <regex>
+#include "Question.h"
 
 Question::Question() {
     std::string questionText;
@@ -29,7 +33,7 @@ Question::Question(Question& q) {
     correct = q.correct;
 }
 
-Question& Question::operator=(Question& q) {
+Question& Question::operator=(const Question& q) {
     questionText = q.questionText;
     answerText = q.answerText;
     correct = q.correct;
@@ -56,7 +60,9 @@ void Question::showQuestion() {
 }
 
 bool Question::checkAnswer(std::string givenAnswer) {
-    return answerText == givenAnswer;
+    std::string answerCmp = toLower(removeSpaces(answerText));
+    std::string givenCmp = toLower(removeSpaces(givenAnswer));
+    return answerCmp == givenCmp;
 }
 
 bool Question::isCorrect() {
@@ -69,4 +75,14 @@ void Question::showAnswer() {
 
 void Question::markCorrect() {
     correct = true;
+}
+
+std::string Question::toLower(std::string str) {
+    std::transform(str.begin(), str.end(), str.begin(),
+            [](unsigned char c){ return std::tolower(c); });
+    return str;
+}
+
+std::string Question::removeSpaces(std::string str) {
+    return std::regex_replace(str, std::regex("\\s+"), std::string(""));
 }

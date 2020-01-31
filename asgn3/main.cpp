@@ -1,15 +1,14 @@
 //----------------------------------------------------------------------------
 // Author: Victor Soriano Mendoza
 // Instructor: Rich Albers
-// Date: 2020-01-24
-// Title: Assignment 2: Inheritance and Polymorphism part 1
+// Date: 2020-01-29
+// Title: Assignment 2: Inheritance and Polymorphism part 2
 // Description: Create a basic quiz application that can extended via
 // inheritance in the future.
 //----------------------------------------------------------------------------
-#include "Question.h"
-#include "QuestionTF.h"
-#include "Quiz.h"
 #include <iostream>
+#include <string>
+#include "Quiz.h"
 
 void printUsage() {
     std::cerr << "Usage: quiz filename [-d]";
@@ -17,18 +16,6 @@ void printUsage() {
 }
 
 int main(int argc, char* argv[]) {
-    /*
-    QuestionTF qt("True or False", "True");
-    std::string fakeAnswer = "t";
-    qt.showQuestion();
-    qt.showAnswer();
-    if (qt.checkAnswer(fakeAnswer)) {
-        std::cout << "correct" << std::endl;
-    } else {
-        std::cout << "wrong" << std::endl;
-    }
-    return 0;
-    */
     if (argc < 2) {
         printUsage();
         return 1;

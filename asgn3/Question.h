@@ -1,8 +1,8 @@
 //----------------------------------------------------------------------------
 // Author: Victor Soriano Mendoza
 // Instructor: Rich Albers
-// Date: 2020-01-24
-// Title: Assignment 2: Inheritance and Polymorphism part 1
+// Date: 2020-01-29
+// Title: Assignment 2: Inheritance and Polymorphism part 2
 // Description: Create a basic quiz application that can extended via
 // inheritance in the future.
 //----------------------------------------------------------------------------
@@ -43,17 +43,59 @@ class Question {
          */
         Question();
         /**
-         * Overloaded constructor.
+         * Overloaded constructor for initializing questionText and answerText
+         * member variables.
          *
          * @param std::string   String to use as questionText.
          * @param std::string   String to use as answerText.
          */
         Question(std::string, std::string);
+        /**
+         * Constructor for extracting questionText and answerText from a vector
+         * of string tokens.
+         *
+         * @param std::vector<std::string>  Vector of tokens extracted from a
+         *                                  questions file
+         */
         Question(std::vector<std::string>);
-        virtual ~Question();
+        /**
+         * Copy constructor
+         *
+         * @param Question& Reference to object we should copy.
+         */
         Question(Question&);
-        Question& operator=(Question&);
+        /**
+         * Virtual destructor in case this class is ever inherited.
+         */
+        virtual ~Question();
+        /**
+         * Assignment operator overload
+         *
+         * @param Question& Reference to object we should copy.
+         *
+         * @return Question& Reference to this object.
+         */
+        Question& operator=(const Question&);
     protected:
+        /**
+         * Removes all space characters in a string.
+         *
+         * @param std::string   String to remove space characters from.
+         *
+         * @return std::string  String with removed space characters.
+         */
+        std::string removeSpaces(std::string);
+        /**
+         * Make a string lowercase.
+         *
+         * @param std::string   String to make lowercase.
+         *
+         * @see https://notfaq.wordpress.com/2007/08/04/
+         *          cc-convert-string-to-upperlower-case/
+         *
+         * @return std::strign Lowercase version of passed string.
+         */
+        std::string toLower(std::string);
         std::string questionText;
         std::string answerText;
         bool correct;
