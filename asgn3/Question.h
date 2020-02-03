@@ -96,6 +96,14 @@ class Question {
          * @return std::strign Lowercase version of passed string.
          */
         std::string toLower(std::string);
+        /**
+         * To be used as a callback for a std::transform call
+         *
+         * @param unsigned char An unsigned character
+         *
+         * @return unsigned char std::tolower() of parameter
+         */
+        static unsigned char lower(unsigned char);
         std::string questionText;
         std::string answerText;
         bool correct;

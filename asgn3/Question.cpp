@@ -10,7 +10,8 @@
 #include <algorithm>
 #include <string>
 #include <cctype>
-#include <regex>
+// needs extra compiler options
+//#include <regex>
 #include "Question.h"
 
 Question::Question() {
@@ -60,8 +61,12 @@ void Question::showQuestion() {
 }
 
 bool Question::checkAnswer(std::string givenAnswer) {
+    /* Doesn't work on school g++ without extra compiler options
     std::string answerCmp = toLower(removeSpaces(answerText));
     std::string givenCmp = toLower(removeSpaces(givenAnswer));
+    */
+    std::string answerCmp = toLower(answerText);
+    std::string givenCmp = toLower(givenAnswer);
     return answerCmp == givenCmp;
 }
 
@@ -77,12 +82,21 @@ void Question::markCorrect() {
     correct = true;
 }
 
+unsigned char Question::lower(unsigned char c) {
+    return std::tolower(c);
+}
+
 std::string Question::toLower(std::string str) {
+    /* Doesn't work on school g++ without extra compiler options
     std::transform(str.begin(), str.end(), str.begin(),
             [](unsigned char c){ return std::tolower(c); });
+            */
+    std::transform(str.begin(), str.end(), str.begin(), Question::lower);
+
     return str;
 }
 
+/* Doesn't work on school g++ without extra compiler options
 std::string Question::removeSpaces(std::string str) {
     return std::regex_replace(str, std::regex("\\s+"), std::string(""));
-}
+}*/
