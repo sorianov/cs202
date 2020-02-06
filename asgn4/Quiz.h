@@ -82,6 +82,7 @@ class Quiz {
          */
         std::vector<std::string> parts(std::string, char);
         bool askContinue();
+        bool validateYesNo(std::string);
         std::vector<Question*> questions;
         std::vector<Question*> incorrectQuestions;
         std::string filename;

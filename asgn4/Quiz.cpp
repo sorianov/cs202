@@ -213,6 +213,26 @@ int Quiz::getNumIncorrect() {
     return incorrect;
 }
 
+bool Quiz::validateYesNo(std::string str) {
+    if (str == "") {
+        return true;
+    }
+
+    char lChar;
+    try {
+       lChar = std::tolower(str.at(0));
+       if (lChar == 'y') {
+            return true;
+       }
+       if (lChar == 'n') {
+            return true;
+        }
+    } catch (const std::out_of_range& oor) { }
+    std::cout << "Please enter 'y' or 'n'";
+    std::cout << std::endl;
+    return false;
+}
+
 bool Quiz::askContinue() {
     std::string response;
     std::getline(std::cin, response);
@@ -238,15 +258,26 @@ int Quiz::deliverIncorrectQuestions() {
     std::string answer;
     std::string retryAnswer;
     //int totalIncorrect = incorrectQuestions.size();
+    do {
+        std::cout << "You answered " << incorrect << " questions ";
+        std::cout << "incorrectly. ";
+        std::cout << "Would you like to repeat them? [Y/n]" << std::endl;
+        std::getline(std::cin, retryAnswer);
+    } while (!validateYesNo(retryAnswer));
+    if (std::tolower(retryAnswer.at(0)) == 'n') {
+        return correct;
+    }
 
     std::vector<Question*>::iterator it = incorrectQuestions.begin();
     while(incorrect > 0) {
         if (it == incorrectQuestions.end()) {
-            std::cout << "You still have incorrectly answered questions. ";
-            std::cout << "Would you like to keep trying? [Y/n]";
-            std::cout << std::endl;
-            std::getline(std::cin, retryAnswer);
-            if (retryAnswer == "n" || retryAnswer == "N") {
+            do {
+                std::cout << "You still have incorrectly answered questions. ";
+                std::cout << "Would you like to keep trying? [Y/n]";
+                std::cout << std::endl;
+                std::getline(std::cin, retryAnswer);
+            } while (!validateYesNo(retryAnswer));
+            if (retryAnswer.at(0) == 'n') {
                 break;
             }
             it = incorrectQuestions.begin();

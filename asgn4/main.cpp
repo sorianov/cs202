@@ -48,6 +48,7 @@ int main(int argc, char* argv[]) {
         std::string retryAnswer;
         if (incorrect > 0) {
             // start incorrect loop
+            /*
             std::cout << "You answered " << incorrect << " questions ";
             std::cout << "incorrectly. ";
             std::cout << "Would you like to repeat them? [Y/n]" << std::endl;
@@ -58,6 +59,8 @@ int main(int argc, char* argv[]) {
                 // serve incorrect questions.
                 quiz.deliverIncorrectQuestions();
             }
+             */
+            quiz.deliverIncorrectQuestions();
         }
         return 0;
     } catch (const char* e) {
