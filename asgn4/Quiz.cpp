@@ -264,8 +264,11 @@ int Quiz::deliverIncorrectQuestions() {
         std::cout << "Would you like to repeat them? [Y/n]" << std::endl;
         std::getline(std::cin, retryAnswer);
     } while (!validateYesNo(retryAnswer));
-    if (std::tolower(retryAnswer.at(0)) == 'n') {
-        return correct;
+    
+    if (retryAnswer.size() > 0) {
+        if (retryAnswer.at(0) == 'n') {
+            return correct;
+        }
     }
 
     std::vector<Question*>::iterator it = incorrectQuestions.begin();
@@ -277,9 +280,13 @@ int Quiz::deliverIncorrectQuestions() {
                 std::cout << std::endl;
                 std::getline(std::cin, retryAnswer);
             } while (!validateYesNo(retryAnswer));
-            if (retryAnswer.at(0) == 'n') {
-                break;
+
+            if (retryAnswer.size() > 0) {
+                if (retryAnswer.at(0) == 'n') {
+                    break;
+                }
             }
+            
             it = incorrectQuestions.begin();
         }
 
