@@ -1,0 +1,4 @@
+S|1|What is the capital of France|Paris
+S|2|What is the capital of Italy|Rome
+T|1|The capital of Germany is Munich|False
+M|1|What is the capital of Ukraine|Minsk:Kyiv:Warsaw:Chisinau|B
