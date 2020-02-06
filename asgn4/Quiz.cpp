@@ -12,6 +12,7 @@
 #include <sstream>
 #include <string>
 #include <iomanip>
+#include <cctype>
 #include "Quiz.h"
 #include "Question.h"
 #include "QuestionSA.h"
@@ -210,6 +211,27 @@ int Quiz::getNumCorrect() {
 
 int Quiz::getNumIncorrect() {
     return incorrect;
+}
+
+bool Quiz::askContinue() {
+    std::string response;
+    std::getline(std::cin, response);
+    char r = 'n';
+
+    // User pressed enter, yes is implied.
+    if (response == "") {
+        return true;
+    }
+
+    if (response.size() > 0) {
+        r = std::tolower(response.at(0));
+    } else {
+        return false;
+    }
+    if (response == "n" || response == "N") {
+        return false;
+    }
+    return false;
 }
 
 int Quiz::deliverIncorrectQuestions() {
