@@ -141,8 +141,38 @@ void Quiz::dumpQuestions() {
     }
 }
 
+bool Quiz::validateQuestionLine(std::string line) {
+    // empty lines ok
+    if (line == "") {
+        return true;
+    }
+    if (line.size() == 0) {
+        return true;
+    }
+
+    const char lineChar = std::tolower(line.at(0));
+    if (std::isspace(lineChar)) {
+        return true;
+    }
+    if (lineChar == '#') {
+        return true;
+    }
+    if (lineChar == 's') {
+        return true;
+    }
+    if (lineChar == 't') {
+        return true;
+    }
+    if (lineChar == 'm') {
+        return true;
+    }
+
+    return false;
+}
+
 bool Quiz::loadQuestions(std::string filename) {
     const char* fn = filename.c_str();
+    int lineNumber = 0;
     std::ifstream f;
     f.open(fn);
     std::string type;
@@ -155,6 +185,24 @@ bool Quiz::loadQuestions(std::string filename) {
         this->filename = filename;
         filenameIsValid = true;
         while (std::getline(f, line)) {
+            ++lineNumber;
+            if (!validateQuestionLine(line)) {
+                std::stringstream ss;
+                ss << "Error while parsing " << filename << ":\n";
+                ss << "\tInvalid character " << line.at(0);
+                ss << " at line " << lineNumber << ".";
+                std::cerr << ss.str() << std::endl;
+                continue;
+            }
+            if (line == "") {
+                continue;
+            } else if (line.size() > 0) {
+                if (line.at(0) == '#') {
+                    continue;
+                } else if (std::isspace(line.at(0))) {
+                    continue;
+                }
+            }
             lineParts = parts(line);
 
             if (lineParts.size() == 0) {
@@ -233,27 +281,6 @@ bool Quiz::validateYesNo(std::string str) {
     return false;
 }
 
-bool Quiz::askContinue() {
-    std::string response;
-    std::getline(std::cin, response);
-    char r = 'n';
-
-    // User pressed enter, yes is implied.
-    if (response == "") {
-        return true;
-    }
-
-    if (response.size() > 0) {
-        r = std::tolower(response.at(0));
-    } else {
-        return false;
-    }
-    if (response == "n" || response == "N") {
-        return false;
-    }
-    return false;
-}
-
 int Quiz::deliverIncorrectQuestions() {
     std::string answer;
     std::string retryAnswer;
@@ -264,7 +291,7 @@ int Quiz::deliverIncorrectQuestions() {
         std::cout << "Would you like to repeat them? [Y/n]" << std::endl;
         std::getline(std::cin, retryAnswer);
     } while (!validateYesNo(retryAnswer));
-    
+
     if (retryAnswer.size() > 0) {
         if (retryAnswer.at(0) == 'n') {
             return correct;
@@ -286,7 +313,7 @@ int Quiz::deliverIncorrectQuestions() {
                     break;
                 }
             }
-            
+
             it = incorrectQuestions.begin();
         }
 

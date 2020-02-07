@@ -1,0 +1,21 @@
+J|1|What is the capital of France|Paris
+S|1|What is the capital of France|Paris
+S|1|What is the capital of France|Paris
+
+#
+
+
+
+S|1|What is the capital of France|Paris
+jkfdaife
+S|2|What is the capital of Italy|Rome
+T|1|The capital of Germany is Munich|False
+[]l;,./i94302
+M|1|What is the capital of Ukraine|Minsk:Kyiv:Warsaw:Chisinau|B
+_¬{
+S|2|What is the capital of Your Mom|Kek
+ò|=2y
+S|8|How many lines does it take|0
+ò|=2y
+S|2|What is the capital of Italy|Rome
+|=2y
