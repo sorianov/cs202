@@ -71,6 +71,8 @@ class QuestionMC : public Question {
          * @return bool         True if characters match, false otherwise.
          */
         virtual bool checkAnswer(std::string);
+    protected:
+        virtual bool validateQuestionLineParts(std::vector<std::string>);
     private:
         /**
          * Parses a string and separates contents by a passed delimiter and

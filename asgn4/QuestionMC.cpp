@@ -76,6 +76,10 @@ bool QuestionMC::checkAnswer(std::string answer) {
     return c == a;
 }
 
+bool QuestionMC::validateQuestionLineParts(std::vector<std::string> parts) {
+    return true;
+}
+
 std::vector<std::string> QuestionMC::parts(std::string str, char delimiter) {
     std::istringstream ss(str);
     std::string token;

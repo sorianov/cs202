@@ -53,6 +53,10 @@ QuestionTF& QuestionTF::operator=(const QuestionTF& q) {
     return *this;
 }
 
+bool QuestionTF::validateQuestionLineParts(std::vector<std::string> parts) {
+    return true;
+}
+
 QuestionTF::~QuestionTF() { }
 
 void QuestionTF::showQuestion() {

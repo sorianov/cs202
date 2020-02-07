@@ -104,6 +104,7 @@ class Question {
          * @return unsigned char std::tolower() of parameter
          */
         static unsigned char lower(unsigned char);
+        virtual bool validateQuestionLineParts(std::vector<std::string>) = 0;
         std::string questionText;
         std::string answerText;
         bool correct;

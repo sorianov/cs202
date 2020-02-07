@@ -219,25 +219,33 @@ bool Quiz::loadQuestions(std::string filename) {
             }
 
             Question* ptr = NULL;
-            if (type == "S") {
-                // Short answer questions
-                ptr = new QuestionSA(lineParts);
-            } else if (type == "T") {
-                // True/False questions
-                ptr = new QuestionTF(lineParts);
-            } else if (type == "M") {
-                // Multiple choice questions
-                ptr = new QuestionMC(lineParts);
-            } else {
-                std::cerr << "Couldn't determine question type";
-                std::cerr << std::endl;
-                return false;
+            try {
+                if (type == "S") {
+                    // Short answer questions
+                    ptr = new QuestionSA(lineParts);
+                } else if (type == "T") {
+                    // True/False questions
+                    ptr = new QuestionTF(lineParts);
+                } else if (type == "M") {
+                    // Multiple choice questions
+                    ptr = new QuestionMC(lineParts);
+                } else {
+                    std::cerr << "Couldn't determine question type";
+                    std::cerr << std::endl;
+                    continue;
+                }
+            } catch (std::string e) {
+                std::cerr << "An error ocurred on line " << lineNumber << ": ";
+                std::cerr << e << std::endl;
+                continue;
             }
 
             if (ptr == NULL) {
-                std::cerr << "Couldn't add question to quiz.";
+                std::cerr << "Couldn't add question on line " << lineNumber;
+                std::cerr << " to quiz.";
                 std::cerr << std::endl;
-                return false;
+                //return false;
+                continue;
             }
 
             questions.push_back(ptr);

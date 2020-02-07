@@ -8,6 +8,7 @@
 //----------------------------------------------------------------------------
 #include <iostream>
 #include <algorithm>
+#include <sstream>
 #include <string>
 #include <cctype>
 // needs extra compiler options
@@ -42,6 +43,8 @@ QuestionSA& QuestionSA::operator=(const QuestionSA& q) {
 }
 
 QuestionSA::QuestionSA(std::vector<std::string> lineParts) {
+    validateQuestionLineParts(lineParts);
+    /*
     if (lineParts.size() != 4) {
         std::cerr << "Invalid number of short answer question parameters";
         std::cerr << std::endl;
@@ -53,6 +56,10 @@ QuestionSA::QuestionSA(std::vector<std::string> lineParts) {
         answerText = lineParts[3];
         correct = false;
     }
+    */
+    questionText = lineParts[2];
+    answerText = lineParts[3];
+    correct = false;
 }
 
 void QuestionSA::showQuestion() {
@@ -83,6 +90,77 @@ void QuestionSA::markCorrect() {
 
 unsigned char QuestionSA::lower(unsigned char c) {
     return std::tolower(c);
+}
+
+// TODO Make custom exceptions for less repetitive code.
+bool QuestionSA::validateQuestionLineParts(std::vector<std::string> parts) {
+    std::stringstream ss;
+    std::string tmp;
+    // Make sure we have a correct vector size before we start accessing
+    // out of bound members.
+    if (parts.size() > 4) {
+        ss << "Invalid number of short answer question parameters. There are ";
+        ss << "too many fields separated by '|' characters. ";
+        ss << "Expected format:\n";
+        ss << "\tS|level|question|answer";
+        throw(ss.str());
+    }
+    if (parts.size() < 4) {
+        ss << "Invalid number of short answer question parameters. There are ";
+        ss << "too few fields separated by '|' characters. ";
+        ss << "Expected format:\n";
+        ss << "\tS|level|question|answer";
+        throw(ss.str());
+    }
+    // Validate Question code
+    tmp = parts.at(0);
+    if (tmp.size() != 1) {
+        // Too many characters in field
+        ss << "Invalid short answer question code " << tmp << ". ";
+        ss << "Expected S.";
+        throw(ss.str());
+    }
+    if (std::tolower(tmp.at(0)) != 's') {
+        // Wrong code
+        ss << "Invalid short answer question code " << tmp << ". ";
+        ss << "Expected S.";
+        throw(ss.str());
+    }
+    // Validate Level
+    tmp = parts.at(1);
+    if (tmp.size() != 1) {
+        // Too many characters in field
+        ss << "Invalid short answer question level " << tmp << ". ";
+        ss << "Expected a number from 1 to 9.";
+        throw(ss.str());
+    }
+    if (!std::isdigit(tmp.at(0))) {
+        // We're expecting a digit
+        ss << "Invalid short answer question level " << tmp << ". ";
+        ss << "Expected a number from 1 to 9.";
+        throw(ss.str());
+    }
+    int level = tmp.at(0) - '0';
+    if (level < 1 || level > 9) {
+        // Level out of acceptable bounds
+        ss << "Invalid short answer question level " << tmp << ". ";
+        ss << "Expected a number from 1 to 9.";
+        throw(ss.str());
+    }
+    // Validate question text
+    tmp = parts.at(2);
+    if (tmp.empty()) {
+        ss << "Expected a question. Received empty string.";
+        throw(ss.str());
+    }
+    // Validate answer text
+    tmp = parts.at(3);
+    if (tmp.empty()) {
+        ss << "Expected an answer. Received empty string.";
+        throw(ss.str());
+    }
+
+    return true;
 }
 
 std::string QuestionSA::toLower(std::string str) {

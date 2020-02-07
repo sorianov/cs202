@@ -69,6 +69,8 @@ class QuestionTF : public Question {
          *                      match, false otherwise.
          */
         virtual bool checkAnswer(std::string);
+    protected:
+        virtual bool validateQuestionLineParts(std::vector<std::string>);
 };
 
 #endif
