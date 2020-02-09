@@ -23,14 +23,6 @@ int main(int argc, char* argv[]) {
     std::string filename = argv[1];
     try {
         Quiz quiz(filename);
-        /*
-        if (!quiz.loadQuestions(filename)) {
-            std::cerr << "Questions could not be loaded";
-            std::cerr << std::endl;
-            return 3;
-        }
-        */
-
         if (argc == 3) {
             std::string dumpFlag = argv[2];
             if (dumpFlag == "-d") {
@@ -47,25 +39,15 @@ int main(int argc, char* argv[]) {
         int incorrect = quiz.getNumIncorrect();
         std::string retryAnswer;
         if (incorrect > 0) {
-            // start incorrect loop
-            /*
-            std::cout << "You answered " << incorrect << " questions ";
-            std::cout << "incorrectly. ";
-            std::cout << "Would you like to repeat them? [Y/n]" << std::endl;
-            std::getline(std::cin, retryAnswer);
-            if (retryAnswer == ""
-                    || retryAnswer.at(0) == 'y'
-                    || retryAnswer.at(0) == 'Y') {
-                // serve incorrect questions.
-                quiz.deliverIncorrectQuestions();
-            }
-             */
             quiz.deliverIncorrectQuestions();
         }
         return 0;
     } catch (const char* e) {
         std::cerr << e << std::endl;
         return 3;
+    } catch (...) {
+        std::cerr << "An Unknown error ocurred. Exiting." << std::endl;
+        return 4;
     }
 }
 

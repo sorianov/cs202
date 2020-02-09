@@ -26,6 +26,8 @@ QuestionMC::QuestionMC(std::string question, std::string answer) {
 }
 
 QuestionMC::QuestionMC(std::vector<std::string> lineParts) {
+    validateQuestionLineParts(lineParts);
+    /*
     if (lineParts.size() != 5) {
         std::cerr << "Invalid number of true/false question parameters";
         std::cerr << std::endl;
@@ -38,6 +40,11 @@ QuestionMC::QuestionMC(std::vector<std::string> lineParts) {
         choices = parts(lineParts[3]);
         correct = false;
     }
+    */
+    questionText = lineParts[2];
+    answerText = lineParts[4];
+    choices = parts(lineParts[3]);
+    correct = false;
 }
 
 QuestionMC::QuestionMC(const QuestionMC& q) {
@@ -62,10 +69,10 @@ bool QuestionMC::validateQuestionLineParts(std::vector<std::string> lParts) {
         ss << "Invalid number of multiple choice question parameters. ";
         ss << "There are too many fields separated by '|' characters. ";
         ss << "Expected format:\n";
-        ss << "\tM|level|question|possible:answers:to:question|letter";
-        ss << "There can only be a maximum of 10 choices with a 2 choice ";
-        ss << "minimum. For a 2 choice question, the answer can be either a ";
-        ss << "or b, and for a 10 choice question, the answer can be a-j";
+        ss << "\tM|level|question|possible:answers:to:question|letter\n";
+        ss << "\tThere can only be a maximum of 10 choices with a 2 choice\n";
+        ss << "\tminimum. For a 2 choice question, the answer can be either ";
+        ss << "a or b, and for a 10 choice question, the answer can be a-j";
         throw(ss.str());
     }
     if (lParts.size() < 5) {

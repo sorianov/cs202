@@ -45,3 +45,33 @@ S|3|=|2y
 # test garbage data
 T|3|=|False
 T|5|Question|
+# test happy path data
+M|2|What is the capital of America|Oregon:Washington D.C.:Portland:Baltimore|B
+# test too many fields
+M|2|What is the capital of America|Oregon:Washington D.C.:Baltimore|B|C|D
+# test too few fields
+M|2|What is the capital of America|
+# test out of bounds question level
+M|0|What is the capital of America|Oregon:Washington D.C.:Portland:Baltimore|B
+# test out of bounds question level
+M|10|What is the capital of America|Oregon:Washington D.C.:Portland:Baltimore|B
+# test out of bounds question level
+M|2|What is the capital of America|Oregon:Washington D.C.:Portland:Baltimore|B
+# test invalid question code
+Mc|3|What is the capital of America|Oregon:Washington D.C.:Portland:Baltimore|B
+# test invalid question code
+mJ|4|What is the capital of America|Oregon:Washington D.C.:Portland:Baltimore|B
+# test invalid question code
+m|4|What is the capital of America|Oregon:Washington D.C.:Portland:Baltimore|B
+# test empty question
+M||What is the capital of America|Oregon:Washington D.C.:Portland:Baltimore|B
+# test empty answer
+M|2|What is the capital of America||B
+# test too few answers
+M|2|What is the capital of America|Oregon|B
+# test too few answers and empty answer
+M|2|What is the capital of America|Oregon::|B
+# test too many answers
+M|2|What is the capital of America|o:r:e:g:o:n:w:a:s:h:i:n:g:t:o:n:d.c.:d:c|B
+# test answer out of bounds
+M|2|What is the capital of America|Oregon:Washington D.C.:Portland:Baltimore|e
