@@ -87,6 +87,7 @@ class QuestionMC : public Question {
          *
          */
         std::vector<std::string> parts(std::string, char=':');
+        bool validateChoices(std::vector<std::string>);
         std::vector<std::string> choices;
 };
 

@@ -52,6 +52,133 @@ QuestionMC::QuestionMC(const QuestionMC& q) {
 
 QuestionMC::~QuestionMC() { }
 
+// TODO Make custom exceptions for less repetitive code.
+bool QuestionMC::validateQuestionLineParts(std::vector<std::string> lParts) {
+    std::stringstream ss;
+    std::string tmp;
+    // Make sure we have a correct vector size before we start accessing
+    // out of bound members.
+    if (lParts.size() > 5) {
+        ss << "Invalid number of multiple choice question parameters. ";
+        ss << "There are too many fields separated by '|' characters. ";
+        ss << "Expected format:\n";
+        ss << "\tM|level|question|possible:answers:to:question|letter";
+        ss << "There can only be a maximum of 10 choices with a 2 choice ";
+        ss << "minimum. For a 2 choice question, the answer can be either a ";
+        ss << "or b, and for a 10 choice question, the answer can be a-j";
+        throw(ss.str());
+    }
+    if (lParts.size() < 5) {
+        ss << "Invalid number of multiple choice question parameters. ";
+        ss << "There are too few fields separated by '|' characters. ";
+        ss << "Expected format:\n";
+        ss << "\tM|level|question|possible:answers:to:question|letter";
+        ss << "There can only be a maximum of 10 choices with a 2 choice ";
+        ss << "minimum. For a 2 choice question, the answer can be either a ";
+        ss << "or b, and for a 10 choice question, the answer can be a-j";
+        throw(ss.str());
+    }
+    // Validate Question code
+    tmp = lParts.at(0);
+    if (tmp.size() != 1) {
+        // Too many characters in field
+        ss << "Invalid multiple choice question code " << tmp << ". ";
+        ss << "Expected M.";
+        throw(ss.str());
+    }
+    
+    tmp = toLower(tmp);
+    if (tmp != "m") {
+        // Wrong code
+        ss << "Invalid multiple choice question code " << tmp << ". ";
+        ss << "Expected M.";
+        throw(ss.str());
+    }
+    // Validate Level
+    tmp = lParts.at(1);
+    if (tmp.size() != 1) {
+        // Too many characters in field
+        ss << "Invalid multiple choice question level " << tmp << ". ";
+        ss << "Expected a number from 1 to 9.";
+        throw(ss.str());
+    }
+    if (!std::isdigit(tmp.at(0))) {
+        // We're expecting a digit
+        ss << "Invalid multiple choice question level " << tmp << ". ";
+        ss << "Expected a number from 1 to 9.";
+        throw(ss.str());
+    }
+    int level = tmp.at(0) - '0';
+    if (level < 1 || level > 9) {
+        // Level out of acceptable bounds
+        ss << "Invalid multiple choice question level " << tmp << ". ";
+        ss << "Expected a number from 1 to 9.";
+        throw(ss.str());
+    }
+    // Validate question text
+    tmp = lParts.at(2);
+    if (tmp.empty()) {
+        ss << "Expected a question. Received empty string.";
+        throw(ss.str());
+    }
+    // Validate choices
+    std::vector<std::string> _choices = parts(lParts.at(3));
+    validateChoices(_choices);
+
+    // Validate answer letter
+    int maxIndex = _choices.size() - 1;
+    tmp = lParts.at(4);
+    if (tmp.size() != 1 || tmp.empty()) {
+        ss << "Expected a single letter. Got " << tmp << ".";
+        throw(ss.str());
+    }
+    char answer = tmp.at(0) - 'a';
+    if (answer < 0) {
+        ss << "Answer is outside of possibilities. Nice quiz.";
+        throw(ss.str());
+    }
+    if (answer > maxIndex) {
+        ss << "Answer is outside of possibilities. Nice quiz.";
+        throw(ss.str());
+    }
+    //TODO Test this code
+
+    /*
+    tmp = lParts.at(3);
+    if (tmp.empty()) {
+        ss << "Expected an answer. Received empty string.";
+        throw(ss.str());
+    }
+    tmp = toLower(tmp);
+    if (tmp.at(0) != 'f' && tmp.at(0) != 't') {
+        ss << "Expected True or False as an answer.";
+        throw(ss.str());
+    }
+    */
+
+    return true;
+}
+
+bool QuestionMC::validateChoices(std::vector<std::string> _choices) {
+    std::stringstream ss;
+    int size = _choices.size();
+    if (size < 2) {
+       ss << "Too few choices. Minimum choice amount 2";
+       throw(ss.str());
+    }
+    if (size > 10) {
+       ss << "Too many choices. Maximum choice amount 10";
+       throw(ss.str());
+    }
+    for (int i = 0; i < size; ++i) {
+        if (_choices[i].empty()) {
+            ss << "Received empty answer.";
+            throw(ss.str());
+        }
+    }
+    return true;
+}
+
 void QuestionMC::showQuestion() {
     char optionChar = 'a';
     std::cout << questionText;
@@ -74,10 +201,6 @@ bool QuestionMC::checkAnswer(std::string answer) {
     char a = std::tolower(answerText.c_str()[0]);
 
     return c == a;
-}
-
-bool QuestionMC::validateQuestionLineParts(std::vector<std::string> parts) {
-    return true;
 }
 
 std::vector<std::string> QuestionMC::parts(std::string str, char delimiter) {
