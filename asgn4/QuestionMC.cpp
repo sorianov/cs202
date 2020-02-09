@@ -132,7 +132,12 @@ bool QuestionMC::validateQuestionLineParts(std::vector<std::string> lParts) {
         ss << "Expected a single letter. Got " << tmp << ".";
         throw(ss.str());
     }
-    char answer = tmp.at(0) - 'a';
+    char c = tmp.at(0);
+    if (!std::isalpha(c)) {
+        ss << "Expected an ASCII alphabetical character";
+        throw(ss.str());
+    }
+    char answer = std::tolower(tmp.at(0)) - 'a';
     if (answer < 0) {
         ss << "Answer is outside of possibilities. Nice quiz.";
         throw(ss.str());
