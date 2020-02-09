@@ -206,16 +206,18 @@ bool Quiz::loadQuestions(std::string filename) {
             lineParts = parts(line);
 
             if (lineParts.size() == 0) {
-                std::cerr << "There was an issue loading questions";
+                std::cerr << "There was an issue loading question on line ";
+                std::cerr << lineNumber;
                 std::cerr << std::endl;
-                return false;
+                continue;
             }
 
             type = lineParts[0];
             if (type.length() != 1) {
-                std::cerr << "Couldn't determine question type";
+                std::cerr << "Couldn't determine question type. ";
+                std::cerr << type << " is not a valid question code.";
                 std::cerr << std::endl;
-                return false;
+                continue;
             }
 
             Question* ptr = NULL;
@@ -244,7 +246,6 @@ bool Quiz::loadQuestions(std::string filename) {
                 std::cerr << "Couldn't add question on line " << lineNumber;
                 std::cerr << " to quiz.";
                 std::cerr << std::endl;
-                //return false;
                 continue;
             }
 
@@ -255,10 +256,9 @@ bool Quiz::loadQuestions(std::string filename) {
     } else {
         this->filename = filename;
         filenameIsValid = false;
+        f.close();
         throw("Could not open file for reading.");
     }
-    f.close();
-    return false;
 }
 
 int Quiz::getNumCorrect() {

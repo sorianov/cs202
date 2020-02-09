@@ -20,7 +20,28 @@ S|2|What is the capital of Your Mom|Kek
 ò|=2y
 S|8|How many lines does it take|0
 S|12|How many lines does it take|0
+# test answer case sensitivity
+T|2|The city of Spain is Munich|true
+# happy path data
+T|1|The capital of Spain is Munich|T
+# happy path data
+T|9|The capital of Germany is Spain|F
+# test answer case sensitivity
+T|7|The capital of Germany is Spain|false
+# test invalid question code
+T|1|The capital of Germany is Germany|False
+# test invalid question level
+T|0|The capital of Germany is Germany|False
+# test invalid question level
+T|-1|The capital of Germany is Germany|False
+# test invalid question level
+T|10|The capital of Germany is Germany|False
 S|12|0
-ò|=2y
+# test garbage data
+T|ò|=|2y
 S|2|What is the capital of Italy|Rome
-|=2y
+# test garbage data
+S|3|=|2y
+# test garbage data
+T|3|=|False
+T|5|Question|
