@@ -1,10 +1,10 @@
 //----------------------------------------------------------------------------
 // Author: Victor Soriano Mendoza
 // Instructor: Rich Albers
-// Date: 2020-01-29
-// Title: Assignment 2: Inheritance and Polymorphism part 2
-// Description: Create a basic quiz application that can extended via
-// inheritance in the future.
+// Date: 2020-02-09
+// Title: Assignment 3: Abstract classes, exceptions, and other error handling
+// Description: Create a basic and robust quiz application that can extended
+// via inheritance in the future.
 //----------------------------------------------------------------------------
 #ifndef QUESTIONMC
 #define QUESTIONMC
@@ -72,6 +72,18 @@ class QuestionMC : public Question {
          */
         virtual bool checkAnswer(std::string);
     protected:
+        /**
+         * Validate questions tokens for bad data.
+         *
+         * @param std::vector<std::string>> Vector containing tokens to
+         *                                  validate.
+         *
+         * @throws std::string              Exception with a description of
+         *                                  why it was thrown
+         *
+         * @return bool                     True is every token passes
+         *                                  validation.
+         */
         virtual bool validateQuestionLineParts(std::vector<std::string>);
     private:
         /**
@@ -87,6 +99,19 @@ class QuestionMC : public Question {
          *
          */
         std::vector<std::string> parts(std::string, char=':');
+        /**
+         * Validates the tokens inside the passed vector parameter. This
+         * function will not return false. It will throw an exception instread.
+         *
+         * @param std::vector<std::string>  Vector containing tokens to
+         *                                  validate
+         *
+         * @throws  std::string             Exception with a description of why
+         *                                  it was thrown.
+         *
+         * @return  bool                    True if every token passes
+         *                                  validation.
+         */
         bool validateChoices(std::vector<std::string>);
         std::vector<std::string> choices;
 };

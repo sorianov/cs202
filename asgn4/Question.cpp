@@ -1,10 +1,10 @@
 //----------------------------------------------------------------------------
 // Author: Victor Soriano Mendoza
 // Instructor: Rich Albers
-// Date: 2020-01-29
-// Title: Assignment 2: Inheritance and Polymorphism part 2
-// Description: Create a basic quiz application that can extended via
-// inheritance in the future.
+// Date: 2020-02-09
+// Title: Assignment 3: Abstract classes, exceptions, and other error handling
+// Description: Create a basic and robust quiz application that can extended
+// via inheritance in the future.
 //----------------------------------------------------------------------------
 #include <iostream>
 #include <algorithm>
