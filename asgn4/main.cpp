@@ -10,9 +10,34 @@
 #include <string>
 #include "Quiz.h"
 
+/**
+ * Prints usage information to stderr.
+ *
+ * @output Usage text
+ */
 void printUsage() {
     std::cerr << "Usage: quiz filename [-d]";
     std::cerr << std::endl;
+}
+
+/**
+ * Determines whether we should qump quiz questions.
+ *
+ * @param int argc  Number of commandline arguments
+ * @param char** argv   Values of commandline arguments
+ *
+ * @return bool True if questions should be dumped, false otherwise.
+ */
+bool shouldDumpQuestions(int argc, char* argv[]) {
+    if (argc == 3) {
+        std::string dumpFlag = argv[2];
+        if (dumpFlag == "-d") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    return false;
 }
 
 int main(int argc, char* argv[]) {
@@ -21,19 +46,17 @@ int main(int argc, char* argv[]) {
         return 1;
     }
     std::string filename = argv[1];
+    bool shouldDump = shouldDumpQuestions(argc, argv);
     try {
         Quiz quiz(filename);
-        if (argc == 3) {
-            std::string dumpFlag = argv[2];
-            if (dumpFlag == "-d") {
-                quiz.dumpQuestions();
-                return 0;
-            } else {
-                printUsage();
-                return 2;
-            }
+        if (shouldDump) {
+            quiz.dumpQuestions();
+            return 0;
         }
-
+        if (!shouldDump && argc >= 3) {
+            printUsage();
+            return 2;
+        }
         quiz.deliverQuiz();
 
         int incorrect = quiz.getNumIncorrect();

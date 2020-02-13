@@ -73,7 +73,7 @@ Quiz& Quiz::operator=(const Quiz& q) {
     return *this;
 }
 
-std::vector<std::string> Quiz::parts(std::string str, char delimiter='|') {
+std::vector<std::string> Quiz::explode(std::string str, char delimiter='|') {
     std::istringstream ss(str);
     std::string token;
     std::vector<std::string> parts;
@@ -83,33 +83,7 @@ std::vector<std::string> Quiz::parts(std::string str, char delimiter='|') {
     return parts;
 }
 
-int Quiz::deliverQuiz() {
-    std::string answer;
-    std::cout << "Hope your brain's warmed up, it's Quiz time!!!" << std::endl;
-    std::cout << "After each answer is displayed, press enter to see the ";
-    std::cout << "next question." << std::endl;
-    std::cout << std::endl;
-
-    for (std::vector<Question*>::iterator it = questions.begin();
-            it != questions.end();
-            ++it) {
-        (*it)->showQuestion();
-        std::cout << "> ";
-        std::getline(std::cin, answer);
-        if((*it)->checkAnswer(answer)) {
-            ++correct;
-            std::cout << "Correct! Great job!" << std::endl;
-            std::cout << std::endl;
-            (*it)->markCorrect();
-        } else {
-            ++incorrect;
-            incorrectQuestions.push_back((*it));
-            std::cout << "Sorry, the answer is ";
-            (*it)->showAnswer();
-            std::cout << std::endl;
-        }
-    }
-
+void Quiz::printQuizSummary() {
     int totalQuestions = static_cast<int>(questions.size());
     float correctF = static_cast<float>(correct * 100);
     float totalF = static_cast<float>(totalQuestions * 100);
@@ -128,6 +102,41 @@ int Quiz::deliverQuiz() {
     }
 
     std::cout << std::endl;
+}
+
+void Quiz::printQuizInstructions() {
+    std::cout << "Hope your brain's warmed up, it's Quiz time!!!" << std::endl;
+    std::cout << "After each answer is displayed, press enter to see the ";
+    std::cout << "next question." << std::endl;
+    std::cout << std::endl;
+}
+
+int Quiz::deliverQuiz() {
+    std::string answer;
+
+    printQuizInstructions();
+    for (std::vector<Question*>::iterator it = questions.begin();
+            it != questions.end();
+            ++it) {
+
+        (*it)->showQuestion();
+        std::cout << "> ";
+        std::getline(std::cin, answer);
+
+        if((*it)->checkAnswer(answer)) {
+            ++correct;
+            std::cout << "Correct! Great job!" << std::endl;
+            std::cout << std::endl;
+            (*it)->markCorrect();
+        } else {
+            ++incorrect;
+            incorrectQuestions.push_back((*it));
+            std::cout << "Sorry, the answer is ";
+            (*it)->showAnswer();
+            std::cout << std::endl;
+        }
+    }
+    printQuizSummary();
 
     return correct;
 }
@@ -141,69 +150,113 @@ void Quiz::dumpQuestions() {
     }
 }
 
-bool Quiz::validateQuestionLine(std::string line) {
-    // empty lines ok
-    if (line == "") {
+bool Quiz::isComment(char c) {
+    return c == '#';
+}
+
+bool Quiz::isQuestionCode(char c) {
+    c = std::tolower(c);
+    if (c == 's') {
         return true;
     }
-    if (line.size() == 0) {
+    if (c == 't') {
+        return true;
+    }
+    if (c == 'm') {
+        return true;
+    }
+    return false;
+}
+
+bool Quiz::validateQuestionLine(std::string line) {
+    // empty lines ok
+    if (line.empty()) {
         return true;
     }
 
-    const char lineChar = std::tolower(line.at(0));
-    if (std::isspace(lineChar)) {
+    const char firstChar = line.at(0);
+    if (std::isspace(firstChar)) {
         return true;
     }
-    if (lineChar == '#') {
+    if (isComment(firstChar)) {
         return true;
     }
-    if (lineChar == 's') {
-        return true;
-    }
-    if (lineChar == 't') {
-        return true;
-    }
-    if (lineChar == 'm') {
+    if (isQuestionCode(firstChar)) {
         return true;
     }
 
     return false;
 }
 
+void Quiz::printErrorMessage(int lineNumber, std::string line) {
+    std::stringstream ss;
+    ss << "Error while parsing " << filename << ":\n";
+    ss << "\tInvalid character " << line.at(0);
+    ss << " at line " << lineNumber << ".";
+    std::cerr << ss.str() << std::endl;
+}
+
+bool Quiz::shouldSkipLine(int lineNumber, std::string line) {
+    if (!validateQuestionLine(line)) {
+        printErrorMessage(lineNumber, line);
+        return true;
+    }
+    if (line.empty()) {
+        return true;
+    }
+    if (isComment(line.at(0))) {
+        return true;
+    }
+    if (std::isspace(line.at(0))) {
+        return true;
+    }
+    return false;
+}
+
+bool Quiz::addQuestion(std::vector<std::string> lineParts) {
+    std::string type = lineParts.at(0);
+    Question* ptr = NULL;
+    if (type.length() != 1) {
+        std::cerr << "Couldn't determine question type. ";
+        std::cerr << type << " is not a valid question code.";
+        std::cerr << std::endl;
+        return false;
+    }
+    if (type == "S") {
+        // Short answer questions
+        ptr = new QuestionSA(lineParts);
+    } else if (type == "T") {
+        // True/False questions
+        ptr = new QuestionTF(lineParts);
+    } else if (type == "M") {
+        // Multiple choice questions
+        ptr = new QuestionMC(lineParts);
+    } else {
+        std::cerr << "Couldn't determine question type";
+        std::cerr << std::endl;
+        return false;
+    }
+    questions.push_back(ptr);
+    return true;
+}
+
 bool Quiz::loadQuestions(std::string filename) {
-    const char* fn = filename.c_str();
     int lineNumber = 0;
     std::ifstream f;
-    f.open(fn);
-    std::string type;
+    f.open(filename.c_str());
     std::string line;
     std::vector<std::string> lineParts;
     if (f.is_open()) {
-        if (questions.size() > 0) {
-            questions.clear();
-        }
+        questions.clear();
         this->filename = filename;
         filenameIsValid = true;
         while (std::getline(f, line)) {
             ++lineNumber;
-            if (!validateQuestionLine(line)) {
-                std::stringstream ss;
-                ss << "Error while parsing " << filename << ":\n";
-                ss << "\tInvalid character " << line.at(0);
-                ss << " at line " << lineNumber << ".";
-                std::cerr << ss.str() << std::endl;
+
+            if (shouldSkipLine(lineNumber, line)) {
                 continue;
             }
-            if (line == "") {
-                continue;
-            } else if (line.size() > 0) {
-                if (line.at(0) == '#') {
-                    continue;
-                } else if (std::isspace(line.at(0))) {
-                    continue;
-                }
-            }
-            lineParts = parts(line);
+            lineParts = explode(line);
 
             if (lineParts.size() == 0) {
                 std::cerr << "There was an issue loading question on line ";
@@ -212,28 +265,8 @@ bool Quiz::loadQuestions(std::string filename) {
                 continue;
             }
 
-            type = lineParts[0];
-            if (type.length() != 1) {
-                std::cerr << "Couldn't determine question type. ";
-                std::cerr << type << " is not a valid question code.";
-                std::cerr << std::endl;
-                continue;
-            }
-
-            Question* ptr = NULL;
             try {
-                if (type == "S") {
-                    // Short answer questions
-                    ptr = new QuestionSA(lineParts);
-                } else if (type == "T") {
-                    // True/False questions
-                    ptr = new QuestionTF(lineParts);
-                } else if (type == "M") {
-                    // Multiple choice questions
-                    ptr = new QuestionMC(lineParts);
-                } else {
-                    std::cerr << "Couldn't determine question type";
-                    std::cerr << std::endl;
+                if (!addQuestion(lineParts)) {
                     continue;
                 }
             } catch (std::string e) {
@@ -241,15 +274,6 @@ bool Quiz::loadQuestions(std::string filename) {
                 std::cerr << e << std::endl;
                 continue;
             }
-
-            if (ptr == NULL) {
-                std::cerr << "Couldn't add question on line " << lineNumber;
-                std::cerr << " to quiz.";
-                std::cerr << std::endl;
-                continue;
-            }
-
-            questions.push_back(ptr);
         }
         f.close();
         return true;
@@ -344,25 +368,7 @@ int Quiz::deliverIncorrectQuestions() {
         }
         ++it;
     }
-
-    int totalQuestions = static_cast<int>(questions.size());
-    float correctF = static_cast<float>(correct * 100);
-    float totalF = static_cast<float>(totalQuestions * 100);
-    float percentage = (correctF / totalF) * 100.0;
-
-    std::cout << std::fixed;
-    std::cout << std::setprecision(0);
-    std::cout << "You got " << correct << " of " << questions.size() << " ";
-    std::cout << "correct: " << percentage << "%. ";
-    if (correct < totalQuestions) {
-        std::cout << "Better study more!";
-    }
-
-    if (correct == totalQuestions) {
-        std::cout << "Motivational text.";
-    }
-
-    std::cout << std::endl;
+    printQuizSummary();
 
     return correct;
 

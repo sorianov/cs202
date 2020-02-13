@@ -98,7 +98,7 @@ class Quiz {
          *                                  separated by the delimiter.
          *
          */
-        std::vector<std::string> parts(std::string, char);
+        std::vector<std::string> explode(std::string, char);
         /**
          * Does some preliminary validation of a question data line before
          * feeding it into a Question subclass. This function will throw an
@@ -124,6 +124,20 @@ class Quiz {
          *                      answer. Returns false otherwise.
          */
         bool validateYesNo(std::string);
+        /**
+         * Prints Quiz summary to stdout.
+         */
+        void printQuizSummary();
+        /**
+         * Prints Quiz instructions to stdout.
+         */
+        void printQuizInstructions();
+        //TODO add function comments
+        bool isComment(char);
+        bool isQuestionCode(char);
+        bool shouldSkipLine(int, std::string);
+        void printErrorMessage(int, std::string);
+        bool addQuestion(std::vector<std::string>);
         std::vector<Question*> questions;
         std::vector<Question*> incorrectQuestions;
         std::string filename;
