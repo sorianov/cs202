@@ -1,6 +1,6 @@
 # sample makefile showing dependency lists
 
-PROG = quiz
+PROG = quiz3
 CC = g++
 FLAGS = -Wall -g
 OBJS = QuestionSA.o QuestionMC.o QuestionTF.o Question.o Quiz.o main.o
