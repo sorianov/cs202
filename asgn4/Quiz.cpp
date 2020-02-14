@@ -313,16 +313,23 @@ bool Quiz::validateYesNo(std::string str) {
     return false;
 }
 
-int Quiz::deliverIncorrectQuestions() {
-    std::string answer;
+std::string Quiz::waitForYesNoAnswer(std::string msg) {
     std::string retryAnswer;
-    //int totalIncorrect = incorrectQuestions.size();
     do {
-        std::cout << "You answered " << incorrect << " questions ";
-        std::cout << "incorrectly. ";
-        std::cout << "Would you like to repeat them? [Y/n]" << std::endl;
+        std::cout << msg;
         std::getline(std::cin, retryAnswer);
     } while (!validateYesNo(retryAnswer));
+    return retryAnswer;
+}
+
+int Quiz::deliverIncorrectQuestions() {
+    std::stringstream message;
+    std::string answer;
+    std::string retryAnswer;
+    message << "You answered " << incorrect << " questions ";
+    message << "incorrectly. ";
+    message << "Would you like to repeat them? [Y/n]" << std::endl;
+    retryAnswer = waitForYesNoAnswer(message.str());
 
     if (retryAnswer.size() > 0) {
         if (retryAnswer.at(0) == 'n') {

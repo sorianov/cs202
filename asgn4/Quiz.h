@@ -138,6 +138,7 @@ class Quiz {
         bool shouldSkipLine(int, std::string);
         void printErrorMessage(int, std::string);
         bool addQuestion(std::vector<std::string>);
+        std::string waitForYesNoAnswer(std::string);
         std::vector<Question*> questions;
         std::vector<Question*> incorrectQuestions;
         std::string filename;
