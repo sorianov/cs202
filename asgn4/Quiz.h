@@ -133,12 +133,69 @@ class Quiz {
          */
         void printQuizInstructions();
         //TODO add function comments
+        /**
+         * Determines whether the passed parameter is a comment.
+         *
+         * @param char  Character to check
+         *
+         * @return bool True if the character is a comment character, false
+         *              otherwise.
+         */
         bool isComment(char);
+        /**
+         * Determines if the passed parameter is a question code.
+         *
+         * @param char Character to check
+         *
+         * @return bool True if the character is a valid question code. False
+         *              otherwise.
+         */
         bool isQuestionCode(char);
+        /**
+         * Determines whether a line of question data should be skipped.
+         *
+         * @param   int             Line number
+         * @param   std::string     Line to check
+         *
+         * @return  bool            True if the line should be skipped, false
+         *                          otherwise.
+         */
         bool shouldSkipLine(int, std::string);
-        void printErrorMessage(int, std::string);
+        /**
+         * Prints error message with line number to stderr
+         *
+         * @param   int             Line number
+         * @param   std::string     Question data
+         */
+        void printLineError(int, std::string);
+        /**
+         * Adds a question to the questions member variable.
+         *
+         * @param   std::vector<std::string>    Exploded question data
+         *
+         * @return  bool                        True if the questions was added
+         *                                      false otherwise.
+         */
         bool addQuestion(std::vector<std::string>);
-        std::string waitForYesNoAnswer(std::string);
+        /**
+         * Puts user into loop until a valid yes or no answer is entered
+         *
+         * @param   std::string Message to show to user before input loop.
+         *
+         * @return  bool        True if a 'yes' answer, false if 'no' answer.
+         *
+         */
+        bool waitForYesNoAnswer(std::string);
+        /**
+         * Delivers questions in a container to user.
+         *
+         * @param   bool    Whether container should erase question if
+         *                  answered correctly. True is yes, false if no
+         * @param   bool    Set to true if incorrectly answered questions
+         *                  should be pushed onto incorrectQuestions member
+         *                  variable.
+         */
+        void deliverQuestions(std::vector<Question*>&, bool=false, bool=true);
         std::vector<Question*> questions;
         std::vector<Question*> incorrectQuestions;
         std::string filename;
@@ -146,5 +203,4 @@ class Quiz {
         int incorrect;
         bool filenameIsValid;
 };
-
 #endif

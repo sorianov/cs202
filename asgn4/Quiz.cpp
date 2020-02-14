@@ -111,12 +111,12 @@ void Quiz::printQuizInstructions() {
     std::cout << std::endl;
 }
 
-int Quiz::deliverQuiz() {
-    std::string answer;
+void Quiz::deliverQuestions(std::vector<Question*>& container,
+        bool popCorrect, bool pushIncorrect) {
 
-    printQuizInstructions();
-    for (std::vector<Question*>::iterator it = questions.begin();
-            it != questions.end();
+    std::string answer;
+    for (std::vector<Question*>::iterator it = container.begin();
+            it != container.end();
             ++it) {
 
         (*it)->showQuestion();
@@ -128,14 +128,27 @@ int Quiz::deliverQuiz() {
             std::cout << "Correct! Great job!" << std::endl;
             std::cout << std::endl;
             (*it)->markCorrect();
+            if (popCorrect) {
+               container.erase(it);
+               --it;
+            }
         } else {
             ++incorrect;
-            incorrectQuestions.push_back((*it));
+            if (pushIncorrect) {
+                incorrectQuestions.push_back((*it));
+            }
             std::cout << "Sorry, the answer is ";
             (*it)->showAnswer();
             std::cout << std::endl;
         }
     }
+}
+
+int Quiz::deliverQuiz() {
+    std::string answer;
+
+    printQuizInstructions();
+    deliverQuestions(questions);
     printQuizSummary();
 
     return correct;
@@ -188,17 +201,21 @@ bool Quiz::validateQuestionLine(std::string line) {
     return false;
 }
 
-void Quiz::printErrorMessage(int lineNumber, std::string line) {
+void Quiz::printLineError(int lineNumber, std::string line) {
     std::stringstream ss;
     ss << "Error while parsing " << filename << ":\n";
-    ss << "\tInvalid character " << line.at(0);
+    try {
+        ss << "\tInvalid character " << line.at(0);
+    } catch (const std::out_of_range& oor) {
+        ss << "\tInvalid data " << line;
+    }
     ss << " at line " << lineNumber << ".";
     std::cerr << ss.str() << std::endl;
 }
 
 bool Quiz::shouldSkipLine(int lineNumber, std::string line) {
     if (!validateQuestionLine(line)) {
-        printErrorMessage(lineNumber, line);
+        printLineError(lineNumber, line);
         return true;
     }
     if (line.empty()) {
@@ -313,70 +330,50 @@ bool Quiz::validateYesNo(std::string str) {
     return false;
 }
 
-std::string Quiz::waitForYesNoAnswer(std::string msg) {
+bool Quiz::waitForYesNoAnswer(std::string msg) {
     std::string retryAnswer;
+    char c;
     do {
         std::cout << msg;
         std::getline(std::cin, retryAnswer);
     } while (!validateYesNo(retryAnswer));
-    return retryAnswer;
+    try {
+        c = retryAnswer.at(0);
+    } catch (const std::out_of_range& oor) {
+        c = 'y';
+    }
+    return c == 'y';
 }
 
 int Quiz::deliverIncorrectQuestions() {
     std::stringstream message;
     std::string answer;
-    std::string retryAnswer;
+    bool isYes;
     message << "You answered " << incorrect << " questions ";
     message << "incorrectly. ";
     message << "Would you like to repeat them? [Y/n]" << std::endl;
-    retryAnswer = waitForYesNoAnswer(message.str());
+    isYes = waitForYesNoAnswer(message.str());
+    message.str("");
 
-    if (retryAnswer.size() > 0) {
-        if (retryAnswer.at(0) == 'n') {
-            return correct;
-        }
+    if (!isYes) {
+        return correct;
     }
 
-    std::vector<Question*>::iterator it = incorrectQuestions.begin();
-    while(incorrect > 0) {
-        if (it == incorrectQuestions.end()) {
-            do {
-                std::cout << "You still have incorrectly answered questions. ";
-                std::cout << "Would you like to keep trying? [Y/n]";
-                std::cout << std::endl;
-                std::getline(std::cin, retryAnswer);
-            } while (!validateYesNo(retryAnswer));
+    while(!incorrectQuestions.empty()) {
+        deliverQuestions(incorrectQuestions, true, false);
+        if (!incorrectQuestions.empty()) {
+            message << "You still have incorrectly answered questions. ";
+            message << "Would you like to keep trying? [Y/n]";
+            message << std::endl;
+            isYes = waitForYesNoAnswer(message.str());
+            message.str("");
 
-            if (retryAnswer.size() > 0) {
-                if (retryAnswer.at(0) == 'n') {
-                    break;
-                }
+            if (!isYes) {
+                break;
             }
-
-            it = incorrectQuestions.begin();
         }
-
-        (*it)->showQuestion();
-        std::cout << "> ";
-        std::getline(std::cin, answer);
-
-        if((*it)->checkAnswer(answer)) {
-            --incorrect;
-            ++correct;
-
-            std::cout << "Correct! Great job!" << std::endl;
-            std::cout << std::endl;
-
-            (*it)->markCorrect();
-            incorrectQuestions.erase(it);
-            --it; // we resized the vector
-        } else {
-            std::cout << "Sorry, incorrect.\n" << std::endl;
-        }
-        ++it;
     }
     printQuizSummary();
 
     return correct;
-
 }
