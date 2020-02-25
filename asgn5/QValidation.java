@@ -2,6 +2,46 @@
  * @author Victor Soriano Mendoza
  *
  */
+
+class InvalidFieldCountException extends Exception {
+	private static final long serialVersionUID = 5267215075575109999L;
+	
+	public InvalidFieldCountException() {
+		super("Number of fields is invalid.");
+	}
+	public InvalidFieldCountException(String msg) {
+		super(msg);
+	}
+	public InvalidFieldCountException(int req) {
+		super("Number of fields is invalid. "
+				+ "There must be " + String.valueOf(req) + ".");
+	}
+}
+
+class InvalidQuestionCodeException extends Exception {
+	private static final long serialVersionUID = 6348577435419646119L;
+
+	public InvalidQuestionCodeException(String msg) {
+		super("Question code is invalid");
+	}
+}
+
+class InvalidQuestionException extends Exception {
+	private static final long serialVersionUID = 4849221316372993371L;
+
+	public InvalidQuestionException() {
+		super("Invalid question");
+	}
+}
+
+class InvalidQuestionLevelException extends Exception {
+	private static final long serialVersionUID = -5780710823909918879L;
+
+	public InvalidQuestionLevelException() {
+		super("Invalid question level");
+	}
+}
+
 public abstract class QValidation {
 
 	/**
@@ -11,16 +51,31 @@ public abstract class QValidation {
 	 *
 	 * @return	boolean		true if the question data is valid, false if
 	 * 						the question data is not valid
+	 * @throws InvalidQuestionException 
+	 * @throws InvalidQuestionLevelException 
+	 * @throws InvalidQuestionCodeException 
+	 * @throws InvalidChoicesException 
 	 */
-	public abstract boolean validate(String line);
+	public abstract boolean validate(String line) throws InvalidFieldCountException, 
+		InvalidQuestionCodeException, 
+		InvalidQuestionLevelException, 
+		InvalidQuestionException, 
+		InvalidChoicesException;
 	/**
 	 * Validates question code
 	 *
 	 * @param 	code	Question code to validate
 	 * @return	boolean	true if the question code is valid,
 	 * 					false if the question code is invalid.
+	 * @throws InvalidQuestionCodeException 
 	 */
-	public abstract boolean isValidQuestionCode(String code);
+	public boolean isValidQuestionCode(String code, String validCode) throws InvalidQuestionCodeException {
+		String validLower = validCode.toLowerCase();
+		if (!code.toLowerCase().contentEquals(validLower)) {
+			throw new InvalidQuestionCodeException(code);
+		}
+		return true;
+	}
 	/**
 	 * Validates question answer
 	 *
@@ -36,10 +91,14 @@ public abstract class QValidation {
 	 * @param	numFields	Number of fields the data line should have
 	 * @return	boolean		true if the number of fields is valid,
 	 * 						false if the number of fields in invalid.
+	 * @throws InvalidFieldCountException 
 	 */
-	public boolean validNumFields(String line, int numFields, String delimiter) {
+	public boolean validNumFields(String line, int numFields, String delimiter) throws InvalidFieldCountException {
 		String[] parts = line.split(delimiter);
-		return parts.length == numFields;
+		if (!(parts.length == numFields)) {
+			throw new InvalidFieldCountException(numFields);
+		}
+		return true;
 	}
 
 	/**
@@ -47,28 +106,15 @@ public abstract class QValidation {
 	 *
 	 * @param 	question 	Value of the question field.
 	 *
-	 * @return 	boolean 	true if the field is value,
-	 * 						false if the field is invalid.
+	 * @return 	boolean 	true if the field is valid
+	 * 
+	 * @throws InvalidQuestionException 
 	 */
-	public boolean isValidQuestion(String question) {
-		return !question.isBlank();
-	}
-
-  	/**
-  	 * Checks whether a question data line is a comment.
-  	 *
-  	 * @param 	line 		The question data
-  	 *
-  	 * @return 	boolean 	true if the line is a comment. false if the line is
-  	 * 						not a comment.
-  	 */
-	public boolean isCommentLine(String line) {
-		String trimmed = line.trim();
-		if (trimmed.isEmpty()) {
-			return false;
+	public boolean isValidQuestion(String question) throws InvalidQuestionException {
+		if (question.isBlank()) {
+			throw new InvalidQuestionException();
 		}
-
-		return trimmed.startsWith("#") || trimmed.startsWith("//");
+		return true;
 	}
 
 	/**
@@ -91,10 +137,14 @@ public abstract class QValidation {
 	 *
 	 * @return	boolean	true if the level is valid,
 	 * 					false if the level is invalid.
+	 * @throws InvalidQuestionLevelException 
 	 */
-	public boolean isValidLevel(String level) {
+	public boolean isValidLevel(String level) throws InvalidQuestionLevelException {
 		int lvl = Integer.parseInt(level);
-		return lvl <= 9 && lvl >=1;
+		if (lvl > 9 || lvl < 1) {
+			throw new InvalidQuestionLevelException();
+		}
+		return true;
 	}
 
 }

@@ -4,4 +4,8 @@ SA|2|What is the capital of Italy|Rome
 TF|1|The capital of Germany is Munich|False
 MC|1|What is the capital of Ukraine|Minsk:Kyiv:Warsaw:Chisinau|B
 MA|1|Which of these border the Atlantic?|Maine:Kansas:Georgia:Utah|AC
+ZZ|7|What is this|Some kind of error
+TF|2|The moon is made of cheese|Maybe
+MC|2|What is the capital of Kansas|IDK
+
 
