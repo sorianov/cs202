@@ -33,6 +33,7 @@ public class Validation {
 			if (qv == null) {
 				throw new CodeNotFoundException();
 			}
+			++this.processed;
 			qv.validate(line);
 		} catch (Exception e) {
 			++this.errors;
@@ -50,14 +51,13 @@ public class Validation {
 		try {
 			Scanner scn = new Scanner(fh);
 			while(scn.hasNext()) {
-				++this.processed;
 				++lineNumber;
 				line = scn.nextLine();
 				this.validateLine(line, lineNumber, qv);
 			}
 			scn.close();
 		} catch (FileNotFoundException e) {
-			System.err.println(e.getMessage());
+			System.err.println("Could not open " + filename);
 			return false;
 		}
 		printSummary();
