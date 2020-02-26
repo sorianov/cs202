@@ -33,8 +33,8 @@ public class Validation {
 			if (qv == null) {
 				throw new CodeNotFoundException();
 			}
-			++this.processed;
 			qv.validate(line);
+			++this.processed;
 		} catch (Exception e) {
 			++this.errors;
 			System.err.println(errorLine(lineNumber, line));

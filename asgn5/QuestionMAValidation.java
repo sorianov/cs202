@@ -12,7 +12,8 @@ public class QuestionMAValidation extends QValidation {
 	public boolean validate(String line) throws InvalidFieldCountException, 
 		InvalidQuestionCodeException, 
 		InvalidQuestionLevelException, 
-		InvalidQuestionException 
+		InvalidQuestionException, 
+		InvalidAnswerException 
 	{
 		String[] parts = null;
 		if (!this.validNumFields(line, NUM_FIELDS, FIELD_DELIMITER)) {
@@ -36,7 +37,7 @@ public class QuestionMAValidation extends QValidation {
 	}
 
 	@Override
-	public boolean isValidAnswer(String answer) {
+	public boolean isValidAnswer(String answer) throws InvalidAnswerException {
 		String alphabet = "abcdefghij";
 
 		if (this.choicesLength == 0 || answer.isBlank()) {
@@ -48,7 +49,7 @@ public class QuestionMAValidation extends QValidation {
 				// if the answer from the question data doesn't exist
 				// then we know it's not valid
 				if (options.indexOf(answer.toLowerCase().charAt(i)) == -1) {
-					return false;
+					throw new InvalidAnswerException();
 				}
 			}
 

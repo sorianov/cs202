@@ -42,6 +42,23 @@ class InvalidQuestionLevelException extends Exception {
 	}
 }
 
+class InvalidAnswerException extends Exception {
+	private static final long serialVersionUID = -6062364977140280113L;
+
+	public InvalidAnswerException() {
+		super("Answer is invalid.");
+	}
+}
+
+class InvalidChoicesException extends Exception {
+	private static final long serialVersionUID = 1055634682772547735L;
+
+	public InvalidChoicesException() {
+		super("Choices are invalid.");
+	}
+}
+
+
 public abstract class QValidation {
 
 	/**
@@ -55,12 +72,14 @@ public abstract class QValidation {
 	 * @throws InvalidQuestionLevelException 
 	 * @throws InvalidQuestionCodeException 
 	 * @throws InvalidChoicesException 
+	 * @throws InvalidAnswerException 
 	 */
 	public abstract boolean validate(String line) throws InvalidFieldCountException, 
 		InvalidQuestionCodeException, 
 		InvalidQuestionLevelException, 
 		InvalidQuestionException, 
-		InvalidChoicesException;
+		InvalidChoicesException, 
+		InvalidAnswerException;
 	/**
 	 * Validates question code
 	 *
@@ -82,8 +101,9 @@ public abstract class QValidation {
 	 * @param 	answer	Question answer to validate
 	 * @return	boolean	true if the answer is valid,
 	 * 					false if answer is invalid
+	 * @throws InvalidAnswerException 
 	 */
-	public abstract boolean isValidAnswer(String answer);
+	public abstract boolean isValidAnswer(String answer) throws InvalidAnswerException;
 	/**
 	 * Validates the number of fields in the question data.
 	 *

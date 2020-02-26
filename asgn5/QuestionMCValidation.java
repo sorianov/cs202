@@ -1,11 +1,5 @@
 
-class InvalidChoicesException extends Exception {
-	private static final long serialVersionUID = 1055634682772547735L;
 
-	public InvalidChoicesException() {
-		super("Choices are invalid.");
-	}
-}
 public class QuestionMCValidation extends QValidation {
 	private static final int NUM_FIELDS = 5;
 	private static final String FIELD_DELIMITER = "\\|";
@@ -21,7 +15,8 @@ public class QuestionMCValidation extends QValidation {
 		InvalidQuestionCodeException, 
 		InvalidQuestionLevelException, 
 		InvalidQuestionException, 
-		InvalidChoicesException 
+		InvalidChoicesException, 
+		InvalidAnswerException 
 	{
 		String[] parts = null;
 		if (!this.validNumFields(line, NUM_FIELDS, FIELD_DELIMITER)) {
@@ -45,7 +40,7 @@ public class QuestionMCValidation extends QValidation {
 	}
 	
 	@Override
-	public boolean isValidAnswer(String answer) {
+	public boolean isValidAnswer(String answer) throws InvalidAnswerException {
 		String alphabet = "abcdefghij";
 
 		if (this.choicesLength == 0 || answer.isBlank()) {
@@ -55,10 +50,10 @@ public class QuestionMCValidation extends QValidation {
 			String options = alphabet.substring(0, this.choicesLength);
 			// if the answer from the question data exists in the 
 			// substring, we know it's a valid answer
-			if (options.indexOf(answer.charAt(0)) > -1) {
-				return true;
+			if (options.indexOf(answer.toLowerCase().charAt(0)) == -1) {
+				throw new InvalidAnswerException();
 			}
-			return false;
+			return true;
 		}
 	}
 	
