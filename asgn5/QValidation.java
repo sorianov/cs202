@@ -20,9 +20,13 @@ class InvalidFieldCountException extends Exception {
 
 class InvalidQuestionCodeException extends Exception {
 	private static final long serialVersionUID = 6348577435419646119L;
+	
+	public InvalidQuestionCodeException() {
+		super("Question code is invalid");
+	}
 
 	public InvalidQuestionCodeException(String msg) {
-		super("Question code is invalid");
+		super(msg);
 	}
 }
 
@@ -57,7 +61,6 @@ class InvalidChoicesException extends Exception {
 		super("Choices are invalid.");
 	}
 }
-
 
 public abstract class QValidation {
 
@@ -160,10 +163,18 @@ public abstract class QValidation {
 	 * @throws InvalidQuestionLevelException 
 	 */
 	public boolean isValidLevel(String level) throws InvalidQuestionLevelException {
-		int lvl = Integer.parseInt(level);
-		if (lvl > 9 || lvl < 1) {
+		if (level.isBlank()) {
 			throw new InvalidQuestionLevelException();
 		}
+		try {
+			int lvl = Integer.parseInt(level);
+			if (lvl > 9 || lvl < 1) {
+				throw new InvalidQuestionLevelException();
+			}
+		} catch (NumberFormatException e) {
+			throw new InvalidQuestionLevelException();
+		}
+
 		return true;
 	}
 

@@ -8,7 +8,8 @@ public class QuestionTFValidation extends QValidation {
 	public boolean validate(String line) throws InvalidFieldCountException, 
 		InvalidQuestionCodeException, 
 		InvalidQuestionLevelException, 
-		InvalidQuestionException 
+		InvalidQuestionException, 
+		InvalidAnswerException 
 	{
 		String[] parts = null;
 		if (this.validNumFields(line, NUM_FIELDS, FIELD_DELIMITER)) {
@@ -29,12 +30,16 @@ public class QuestionTFValidation extends QValidation {
 	}
 
 	@Override
-	public boolean isValidAnswer(String answer) {
+	public boolean isValidAnswer(String answer) throws InvalidAnswerException {
 		if (answer.isBlank()) {
-			return false;
+			throw new InvalidAnswerException();
 		}
-		return answer.toLowerCase().charAt(0) == 't' 
-				|| answer.toLowerCase().charAt(0) == 'f';
+		if (answer.toLowerCase().charAt(0) != 't' 
+				&& answer.toLowerCase().charAt(0) != 'f')
+		{
+			throw new InvalidAnswerException();
+		}
+		return true;
 	}
 
 }

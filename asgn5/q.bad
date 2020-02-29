@@ -1,0 +1,40 @@
+# invalid question code
+Sf|2|What is the capital of Italy|Rome
+ft|1|The capital of Germany is Munich|False
+kC|1|What is the capital of Ukraine|Minsk:Kyiv:Warsaw:Chisinau|B
+jA|1|Which of these border the Atlantic?|Maine:Kansas:Georgia:Utah|AC
+
+# invalid level
+SA|10|What is the capital of Italy|Rome
+TF|15|The capital of Germany is Munich|False
+MC|0|What is the capital of Ukraine|Minsk:Kyiv:Warsaw:Chisinau|B
+MA|-2|Which of these border the Atlantic?|Maine:Kansas:Georgia:Utah|AC
+
+# not enough fields
+SA|2|What is the capital of Italy
+TF|1|The capital of Germany is Munich
+MC|1|What is the capital of Ukraine|B
+MA|1|Which of these border the Atlantic?|AC
+
+# too many fields
+SA|2|What is the capital of Italy|Rome|Extra
+TF|1|The capital of Germany is Munich|False|Data
+MC|1|What is the capital of Ukraine|Minsk:Kyiv:Warsaw:Chisinau|B|Goes
+MA|1|Which of these border the Atlantic?|Maine:Kansas:Georgia:Utah|AC|Here
+
+# empty fields
+SA|2||Rome
+TF|1||False
+MC||What is the capital of Ukraine|Minsk:Kyiv:Warsaw:Chisinau|B
+MA|1|Which of these border the Atlantic?||AC
+
+# use of improper separator
+MC|1|What is the capital of Ukraine|Minsk;Kyiv;Warsaw;Chisinau|B
+MA|1|Which of these border the Atlantic?|Maine;Kansas;Georgia;Utah|AC
+
+# bad answer
+MC|1|What is the capital of Ukraine|Minsk:Kyiv:Warsaw:Chisinau|E
+MA|1|Which of these border the Atlantic?|Maine:Kansas:Georgia:Utah|JC
+
+# random gibberish
+fj893189531h../z8up314u3190gfp[18[0@&(@!P$@U!()$@!(u$@!|~JU$*(423

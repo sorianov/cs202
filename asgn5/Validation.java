@@ -20,14 +20,18 @@ public class Validation {
 	private int errors = 0;
 	private String filename = "";
 	
+	public Validation() {
+		this.filename = null;
+	}
+	
 	public Validation(String filename) {
 		this.filename = filename;
 	}
 	
-	public void validateLine(String line, int lineNumber, QValidation qv) {
+	public boolean validateLine(String line, int lineNumber, QValidation qv) {
 		try {
 			if (this.isCommentLine(line) || line.isBlank()) {
-				return;
+				return true;
 			};
 			qv = getQuestionObject(line);
 			if (qv == null) {
@@ -39,8 +43,9 @@ public class Validation {
 			++this.errors;
 			System.err.println(errorLine(lineNumber, line));
 			System.err.println("\t" + e.getMessage());
-			return;
+			return false;
 		}
+		return true;
 	}
 	
 	public boolean validateFile() {

@@ -13,7 +13,8 @@ public class QuestionMAValidation extends QValidation {
 		InvalidQuestionCodeException, 
 		InvalidQuestionLevelException, 
 		InvalidQuestionException, 
-		InvalidAnswerException 
+		InvalidAnswerException, 
+		InvalidChoicesException 
 	{
 		String[] parts = null;
 		if (!this.validNumFields(line, NUM_FIELDS, FIELD_DELIMITER)) {
@@ -57,7 +58,7 @@ public class QuestionMAValidation extends QValidation {
 		}
 	}
 
-	private boolean areValidChoices(String choices) {
+	private boolean areValidChoices(String choices) throws InvalidChoicesException {
 		String[] possibleAnswers = choices.split(CHOICE_DELIMITER);
 
 		if (possibleAnswers.length >= MIN_ANSWER_CHOICES
@@ -66,7 +67,7 @@ public class QuestionMAValidation extends QValidation {
 			return true;
 		}
 
-		return false;
+		throw new InvalidChoicesException();
 	}
 
 }
