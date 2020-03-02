@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -51,7 +52,40 @@ public class Quiz {
 		return false;
 	}
 	
+	private int totalCorrectQuestions() {
+		int correct = 0;
+		for (Question q: this.questions) {
+			if (q.isCorrect()) {
+				++correct;
+			}
+		}
+		return correct;
+	}
+	
+	private void printQuizSummary() {
+		if (this.totalQuestions() == 0) {
+			return;
+		}
+		int correct = this.totalCorrectQuestions();
+		int totalQuestions = this.totalCorrectQuestions();
+		double percentCorrect = (correct / totalQuestions) * 100;
+		StringBuilder sb = new StringBuilder();
+		DecimalFormat df = new DecimalFormat("###.##");
+		sb.append("You got " + correct + " of " + totalQuestions);
+		sb.append(" correct: " + percentCorrect + "%. ");
+		if (correct < totalQuestions) {
+			sb.append("Better study more!");
+		}
+		if (correct == totalQuestions) {
+			sb.append("Great job!");
+		}
+		System.out.println(sb);
+	}
+	
 	public boolean loadQuestions(String dataFile) {	
+		if (dataFile == null) {
+			return false;
+		}
 		File fh = new File(dataFile);
 		String line = new String("");
 		int lineNumber = 0;
@@ -87,6 +121,7 @@ public class Quiz {
 			};
 		}
 		sc.close();
+		this.printQuizSummary();
 	}
 	
 	public int getCorrectCount() {
