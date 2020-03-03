@@ -8,7 +8,6 @@ public class Quiz {
 	private ArrayList<Question> questions = new ArrayList<Question>();
 	private String filename = "";
 	private boolean filenameIsValid = true;
-	private int correct = 0;
 	
 	public Quiz(String dataFile) {
 		try {
@@ -23,11 +22,11 @@ public class Quiz {
 		String[] tokens = line.split("\\|");
 		String code = tokens[0].toLowerCase();
 		if (code.contentEquals("sa")) {
-			q = new QuestionSA(line);
+			q = new QuestionSA();
 		} else if (code.contentEquals("tf")) {
-			q = new QuestionTF(line);
+			q = new QuestionTF();
 		} else if (code.contentEquals("mc")) {
-			q = new QuestionMC(line);
+			q = new QuestionMC();
 		} else {
 			throw new InvalidQuestionCodeException();
 		}
@@ -35,21 +34,29 @@ public class Quiz {
 	}
 	
 	private boolean loadQuestion(String line, int lineNumber) {
-		Validation v = new Validation();
-		QValidation qv = null;
-		if (v.validateLine(line, lineNumber, qv)) {
-			try {
-				Question q = null;
-				q = this.getQuestionObject(line);
+		try {
+			Question q = null;
+			q = this.getQuestionObject(line);
+			if (q.validate(line, lineNumber)) {
+				q.loadData(line);
 				this.questions.add(q);
-			} catch (InvalidQuestionCodeException e) {
-				System.err.println(v.errorLine(lineNumber, line));
-				System.err.println("\t" + e.getMessage());
-				return false;
+				return true;
 			}
-			return true;
+			return false;
+		} catch (InvalidQuestionCodeException e) {
+			this.lineErrorMessage(line, lineNumber, e.getMessage());
+			return false;
 		}
-		return false;
+	}
+	
+	private void lineErrorMessage(String line, int lineNumber, String errMsg) {
+		StringBuilder sb = new StringBuilder();
+		sb.append("Error: Line ");
+		sb.append(lineNumber);
+		sb.append(" - ");
+		sb.append(line + "\n");
+		sb.append("\t" + errMsg);
+		System.err.println(sb);
 	}
 	
 	private int totalCorrectQuestions() {
@@ -63,16 +70,24 @@ public class Quiz {
 	}
 	
 	private void printQuizSummary() {
-		if (this.totalQuestions() == 0) {
+		double correct = this.totalCorrectQuestions();
+		double totalQuestions = this.totalQuestions();
+		if (totalQuestions == 0) {
 			return;
 		}
-		int correct = this.totalCorrectQuestions();
-		int totalQuestions = this.totalCorrectQuestions();
 		double percentCorrect = (correct / totalQuestions) * 100;
+		
 		StringBuilder sb = new StringBuilder();
-		DecimalFormat df = new DecimalFormat("###.##");
-		sb.append("You got " + correct + " of " + totalQuestions);
-		sb.append(" correct: " + percentCorrect + "%. ");
+		DecimalFormat integer = new DecimalFormat("#");
+		DecimalFormat percent = new DecimalFormat("###.##");
+		
+		sb.append("You got ");
+		sb.append(integer.format(correct));
+		sb.append(" of ");
+		sb.append(integer.format(totalQuestions));
+		sb.append(" correct: ");
+		sb.append(percent.format(percentCorrect) + "%. ");
+		
 		if (correct < totalQuestions) {
 			sb.append("Better study more!");
 		}
@@ -94,14 +109,20 @@ public class Quiz {
 			while(scn.hasNext()) {
 				++lineNumber;
 				line = scn.nextLine();
+				if (Question.isComment(line) || line.isBlank()) {
+					continue;
+				}
 				this.loadQuestion(line, lineNumber);
 			}
 			scn.close();
+			return true;
 		} catch (FileNotFoundException e) {
 			System.err.println("Could not open " + filename);
 			return false;
+		} catch (Exception e) {
+			System.err.println("An unknown error ocurred");
+			return false;
 		}
-		return true;
 	}
 	
 	public int totalQuestions() {
@@ -133,6 +154,7 @@ public class Quiz {
 		}
 		return correct;
 	}
+	
 	public int getIncorrectCount() {
 		return this.questions.size() - this.getCorrectCount();
 	}

@@ -4,14 +4,11 @@ public class QuestionMC extends Question {
 	private ArrayList<String> answerChoices = new ArrayList<String>();
 	
 	public QuestionMC(String line) {
-		String[] tokens = line.split("\\|");
-		this.question = tokens[2];
-		for (String str: tokens[3].split(":")) {
-			this.answerChoices.add(str);
-		}
-		this.answer = tokens[4];
+		this.loadData(line);
 	}
-
+	
+	public QuestionMC() {}
+	
 	@Override
 	public void showQuestion() {
 		String alphabet = "abcdefghijkl";
@@ -24,7 +21,7 @@ public class QuestionMC extends Question {
 			sb.append("\n");
 			++i;
 		}
-		System.out.println(sb);
+		System.out.print(sb);
 	}
 
 	@Override
@@ -32,6 +29,28 @@ public class QuestionMC extends Question {
 		char correct = this.answer.toLowerCase().charAt(0);
 		char given = givenAnswer.toLowerCase().charAt(0);
 		return correct == given;
+	}
+	
+	@Override
+	protected boolean validate(String line, int lineNumber) {
+		QuestionMCValidation qv = new QuestionMCValidation();
+		try {
+			qv.validate(line);
+			return true;
+		} catch (Exception e) {
+			this.lineErrorMessage(line, lineNumber, e.getMessage());
+			return false;
+		}
+	}
+	
+	@Override
+	public void loadData(String line) {
+		String[] tokens = line.split("\\|");
+		this.question = tokens[2];
+		for (String str: tokens[3].split(":")) {
+			this.answerChoices.add(str);
+		}
+		this.answer = tokens[4];
 	}
 
 }

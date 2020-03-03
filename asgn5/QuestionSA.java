@@ -2,10 +2,10 @@
 public class QuestionSA extends Question {
 	
 	public QuestionSA(String line) {
-		String[] tokens = line.split("\\|");
-		this.question = tokens[2];
-		this.answer = tokens[3];
+		this.loadData(line);
 	}
+	
+	public QuestionSA() {}
 
 	@Override
 	public void showQuestion() {
@@ -20,5 +20,25 @@ public class QuestionSA extends Question {
 		String given = givenAnswer.toLowerCase();
 		return correct.contentEquals(given);
 	}
+	
+	@Override
+	protected boolean validate(String line, int lineNumber) {
+		QuestionSAValidation qv = new QuestionSAValidation();
+		try {
+			qv.validate(line);
+			return true;
+		} catch (Exception e) {
+			this.lineErrorMessage(line, lineNumber, e.getMessage());
+			return false;
+		}
+	}
+	
+	@Override
+	public void loadData(String line) {
+		String[] tokens = line.split("\\|");
+		this.question = tokens[2];
+		this.answer = tokens[3];
+	}
+
 
 }
