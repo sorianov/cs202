@@ -69,7 +69,7 @@ public class Quiz {
 		return correct;
 	}
 	
-	private void printQuizSummary() {
+	public void printQuizSummary() {
 		double correct = this.totalCorrectQuestions();
 		double totalQuestions = this.totalQuestions();
 		if (totalQuestions == 0) {
@@ -129,20 +129,69 @@ public class Quiz {
 		return this.questions.size();
 	}
 	
-	public void deliverQuiz() {
-		Scanner sc = new Scanner(System.in);
-		for (Question q: this.questions) {
-			q.showQuestion();
-			String answer = sc.next();
-			if (q.checkAnswer(answer)) {
-				q.markCorrect();
-				System.out.println("Correct! Good job!");
-			} else {
-				System.out.println("Incorrect.");
-			};
+	private boolean validateYesNo(String maybe) {
+		if (maybe.isBlank()) {
+			return true;
 		}
-		sc.close();
-		this.printQuizSummary();
+		
+		char m = maybe.toLowerCase().charAt(0);
+		if (m == 'y' || m == 'n') {
+			return true;
+		}
+		return false;
+	}
+	
+	private boolean isYes(String maybe) {
+		if (maybe.isBlank() || maybe.toLowerCase().charAt(0) == 'y' ) {
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean userSaysYes(String prompt) {
+		System.out.println(prompt);
+		Scanner keyboard = new Scanner(System.in);
+		String input = "";
+		boolean ranOnce = false;
+		do {
+			if (ranOnce) {
+				System.out.println("Please enter a 'y' or 'n'.");
+			}
+			input = keyboard.nextLine();
+			ranOnce = true;
+		} while (!this.validateYesNo(input));
+		return this.isYes(input);
+	}
+	
+	private void deliverQuestion(Question q) {
+		Scanner keyboard = new Scanner(System.in);
+		String answer = "";
+		q.showQuestion();
+		answer = keyboard.next();
+		if (q.checkAnswer(answer)) {
+			q.markCorrect();
+			System.out.println("Correct! Good job!");
+		} else {
+			System.out.println("Incorrect.");
+		}
+	}
+	
+	private void deliverIncorrectQuestions() {
+		for (Question q: this.questions) {
+			if (!q.isCorrect()) {
+				this.deliverQuestion(q);
+			}
+		}
+	}
+	
+	public void deliverIncorrectQuiz() {
+		this.deliverIncorrectQuestions();
+	}
+	
+	public void deliverQuiz() {
+		for (Question q: this.questions) {
+			this.deliverQuestion(q);
+		}
 	}
 	
 	public int getCorrectCount() {
