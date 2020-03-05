@@ -1,4 +1,9 @@
-
+/**
+ * A validation class for short answer type questions.
+ * 
+ * @author Victor Soriano Mendoza {@literal <soriano.victorm@student.clackamas.edu>}
+ * @version 1.0
+ */
 public class QuestionSAValidation extends QValidation {
 	private static final String QUESTION_CODE = "sa";
 	private static final int NUM_FIELDS = 4;
@@ -27,7 +32,7 @@ public class QuestionSAValidation extends QValidation {
 
 		return false;
 	}
-
+	//--------------------------------------------------------------------------------------------------------------------------
 	@Override
 	public boolean isValidAnswer(String answer) {
 		return !answer.isBlank();

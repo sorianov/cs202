@@ -1,4 +1,9 @@
-
+/**
+ * A validation class for true/false type questions.
+ * 
+ * @author Victor Soriano Mendoza {@literal <soriano.victorm@student.clackamas.edu>}
+ * @version 1.0
+ */
 public class QuestionTFValidation extends QValidation {
 	private static final int NUM_FIELDS = 4;
 	private static final String FIELD_DELIMITER = "\\|";
@@ -28,7 +33,7 @@ public class QuestionTFValidation extends QValidation {
 
 		return false;
 	}
-
+	//--------------------------------------------------------------------------------------------------------------------------
 	@Override
 	public boolean isValidAnswer(String answer) throws InvalidAnswerException {
 		if (answer.isBlank()) {

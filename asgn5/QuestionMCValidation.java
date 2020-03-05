@@ -1,5 +1,9 @@
-
-
+/**
+ * A validation class for multiple choice type questions.
+ * 
+ * @author Victor Soriano Mendoza {@literal <soriano.victorm@student.clackamas.edu>}
+ * @version 1.0
+ */
 public class QuestionMCValidation extends QValidation {
 	private static final int NUM_FIELDS = 5;
 	private static final String FIELD_DELIMITER = "\\|";
@@ -38,7 +42,7 @@ public class QuestionMCValidation extends QValidation {
 
 		return false;
 	}
-	
+	//--------------------------------------------------------------------------------------------------------------------------
 	@Override
 	public boolean isValidAnswer(String answer) throws InvalidAnswerException {
 		String alphabet = "abcdefghij";
@@ -56,7 +60,7 @@ public class QuestionMCValidation extends QValidation {
 			return true;
 		}
 	}
-	
+	//--------------------------------------------------------------------------------------------------------------------------
 	private boolean areValidChoices(String choices) throws InvalidChoicesException {
 		String[] possibleAnswers = choices.split(CHOICE_DELIMITER);
 

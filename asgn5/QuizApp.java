@@ -1,13 +1,26 @@
-
+/**
+ * Instantiate and deliver a Quiz.
+ * 
+ * @author Victor Soriano Mendoza {@literal <soriano.victorm@student.clackamas.edu>}
+ * @version 1.0
+ */
 public class QuizApp {
 
+	/**
+	 * Instantiates a quiz object and delivers it.
+	 * <p>
+	 * Will only deliver quiz if a filename is passed in the commandline arguments. Prints usage if a filename can't be found.
+	 * 
+	 * @param args String array holding command line arguments
+	 */
 	public static void main(String[] args) {
 		String filename = null;
-		if (args.length > 0) {
-			filename = args[0];
-
+		if (args.length == 0) {
+			printUsage();
+			return;
 		}
-
+		
+		filename = args[0];
 		Quiz q = new Quiz(filename);
 		q.deliverQuiz();
 		String prompt = "You have answered some questions incorrectly. ";
@@ -22,6 +35,16 @@ public class QuizApp {
 			}
 		}
 		q.printQuizSummary();
+	}
+	
+	/**
+	 * Outputs text describing how to use application.
+	 */
+	public static void printUsage() {
+		System.out.println();
+		System.out.println("java QuizApp <filename>");
+		System.out.println();
+		System.out.println("\tfilename\tName of file that contains question data");
 	}
 
 }
