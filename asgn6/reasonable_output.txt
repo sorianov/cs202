@@ -1,0 +1,3677 @@
+Spell-checking moby.txt using words.txt as a dictionary...
+Misspelled: moby
+Misspelled: melville
+Misspelled: maketh
+Misspelled: hackluyt
+Misspelled: hval
+Misspelled: hvalt
+Misspelled: dut
+Misspelled: wallen
+Misspelled: walw
+Misspelled: ian
+Misspelled: ketos
+Misspelled: whoel
+Misspelled: hvalt
+Misspelled: wal
+Misspelled: hwal
+Misspelled: baleine
+Misspelled: ballena
+Misspelled: pekee
+Misspelled: nuee
+Misspelled: nuee
+Misspelled: fegee
+Misspelled: pekee
+Misspelled: nuee
+Misspelled: nuee
+Misspelled: erromangoan
+Misspelled: vaticans
+Misspelled: higgledy
+Misspelled: piggledy
+Misspelled: belongest
+Misspelled: hampton
+Misspelled: tuileries
+Misspelled: unsplinterable
+Misspelled: maketh
+Misspelled: perisheth
+Misspelled: breedeth
+Misspelled: whirlpooles
+Misspelled: balaene
+Misspelled: pliny
+Misspelled: tooke
+Misspelled: octher
+Misspelled: montaigne
+Misspelled: raimond
+Misspelled: sebond
+Misspelled: stowe
+Misspelled: maketh
+Misspelled: ork
+Misspelled: sovereignest
+Misspelled: parmacetti
+Misspelled: availle
+Misspelled: returne
+Misspelled: againe
+Misspelled: davenant
+Misspelled: gondibert
+Misspelled: spermacetti
+Misspelled: hosmannus
+Misspelled: nescio
+Misspelled: browne
+Misspelled: jav
+Misspelled: hobbes
+Misspelled: mansoul
+Misspelled: fulller
+Misspelled: dryden
+Misspelled: spitzbergen
+Misspelled: purchas
+Misspelled: schouten
+Misspelled: elbe
+Misspelled: jonas
+Misspelled: harpooneers
+Misspelled: spitzbergen
+Misspelled: pitferren
+Misspelled: sibbald
+Misspelled: kinross
+Misspelled: strafford
+Misspelled: cowley
+Misspelled: frequendy
+Misspelled: ulloa
+Misspelled: asiatics
+Misspelled: uno
+Misspelled: troil
+Misspelled: spermacetti
+Misspelled: nantuckois
+Misspelled: edmund
+Misspelled: nantucket
+Misspelled: edmund
+Misspelled: blackstone
+Misspelled: rodmond
+Misspelled: paley
+Misspelled: cuvier
+Misspelled: spermacetti
+Misspelled: colnett
+Misspelled: obed
+Misspelled: macy
+Misspelled: nantucket
+Misspelled: raal
+Misspelled: eckermann
+Misspelled: essex
+Misspelled: nantucket
+Misspelled: owen
+Misspelled: nantucket
+Misspelled: phospher
+Misspelled: oakes
+Misspelled: scoresby
+Misspelled: beale
+Misspelled: bennett
+Misspelled: bowes
+Misspelled: browne
+Misspelled: cruize
+Misspelled: nantucket
+Misspelled: hussey
+Misspelled: tyerman
+Misspelled: bennett
+Misspelled: nantucket
+Misspelled: nantucket
+Misspelled: preble
+Misspelled: cheever
+Misspelled: mcculloch
+Misspelled: hobomack
+Misspelled: fuego
+Misspelled: wharton
+Misspelled: nantucket
+Misspelled: loomings
+Misspelled: cato
+Misspelled: manhattoes
+Misspelled: corlears
+Misspelled: coenties
+Misspelled: dotings
+Misspelled: rensselaers
+Misspelled: randolphs
+Misspelled: hardicanutes
+Misspelled: affghanistan
+Misspelled: manhatto
+Misspelled: bedford
+Misspelled: nantucket
+Misspelled: bedford
+Misspelled: nantucket
+Misspelled: bedford
+Misspelled: nantucket
+Misspelled: nantucket
+Misspelled: carthage
+Misspelled: nantucket
+Misspelled: nantucket
+Misspelled: bedford
+Misspelled: nantucket
+Misspelled: maketh
+Misspelled: lookest
+Misspelled: observest
+Misspelled: reasonest
+Misspelled: shiverings
+Misspelled: moluccas
+Misspelled: crosslights
+Misspelled: ponderings
+Misspelled: nathan
+Misspelled: haint
+Misspelled: goin
+Misspelled: whalin
+Misspelled: sartainty
+Misspelled: feegees
+Misspelled: bedarned
+Misspelled: arrantest
+Misspelled: alleghanian
+Misspelled: bulkington
+Misspelled: bulkington
+Misspelled: bulkington
+Misspelled: ve
+Misspelled: ve
+Misspelled: airley
+Misspelled: airley
+Misspelled: bamboozingly
+Misspelled: rayther
+Misspelled: slanderin
+Misspelled: hecla
+Misspelled: ve
+Misspelled: sarmon
+Misspelled: balmed
+Misspelled: sellin
+Misspelled: goin
+Misspelled: goin
+Misspelled: inions
+Misspelled: idolators
+Misspelled: harpooneers
+Misspelled: headpeddling
+Misspelled: wrapall
+Misspelled: flourishings
+Misspelled: queequeg
+Misspelled: peddlin
+Misspelled: queequeg
+Misspelled: sabbee
+Misspelled: sabbee
+Misspelled: sleepe
+Misspelled: sabbee
+Misspelled: sabbee
+Misspelled: queequeg
+Misspelled: gettee
+Misspelled: tattooings
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: cretan
+Misspelled: queequeg
+Misspelled: slippering
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: gaspings
+Misspelled: strainings
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: quickley
+Misspelled: harpooneers
+Misspelled: queequeg
+Misspelled: ledyard
+Misspelled: ledyard
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: bedford
+Misspelled: nondescripts
+Misspelled: bedford
+Misspelled: bedford
+Misspelled: feegeeans
+Misspelled: tongatobooarrs
+Misspelled: erromanggoans
+Misspelled: pannangians
+Misspelled: brighggians
+Misspelled: harpooneers
+Misspelled: bedford
+Misspelled: bedford
+Misspelled: bedford
+Misspelled: bedford
+Misspelled: bedford
+Misspelled: bedford
+Misspelled: moluccas
+Misspelled: bedford
+Misspelled: willis
+Misspelled: ellery
+Misspelled: nathan
+Misspelled: coleman
+Misspelled: macy
+Misspelled: gleig
+Misspelled: eliza
+Misspelled: queequeg
+Misspelled: goodwin
+Misspelled: nantucket
+Misspelled: nantucket
+Misspelled: mapple
+Misspelled: mapple
+Misspelled: mapple
+Misspelled: mapple
+Misspelled: mapple
+Misspelled: mapple
+Misspelled: mapple
+Misspelled: connexions
+Misspelled: ehrenbreitstein
+Misspelled: farings
+Misspelled: mapple
+Misspelled: amittai
+Misspelled: joppa
+Misspelled: tarshish
+Misspelled: tarshish
+Misspelled: cadiz
+Misspelled: cadiz
+Misspelled: cadiz
+Misspelled: joppa
+Misspelled: joppa
+Misspelled: jaffa
+Misspelled: tarshish
+Misspelled: cadiz
+Misspelled: tarshish
+Misspelled: apprenhension
+Misspelled: tarshish
+Misspelled: lookest
+Misspelled: plungings
+Misspelled: tarshish
+Misspelled: comest
+Misspelled: mightest
+Misspelled: invokingly
+Misspelled: nineveh
+Misspelled: joppa
+Misspelled: tarshish
+Misspelled: slantings
+Misspelled: engulphed
+Misspelled: queequeg
+Misspelled: tattooings
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: unbiddenly
+Misspelled: idolator
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: idolator
+Misspelled: queequeg
+Misspelled: salamed
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: rokovoko
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: nantucket
+Misspelled: queequeg
+Misspelled: idolator
+Misspelled: nantucket
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: nantucket
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: rokovoko
+Misspelled: rokovoko
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: acushnet
+Misspelled: bedford
+Misspelled: snortings
+Misspelled: queequeg
+Misspelled: ropeyarn
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: capting
+Misspelled: capting
+Misspelled: capting
+Misspelled: capting
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: nantucket
+Misspelled: nantucket
+Misspelled: nantucket
+Misspelled: eddystone
+Misspelled: nantucket
+Misspelled: nantucket
+Misspelled: nantucketers
+Misspelled: behring
+Misspelled: himmalehan
+Misspelled: nantucketers
+Misspelled: nantucketer
+Misspelled: nantucketer
+Misspelled: earthsman
+Misspelled: nantucketer
+Misspelled: queequeg
+Misspelled: hussey
+Misspelled: nantucket
+Misspelled: hc
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: hussey
+Misspelled: hussey
+Misspelled: hussey
+Misspelled: hussey
+Misspelled: hussey
+Misspelled: hussey
+Misspelled: hussey
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: hussey
+Misspelled: queequeg
+Misspelled: hussey
+Misspelled: hussey
+Misspelled: hussey
+Misspelled: queequeg
+Misspelled: stiggs
+Misspelled: unfort
+Misspelled: weepons
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: yojo
+Misspelled: yojo
+Misspelled: yojo
+Misspelled: yojo
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: yojo
+Misspelled: yojo
+Misspelled: queequeg
+Misspelled: yojo
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: yojo
+Misspelled: xxxix
+Misspelled: queequeg
+Misspelled: yojo
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: medes
+Misspelled: pryed
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: peleg
+Misspelled: pequod
+Misspelled: peleg
+Misspelled: thorkill
+Misspelled: pottowottamie
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: nantucketer
+Misspelled: ve
+Misspelled: talkest
+Misspelled: marchant
+Misspelled: marchant
+Misspelled: gettest
+Misspelled: quakerish
+Misspelled: nantucketer
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: pequod
+Misspelled: wantest
+Misspelled: tellest
+Misspelled: monstrousest
+Misspelled: parmacetty
+Misspelled: ve
+Misspelled: marchant
+Misspelled: wantest
+Misspelled: peleg
+Misspelled: peleg
+Misspelled: pequod
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: nantucket
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: nantucketers
+Misspelled: untraditionally
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: nantucket
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: bildad
+Misspelled: bildad
+Misspelled: nantucket
+Misspelled: categut
+Misspelled: bildad
+Misspelled: marrling
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: bildad
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: peleg
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: pequod
+Misspelled: bildad
+Misspelled: pequod
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: bildad
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: knowest
+Misspelled: bildad
+Misspelled: teenth
+Misspelled: forthing
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: owest
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: soulbolts
+Misspelled: bildad
+Misspelled: bildad
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: peleg
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: peleg
+Misspelled: pequod
+Misspelled: yojo
+Misspelled: queequeg
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: knowest
+Misspelled: peleg
+Misspelled: pequod
+Misspelled: tistig
+Misspelled: gayhead
+Misspelled: ve
+Misspelled: bildad
+Misspelled: queequeg
+Misspelled: footmanism
+Misspelled: queequeg
+Misspelled: yojo
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: hussey
+Misspelled: hussey
+Misspelled: hussey
+Misspelled: queequeg
+Misspelled: unfort
+Misspelled: nate
+Misspelled: stiggs
+Misspelled: snarles
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: yojo
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: sittin
+Misspelled: hussey
+Misspelled: queequeg
+Misspelled: puddingers
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: lents
+Misspelled: ramadans
+Misspelled: squattings
+Misspelled: hereafters
+Misspelled: queequeg
+Misspelled: dyspepsias
+Misspelled: ramadans
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: pequod
+Misspelled: queequeg
+Misspelled: peleg
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: queequeg
+Misspelled: nantucket
+Misspelled: bildad
+Misspelled: coleman
+Misspelled: queequeg
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: queequeg
+Misspelled: peleg
+Misspelled: mapple
+Misspelled: queequeg
+Misspelled: spose
+Misspelled: bildad
+Misspelled: queequeg
+Misspelled: spos
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: nantucket
+Misspelled: queequeg
+Misspelled: peleg
+Misspelled: queequeg
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: queequeg
+Misspelled: broadskirted
+Misspelled: queequeg
+Misspelled: clingest
+Misspelled: bildad
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: harpooneers
+Misspelled: swaine
+Misspelled: nantucket
+Misspelled: shrinked
+Misspelled: peleg
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: knowest
+Misspelled: peleg
+Misspelled: beliest
+Misspelled: peleg
+Misspelled: pequod
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: sailmakers
+Misspelled: queequeg
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: queequeg
+Misspelled: pequod
+Misspelled: ve
+Misspelled: skrimmage
+Misspelled: nantucket
+Misspelled: ve
+Misspelled: parmacetti
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: ve
+Misspelled: ve
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: wonderments
+Misspelled: pequod
+Misspelled: peleg
+Misspelled: tistig
+Misspelled: queequeg
+Misspelled: pequod
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: pequod
+Misspelled: costermongers
+Misspelled: everythings
+Misspelled: pequod
+Misspelled: bildad
+Misspelled: pequod
+Misspelled: bildad
+Misspelled: quakeress
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: queequeg
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: pequod
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: dood
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: muffledness
+Misspelled: starbuck
+Misspelled: pequod
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: starbuck
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: starbuck
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: starbuck
+Misspelled: pequod
+Misspelled: handspikes
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: nantucket
+Misspelled: bildad
+Misspelled: booble
+Misspelled: bildad
+Misspelled: pequod
+Misspelled: peleg
+Misspelled: queequeg
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: marchant
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: bildad
+Misspelled: bildad
+Misspelled: hardearned
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: peleg
+Misspelled: peleg
+Misspelled: starbuck
+Misspelled: bildad
+Misspelled: mainyard
+Misspelled: bildad
+Misspelled: starbuck
+Misspelled: nantucket
+Misspelled: bildad
+Misspelled: harpooneers
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: bildad
+Misspelled: peleg
+Misspelled: bulkington
+Misspelled: newlanded
+Misspelled: bedford
+Misspelled: pequod
+Misspelled: bulkington
+Misspelled: wonderfullest
+Misspelled: bulkington
+Misspelled: bulkington
+Misspelled: bulkington
+Misspelled: queequeg
+Misspelled: visting
+Misspelled: witt
+Misspelled: nantucket
+Misspelled: cooke
+Misspelled: cookes
+Misspelled: krusensterns
+Misspelled: nantucket
+Misspelled: cooke
+Misspelled: krusenstern
+Misspelled: cooke
+Misspelled: nantucketers
+Misspelled: edmund
+Misspelled: morrel
+Misspelled: folger
+Misspelled: nantucket
+Misspelled: folgers
+Misspelled: harpooneers
+Misspelled: queequeg
+Misspelled: hairoil
+Misspelled: quoggy
+Misspelled: pequod
+Misspelled: starbuck
+Misspelled: nantucket
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: upbraidings
+Misspelled: marchings
+Misspelled: cullest
+Misspelled: selectest
+Misspelled: tisbury
+Misspelled: pequod
+Misspelled: starbuck
+Misspelled: pequod
+Misspelled: harpooneers
+Misspelled: pequod
+Misspelled: harpooneers
+Misspelled: queequeg
+Misspelled: starbuck
+Misspelled: queequeg
+Misspelled: tashtego
+Misspelled: nantucket
+Misspelled: harpooneers
+Misspelled: tashtego
+Misspelled: tashtego
+Misspelled: tashtego
+Misspelled: harpooneers
+Misspelled: daggoo
+Misspelled: ahasuerus
+Misspelled: daggoo
+Misspelled: nantucket
+Misspelled: daggoo
+Misspelled: ahasuerus
+Misspelled: daggoo
+Misspelled: pequod
+Misspelled: nantucket
+Misspelled: pequod
+Misspelled: isolatoes
+Misspelled: isolato
+Misspelled: isolatoes
+Misspelled: anacharsis
+Misspelled: clootz
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: nantucket
+Misspelled: harpooneers
+Misspelled: nantucketer
+Misspelled: vineyarder
+Misspelled: cellini
+Misspelled: tashtego
+Misspelled: manxman
+Misspelled: nantucket
+Misspelled: manxman
+Misspelled: pequod
+Misspelled: unsurrenderable
+Misspelled: pequod
+Misspelled: allurings
+Misspelled: pequod
+Misspelled: greybeards
+Misspelled: regardings
+Misspelled: whaleboning
+Misspelled: marlinspikes
+Misspelled: pequod
+Misspelled: leviathanic
+Misspelled: scoresby
+Misspelled: beale
+Misspelled: cuvier
+Misspelled: pliny
+Misspelled: aldrovandi
+Misspelled: browne
+Misspelled: gesner
+Misspelled: linnaeus
+Misspelled: rondeletius
+Misspelled: willoughby
+Misspelled: artedi
+Misspelled: sibbald
+Misspelled: brisson
+Misspelled: lacepede
+Misspelled: bonneterre
+Misspelled: desmarest
+Misspelled: cuvier
+Misspelled: cuvier
+Misspelled: owen
+Misspelled: scoresby
+Misspelled: beale
+Misspelled: bennett
+Misspelled: browne
+Misspelled: olmstead
+Misspelled: cheever
+Misspelled: owen
+Misspelled: scoresby
+Misspelled: scoresby
+Misspelled: leviathanic
+Misspelled: reigneth
+Misspelled: beale
+Misspelled: bennett
+Misspelled: tauntings
+Misspelled: linnaeus
+Misspelled: linnaeus
+Misspelled: linnaeus
+Misspelled: penem
+Misspelled: intrantem
+Misspelled: feminam
+Misspelled: mammis
+Misspelled: lactantem
+Misspelled: meritoque
+Misspelled: macey
+Misspelled: nantucket
+Misspelled: linnaeus
+Misspelled: leviathanic
+Misspelled: nantucketers
+Misspelled: lamatins
+Misspelled: nantucket
+Misspelled: trumpa
+Misspelled: pottsfich
+Misspelled: mysticetus
+Misspelled: baliene
+Misspelled: growlands
+Misspelled: walfish
+Misspelled: ahaz
+Misspelled: razar
+Misspelled: divings
+Misspelled: nantucketer
+Misspelled: octavoes
+Misspelled: mephistophelean
+Misspelled: unicornism
+Misspelled: frobisher
+Misspelled: nantucketer
+Misspelled: feegee
+Misspelled: bonapartes
+Misspelled: duodecimoes
+Misspelled: duodecimoes
+Misspelled: scragg
+Misspelled: quog
+Misspelled: leviathanism
+Misspelled: specksynder
+Misspelled: specksynder
+Misspelled: specksynder
+Misspelled: harpooneers
+Misspelled: harpooneers
+Misspelled: nantucket
+Misspelled: pequod
+Misspelled: terrorem
+Misspelled: nantucket
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: mizentop
+Misspelled: abjectus
+Misspelled: starbuck
+Misspelled: marketless
+Misspelled: starbuck
+Misspelled: pequod
+Misspelled: dumfoundered
+Misspelled: pequod
+Misspelled: harpooneers
+Misspelled: domineerings
+Misspelled: harpooneers
+Misspelled: harpooneers
+Misspelled: queequeg
+Misspelled: tashtego
+Misspelled: tashtego
+Misspelled: daggoo
+Misspelled: tashtego
+Misspelled: harpooneers
+Misspelled: queequeg
+Misspelled: tashtego
+Misspelled: daggoo
+Misspelled: queequeg
+Misspelled: tashtego
+Misspelled: harpooneers
+Misspelled: queequeg
+Misspelled: harpooneers
+Misspelled: pequod
+Misspelled: streetdoor
+Misspelled: upliftings
+Misspelled: vendome
+Misspelled: philippe
+Misspelled: trafalgar
+Misspelled: obed
+Misspelled: macy
+Misspelled: nantucket
+Misspelled: obed
+Misspelled: whalesmen
+Misspelled: sidescreen
+Misspelled: greenlandmen
+Misspelled: queequeg
+Misspelled: whaleships
+Misspelled: nantucket
+Misspelled: phaedon
+Misspelled: platonists
+Misspelled: ve
+Misspelled: descartian
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: tashtego
+Misspelled: daggoo
+Misspelled: queequeg
+Misspelled: tashtego
+Misspelled: moby
+Misspelled: moby
+Misspelled: daggoo
+Misspelled: parmacetty
+Misspelled: queequeg
+Misspelled: twiske
+Misspelled: twisk
+Misspelled: queequeg
+Misspelled: daggoo
+Misspelled: nantucket
+Misspelled: tashtego
+Misspelled: moby
+Misspelled: moby
+Misspelled: moby
+Misspelled: starbuck
+Misspelled: moby
+Misspelled: moby
+Misspelled: starbuck
+Misspelled: moby
+Misspelled: moby
+Misspelled: harpooneers
+Misspelled: moby
+Misspelled: starbuck
+Misspelled: moby
+Misspelled: gettest
+Misspelled: nantucket
+Misspelled: nantucket
+Misspelled: starbuck
+Misspelled: requirest
+Misspelled: starbuck
+Misspelled: glarings
+Misspelled: reddenest
+Misspelled: starbuck
+Misspelled: chilian
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: nantucket
+Misspelled: constrainings
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: harpooneers
+Misspelled: spiralizes
+Misspelled: harpooneers
+Misspelled: vitus
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: harpooneers
+Misspelled: harpooneers
+Misspelled: harpooneers
+Misspelled: starbuck
+Misspelled: harpooneers
+Misspelled: moby
+Misspelled: moby
+Misspelled: starbuck
+Misspelled: lombardy
+Misspelled: ve
+Misspelled: ve
+Misspelled: ve
+Misspelled: starbuck
+Misspelled: bendigoes
+Misspelled: ve
+Misspelled: starbuck
+Misspelled: demigorgon
+Misspelled: gurglings
+Misspelled: ve
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: lirra
+Misspelled: skirra
+Misspelled: harpooneers
+Misspelled: lirra
+Misspelled: skirra
+Misspelled: starbuck
+Misspelled: harpooneers
+Misspelled: nantucket
+Misspelled: nantucket
+Misspelled: blackling
+Misspelled: ve
+Misspelled: azore
+Misspelled: azore
+Misspelled: stig
+Misspelled: quig
+Misspelled: tashtego
+Misspelled: nantucket
+Misspelled: showest
+Misspelled: seeva
+Misspelled: chassee
+Misspelled: arboring
+Misspelled: interlacings
+Misspelled: swayings
+Misspelled: coyings
+Misspelled: flutterings
+Misspelled: tahitan
+Misspelled: heeva
+Misspelled: heeva
+Misspelled: pirohitee
+Misspelled: crackest
+Misspelled: holdest
+Misspelled: cattegat
+Misspelled: nantucket
+Misspelled: daggoo
+Misspelled: daggoo
+Misspelled: jago
+Misspelled: nantucket
+Misspelled: daggoo
+Misspelled: daggoo
+Misspelled: tashtego
+Misspelled: crish
+Misspelled: blang
+Misspelled: jimmini
+Misspelled: moby
+Misspelled: moby
+Misspelled: moby
+Misspelled: moby
+Misspelled: moby
+Misspelled: moby
+Misspelled: olassen
+Misspelled: povelson
+Misspelled: cuvier
+Misspelled: povelson
+Misspelled: moby
+Misspelled: moby
+Misspelled: moby
+Misspelled: scoresby
+Misspelled: strello
+Misspelled: moby
+Misspelled: unensanguined
+Misspelled: surmisings
+Misspelled: gleamings
+Misspelled: moby
+Misspelled: exasperations
+Misspelled: moby
+Misspelled: unlimbed
+Misspelled: rockings
+Misspelled: cluny
+Misspelled: entablatures
+Misspelled: nantucketer
+Misspelled: pequod
+Misspelled: starbuck
+Misspelled: invunerable
+Misspelled: moby
+Misspelled: pegu
+Misspelled: symbolizings
+Misspelled: sitteth
+Misspelled: eternam
+Misspelled: coleridge
+Misspelled: flutterings
+Misspelled: throbbings
+Misspelled: coleridge
+Misspelled: overscorning
+Misspelled: xerxes
+Misspelled: alleghanies
+Misspelled: gallopingly
+Misspelled: froissart
+Misspelled: ghent
+Misspelled: dungeoned
+Misspelled: hartz
+Misspelled: unrustlingly
+Misspelled: blocksburg
+Misspelled: stampedoes
+Misspelled: pizarro
+Misspelled: snowhowdahed
+Misspelled: surrenderest
+Misspelled: gorings
+Misspelled: beholdest
+Misspelled: rustlings
+Misspelled: shiftings
+Misspelled: cabaco
+Misspelled: cabaco
+Misspelled: ve
+Misspelled: quakeress
+Misspelled: nantucket
+Misspelled: cabaco
+Misspelled: tish
+Misspelled: driftings
+Misspelled: maury
+Misspelled: moby
+Misspelled: seychelle
+Misspelled: pequod
+Misspelled: moby
+Misspelled: unloitering
+Misspelled: pequod
+Misspelled: nantucket
+Misspelled: pequod
+Misspelled: harmattans
+Misspelled: moby
+Misspelled: pequod
+Misspelled: moby
+Misspelled: unsuppressable
+Misspelled: rinaldo
+Misspelled: rinaldini
+Misspelled: oceanwide
+Misspelled: cambyses
+Misspelled: ombay
+Misspelled: morquan
+Misspelled: miguel
+Misspelled: chilian
+Misspelled: marius
+Misspelled: sylla
+Misspelled: miguel
+Misspelled: narragansett
+Misspelled: annawon
+Misspelled: moby
+Misspelled: essex
+Misspelled: nantucket
+Misspelled: nantucket
+Misspelled: owen
+Misspelled: essex
+Misspelled: manoeuvres
+Misspelled: nantucket
+Misspelled: nantucket
+Misspelled: oahu
+Misspelled: valparaiso
+Misspelled: langsdorff
+Misspelled: langsdorff
+Misspelled: krusenstern
+Misspelled: langsdorff
+Misspelled: ochotsh
+Misspelled: dorchester
+Misspelled: langsdorff
+Misspelled: dampier
+Misspelled: langsdorff
+Misspelled: ferdinando
+Misspelled: fernandes
+Misspelled: pusie
+Misspelled: procopius
+Misspelled: belisarius
+Misspelled: procopius
+Misspelled: marmora
+Misspelled: dardanelles
+Misspelled: procopius
+Misspelled: moby
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: moby
+Misspelled: moby
+Misspelled: errantism
+Misspelled: moby
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: tashtego
+Misspelled: tashtego
+Misspelled: tashtego
+Misspelled: tashtego
+Misspelled: tashtego
+Misspelled: shipkeepers
+Misspelled: mainyard
+Misspelled: ebonness
+Misspelled: fedallah
+Misspelled: starbuck
+Misspelled: fedallah
+Misspelled: starbuck
+Misspelled: cabaco
+Misspelled: cabaco
+Misspelled: silverspoons
+Misspelled: sermonizings
+Misspelled: terri
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: surmisings
+Misspelled: pequod
+Misspelled: nantucket
+Misspelled: hintings
+Misspelled: fedallah
+Misspelled: lowerings
+Misspelled: starbuck
+Misspelled: queequeg
+Misspelled: starbuck
+Misspelled: tossings
+Misspelled: daggoo
+Misspelled: daggoo
+Misspelled: daggoo
+Misspelled: tashtego
+Misspelled: suffusingly
+Misspelled: starbuck
+Misspelled: goadings
+Misspelled: harpooneers
+Misspelled: pequod
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: queequeg
+Misspelled: starbuck
+Misspelled: queequeg
+Misspelled: helter
+Misspelled: starbuck
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: worryings
+Misspelled: pequod
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: starbuck
+Misspelled: ve
+Misspelled: capsizings
+Misspelled: stampings
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: queequeg
+Misspelled: fedallah
+Misspelled: tamerlane
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: cabaco
+Misspelled: moby
+Misspelled: fedallah
+Misspelled: fedallah
+Misspelled: aboriginalness
+Misspelled: pequod
+Misspelled: verdes
+Misspelled: plata
+Misspelled: carrol
+Misspelled: unstaked
+Misspelled: seethings
+Misspelled: fedallah
+Misspelled: yawingly
+Misspelled: pequod
+Misspelled: moby
+Misspelled: pequod
+Misspelled: foamflakes
+Misspelled: hootings
+Misspelled: tormentoto
+Misspelled: burstingly
+Misspelled: respose
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: eyest
+Misspelled: crozetts
+Misspelled: pequod
+Misspelled: nantucketer
+Misspelled: pequod
+Misspelled: congenialities
+Misspelled: nantucketer
+Misspelled: provincialisms
+Misspelled: nantucketer
+Misspelled: whaleships
+Misspelled: moby
+Misspelled: tashtego
+Misspelled: tashtego
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: gallipagos
+Misspelled: sebastian
+Misspelled: interluding
+Misspelled: nantucket
+Misspelled: cruisings
+Misspelled: radney
+Misspelled: vineyarder
+Misspelled: steelkilt
+Misspelled: lakeman
+Misspelled: lakeman
+Misspelled: lakeman
+Misspelled: sebastian
+Misspelled: callao
+Misspelled: lakeman
+Misspelled: interflowing
+Misspelled: thunderings
+Misspelled: afric
+Misspelled: winnebago
+Misspelled: steelkilt
+Misspelled: radney
+Misspelled: nantucket
+Misspelled: nantucketer
+Misspelled: lakeman
+Misspelled: steelkilt
+Misspelled: radney
+Misspelled: steelkilt
+Misspelled: radney
+Misspelled: radney
+Misspelled: steelkilt
+Misspelled: steelkilt
+Misspelled: radney
+Misspelled: steelkilt
+Misspelled: steelkilt
+Misspelled: lakeman
+Misspelled: banterings
+Misspelled: radney
+Misspelled: steelkilt
+Misspelled: lakeman
+Misspelled: radney
+Misspelled: steelkilt
+Misspelled: steelkilt
+Misspelled: radney
+Misspelled: lakeman
+Misspelled: steelkilt
+Misspelled: radney
+Misspelled: lakeman
+Misspelled: steelkilt
+Misspelled: radney
+Misspelled: steelkilt
+Misspelled: lakeman
+Misspelled: radney
+Misspelled: lakeman
+Misspelled: steelkilt
+Misspelled: steelkilt
+Misspelled: steelkilt
+Misspelled: whaleships
+Misspelled: venetianly
+Misspelled: ashantee
+Misspelled: plazza
+Misspelled: sebastian
+Misspelled: limeese
+Misspelled: dominic
+Misspelled: lakeman
+Misspelled: harpooneers
+Misspelled: steelkilt
+Misspelled: steelkilt
+Misspelled: steelkilt
+Misspelled: steelkilt
+Misspelled: lakeman
+Misspelled: handspikes
+Misspelled: lakeman
+Misspelled: steelkilt
+Misspelled: steelkilt
+Misspelled: lakeman
+Misspelled: steelkilt
+Misspelled: steelkilt
+Misspelled: steelkilt
+Misspelled: steelkilt
+Misspelled: villany
+Misspelled: harpooneers
+Misspelled: lakeman
+Misspelled: steelkilt
+Misspelled: radney
+Misspelled: lakeman
+Misspelled: steelkilt
+Misspelled: steelkilt
+Misspelled: radney
+Misspelled: lakeman
+Misspelled: radney
+Misspelled: steelkilt
+Misspelled: radney
+Misspelled: unseaman
+Misspelled: steelkilt
+Misspelled: lakeman
+Misspelled: lakeman
+Misspelled: steelkilt
+Misspelled: teneriffe
+Misspelled: jesu
+Misspelled: moby
+Misspelled: moby
+Misspelled: sebastian
+Misspelled: dominic
+Misspelled: christenings
+Misspelled: moby
+Misspelled: teneriffe
+Misspelled: harpooneers
+Misspelled: radney
+Misspelled: steelkilt
+Misspelled: radney
+Misspelled: whitenesses
+Misspelled: radney
+Misspelled: moby
+Misspelled: lakeman
+Misspelled: moby
+Misspelled: radney
+Misspelled: lakeman
+Misspelled: steelkilt
+Misspelled: lakeman
+Misspelled: steelkilt
+Misspelled: steelkilt
+Misspelled: lakeman
+Misspelled: steelkilt
+Misspelled: cruisings
+Misspelled: steelkilt
+Misspelled: nantucket
+Misspelled: radney
+Misspelled: sebastian
+Misspelled: sebastian
+Misspelled: sebastian
+Misspelled: sebastian
+Misspelled: sebastian
+Misspelled: steelkilt
+Misspelled: radney
+Misspelled: panellings
+Misspelled: matse
+Misspelled: guido
+Misspelled: guido
+Misspelled: hogarth
+Misspelled: sibbald
+Misspelled: titlepages
+Misspelled: baden
+Misspelled: baden
+Misspelled: spitzbergen
+Misspelled: jonas
+Misspelled: peterson
+Misspelled: friesland
+Misspelled: colnett
+Misspelled: lacepede
+Misspelled: mysticetus
+Misspelled: scoresby
+Misspelled: cuvier
+Misspelled: nantucketer
+Misspelled: nantucket
+Misspelled: cuvier
+Misspelled: desmarest
+Misspelled: platonian
+Misspelled: bentham
+Misspelled: roundingly
+Misspelled: pliny
+Misspelled: purchas
+Misspelled: hackluyt
+Misspelled: cuvier
+Misspelled: colnett
+Misspelled: huggins
+Misspelled: cuvier
+Misspelled: beale
+Misspelled: colnett
+Misspelled: cuvier
+Misspelled: huggins
+Misspelled: beale
+Misspelled: beale
+Misspelled: browne
+Misspelled: scoresby
+Misspelled: garnery
+Misspelled: garnery
+Misspelled: garnery
+Misspelled: scoresby
+Misspelled: leuwenhoeck
+Misspelled: garnery
+Misspelled: durand
+Misspelled: leviathanic
+Misspelled: nantucket
+Misspelled: bedford
+Misspelled: skrimshandering
+Misspelled: durer
+Misspelled: soloma
+Misspelled: mendanna
+Misspelled: figuera
+Misspelled: crozetts
+Misspelled: pequod
+Misspelled: korah
+Misspelled: pequod
+Misspelled: daggoo
+Misspelled: moby
+Misspelled: daggoo
+Misspelled: daggoo
+Misspelled: moby
+Misspelled: starbuck
+Misspelled: moby
+Misspelled: pontoppodan
+Misspelled: anak
+Misspelled: spiralizations
+Misspelled: harpooneers
+Misspelled: tubline
+Misspelled: whizzings
+Misspelled: mazeppa
+Misspelled: serpentines
+Misspelled: everpresent
+Misspelled: starbuck
+Misspelled: queequeg
+Misspelled: parm
+Misspelled: pequod
+Misspelled: plata
+Misspelled: sharppointed
+Misspelled: tashtego
+Misspelled: kee
+Misspelled: kee
+Misspelled: daggoo
+Misspelled: koo
+Misspelled: queequeg
+Misspelled: tashtego
+Misspelled: circlings
+Misspelled: tashtego
+Misspelled: harpstring
+Misspelled: tashtego
+Misspelled: atlantics
+Misspelled: pacifics
+Misspelled: sterning
+Misspelled: overwrapped
+Misspelled: daggoo
+Misspelled: harpooneers
+Misspelled: harpooneers
+Misspelled: pequod
+Misspelled: piglead
+Misspelled: pequod
+Misspelled: moby
+Misspelled: pequod
+Misspelled: starbuck
+Misspelled: flavorish
+Misspelled: daggoo
+Misspelled: nantucketers
+Misspelled: ve
+Misspelled: smackin
+Misspelled: mustn
+Misspelled: belubed
+Misspelled: natur
+Misspelled: wery
+Misspelled: woracious
+Misspelled: zay
+Misspelled: woraciousness
+Misspelled: slappin
+Misspelled: spose
+Misspelled: bitin
+Misspelled: woraciousness
+Misspelled: natur
+Misspelled: gobern
+Misspelled: natur
+Misspelled: sartin
+Misspelled: gobern
+Misspelled: goberned
+Misspelled: wonst
+Misspelled: cibil
+Misspelled: yourselbs
+Misspelled: tearin
+Misspelled: dood
+Misspelled: toder
+Misspelled: brigger
+Misspelled: oders
+Misspelled: mouts
+Misspelled: brigness
+Misspelled: swaller
+Misspelled: demselves
+Misspelled: goin
+Misspelled: willains
+Misspelled: scougin
+Misspelled: slappin
+Misspelled: oder
+Misspelled: uttons
+Misspelled: eber
+Misspelled: eber
+Misspelled: dention
+Misspelled: goin
+Misspelled: ober
+Misspelled: bress
+Misspelled: noder
+Misspelled: eber
+Misspelled: joosy
+Misspelled: joosy
+Misspelled: bressed
+Misspelled: dention
+Misspelled: bressed
+Misspelled: viiith
+Misspelled: barbacued
+Misspelled: dunfermline
+Misspelled: esquimaux
+Misspelled: zogranda
+Misspelled: oly
+Misspelled: fejee
+Misspelled: fejee
+Misspelled: nailest
+Misspelled: feastest
+Misspelled: foie
+Misspelled: pequod
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: fejee
+Misspelled: nantucket
+Misspelled: ingin
+Misspelled: pequod
+Misspelled: starbuck
+Misspelled: spiralizing
+Misspelled: starbuck
+Misspelled: harpooneers
+Misspelled: slicings
+Misspelled: agassiz
+Misspelled: sphynx
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: crutchwise
+Misspelled: sphynx
+Misspelled: lookest
+Misspelled: breezelessness
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: nantucket
+Misspelled: pequod
+Misspelled: starbuck
+Misspelled: mayhew
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: neskyeuna
+Misspelled: neskyeuna
+Misspelled: nantucket
+Misspelled: oceanica
+Misspelled: pequod
+Misspelled: mayhew
+Misspelled: mayhew
+Misspelled: seethings
+Misspelled: mayhew
+Misspelled: moby
+Misspelled: moby
+Misspelled: moby
+Misspelled: macey
+Misspelled: macey
+Misspelled: macey
+Misspelled: macey
+Misspelled: mayhew
+Misspelled: mayhew
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: har
+Misspelled: macey
+Misspelled: macey
+Misspelled: mayhew
+Misspelled: mayhew
+Misspelled: starbuck
+Misspelled: pequod
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: pequod
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: tashtego
+Misspelled: daggoo
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: yojo
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: starbuck
+Misspelled: kannakin
+Misspelled: starbuck
+Misspelled: queequeg
+Misspelled: starbuck
+Misspelled: insurances
+Misspelled: harpooneers
+Misspelled: jub
+Misspelled: jub
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: weazel
+Misspelled: wantest
+Misspelled: queequeg
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: crozetts
+Misspelled: pequod
+Misspelled: fedallah
+Misspelled: fedallah
+Misspelled: ve
+Misspelled: moby
+Misspelled: fedallah
+Misspelled: soladoes
+Misspelled: pequod
+Misspelled: fedallah
+Misspelled: pequod
+Misspelled: fedallah
+Misspelled: fedallah
+Misspelled: daresn
+Misspelled: fedallah
+Misspelled: halled
+Misspelled: pequod
+Misspelled: locke
+Misspelled: fedallah
+Misspelled: laplandish
+Misspelled: nantucketer
+Misspelled: pequod
+Misspelled: umbrellasticks
+Misspelled: queequeg
+Misspelled: daggoo
+Misspelled: tashtego
+Misspelled: queequeg
+Misspelled: soundingboard
+Misspelled: greenlanders
+Misspelled: purchas
+Misspelled: hackluyt
+Misspelled: haarlem
+Misspelled: platonian
+Misspelled: spinoza
+Misspelled: handspikes
+Misspelled: darien
+Misspelled: provincials
+Misspelled: lais
+Misspelled: heidelburgh
+Misspelled: heidelburgh
+Misspelled: heidelburgh
+Misspelled: heidelburgh
+Misspelled: heidelburgh
+Misspelled: heidelburgh
+Misspelled: tashtego
+Misspelled: mainyard
+Misspelled: tashtego
+Misspelled: tashtego
+Misspelled: pequod
+Misspelled: tashtego
+Misspelled: suckingly
+Misspelled: tashtego
+Misspelled: heidelburgh
+Misspelled: daggoo
+Misspelled: tashtego
+Misspelled: daggoo
+Misspelled: daggoo
+Misspelled: daggoo
+Misspelled: tashtego
+Misspelled: boardingsword
+Misspelled: queequeg
+Misspelled: daggoo
+Misspelled: daggoo
+Misspelled: queequeg
+Misspelled: tashtego
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: tashtego
+Misspelled: makest
+Misspelled: queequeg
+Misspelled: tashtego
+Misspelled: sanctorum
+Misspelled: lavater
+Misspelled: lavater
+Misspelled: spurzheim
+Misspelled: phidias
+Misspelled: jollyboat
+Misspelled: melancthon
+Misspelled: lavater
+Misspelled: champollion
+Misspelled: champollion
+Misspelled: pequod
+Misspelled: jungfrau
+Misspelled: derick
+Misspelled: bremen
+Misspelled: jungfrau
+Misspelled: pequod
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: yarman
+Misspelled: yarman
+Misspelled: derick
+Misspelled: bremen
+Misspelled: jungfrau
+Misspelled: derick
+Misspelled: derick
+Misspelled: pequod
+Misspelled: hindostan
+Misspelled: starbuck
+Misspelled: pequod
+Misspelled: derick
+Misspelled: derick
+Misspelled: starbuck
+Misspelled: yarman
+Misspelled: yarman
+Misspelled: yarman
+Misspelled: sogger
+Misspelled: yarman
+Misspelled: derick
+Misspelled: tashtego
+Misspelled: gayhead
+Misspelled: pequod
+Misspelled: yarman
+Misspelled: derick
+Misspelled: derick
+Misspelled: starbuck
+Misspelled: diagonically
+Misspelled: pequod
+Misspelled: derick
+Misspelled: queequeg
+Misspelled: tashtego
+Misspelled: daggoo
+Misspelled: nantucket
+Misspelled: derick
+Misspelled: wheelspokes
+Misspelled: harpooneers
+Misspelled: layeth
+Misspelled: esteemeth
+Misspelled: laugheth
+Misspelled: unfulfilments
+Misspelled: pequod
+Misspelled: fishspears
+Misspelled: xerxes
+Misspelled: starbuck
+Misspelled: icefield
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: gurglings
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: pequod
+Misspelled: inlayings
+Misspelled: handspikes
+Misspelled: timberheads
+Misspelled: handspikes
+Misspelled: queequeg
+Misspelled: pequod
+Misspelled: jungfrau
+Misspelled: derick
+Misspelled: dericks
+Misspelled: harpooneers
+Misspelled: joppa
+Misspelled: jaffa
+Misspelled: joppa
+Misspelled: joppa
+Misspelled: harpooneers
+Misspelled: nantucket
+Misspelled: nantucketer
+Misspelled: trowers
+Misspelled: crockett
+Misspelled: vishnoo
+Misspelled: hindoos
+Misspelled: vishnoo
+Misspelled: vishnoo
+Misspelled: vishnoo
+Misspelled: vedas
+Misspelled: vishnoo
+Misspelled: vedas
+Misspelled: vishnoo
+Misspelled: vishnoo
+Misspelled: vishnoo
+Misspelled: nantucketers
+Misspelled: arion
+Misspelled: jebb
+Misspelled: joppa
+Misspelled: exegetists
+Misspelled: nineveh
+Misspelled: nineveh
+Misspelled: nineveh
+Misspelled: diaz
+Misspelled: nineveh
+Misspelled: pitchpoling
+Misspelled: queequeg
+Misspelled: jungfrau
+Misspelled: actium
+Misspelled: tashtego
+Misspelled: strainings
+Misspelled: dexterities
+Misspelled: pitchpoling
+Misspelled: pitchpoled
+Misspelled: pitchpoling
+Misspelled: pitchpoling
+Misspelled: monongahela
+Misspelled: tashtego
+Misspelled: pitchpoler
+Misspelled: mistifying
+Misspelled: mistifying
+Misspelled: spoutings
+Misspelled: spoutings
+Misspelled: cretan
+Misspelled: spoutings
+Misspelled: spoutings
+Misspelled: pyrrho
+Misspelled: infantileness
+Misspelled: eckerman
+Misspelled: angelo
+Misspelled: lobtailing
+Misspelled: darmonodes
+Misspelled: birmah
+Misspelled: sunda
+Misspelled: sunda
+Misspelled: sunda
+Misspelled: sunda
+Misspelled: chastisements
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: moby
+Misspelled: nantucket
+Misspelled: nantucketer
+Misspelled: sunda
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: harpooneers
+Misspelled: sunda
+Misspelled: moby
+Misspelled: tashtego
+Misspelled: pequod
+Misspelled: asiatics
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: harpooneers
+Misspelled: spoutings
+Misspelled: helter
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: starbuck
+Misspelled: nantucket
+Misspelled: druggs
+Misspelled: drugg
+Misspelled: drugg
+Misspelled: spoutings
+Misspelled: queequeg
+Misspelled: starbuck
+Misspelled: queequeg
+Misspelled: starbuck
+Misspelled: queequeg
+Misspelled: starbuck
+Misspelled: rivallingly
+Misspelled: hominum
+Misspelled: consternations
+Misspelled: concernments
+Misspelled: tornadoed
+Misspelled: starbuck
+Misspelled: queequeg
+Misspelled: starbuck
+Misspelled: queequeg
+Misspelled: dardanelles
+Misspelled: queequeg
+Misspelled: pequod
+Misspelled: surroundingly
+Misspelled: leviathanic
+Misspelled: fashionables
+Misspelled: warringly
+Misspelled: vidocq
+Misspelled: boone
+Misspelled: forthing
+Misspelled: littleton
+Misspelled: erskine
+Misspelled: ellenborough
+Misspelled: erskine
+Misspelled: erskine
+Misspelled: erskine
+Misspelled: ellenborough
+Misspelled: savesoul
+Misspelled: savesoul
+Misspelled: verbalists
+Misspelled: balena
+Misspelled: vero
+Misspelled: sufficit
+Misspelled: habeat
+Misspelled: caudam
+Misspelled: bracton
+Misspelled: blackstone
+Misspelled: blackstone
+Misspelled: ali
+Misspelled: plowdon
+Misspelled: plowdon
+Misspelled: prynne
+Misspelled: discourseth
+Misspelled: prynne
+Misspelled: pequod
+Misspelled: ambergriese
+Misspelled: browne
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: crappoes
+Misspelled: pequod
+Misspelled: moby
+Misspelled: pequod
+Misspelled: gardenny
+Misspelled: guernseyman
+Misspelled: indignations
+Misspelled: jago
+Misspelled: ve
+Misspelled: ve
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: handfulls
+Misspelled: nantucket
+Misspelled: pastiles
+Misspelled: paracelsus
+Misspelled: maketh
+Misspelled: schmerenburgh
+Misspelled: smeerenberg
+Misspelled: pequod
+Misspelled: shipkeepers
+Misspelled: shipkeepers
+Misspelled: pequod
+Misspelled: julys
+Misspelled: tolland
+Misspelled: tashtego
+Misspelled: cursings
+Misspelled: pequod
+Misspelled: heidelburgh
+Misspelled: constantine
+Misspelled: paracelsan
+Misspelled: bestreaked
+Misspelled: slobgollion
+Misspelled: gaffman
+Misspelled: gaffman
+Misspelled: pequod
+Misspelled: mortemizing
+Misspelled: yojo
+Misspelled: queequeg
+Misspelled: maachah
+Misspelled: judea
+Misspelled: asa
+Misspelled: kedron
+Misspelled: grandissimus
+Misspelled: punchbowls
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: hydriote
+Misspelled: canaris
+Misspelled: harpooneers
+Misspelled: emblazonings
+Misspelled: harpooneers
+Misspelled: pequod
+Misspelled: wandereth
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: meshach
+Misspelled: abednego
+Misspelled: besooted
+Misspelled: sweatings
+Misspelled: toilings
+Misspelled: pactolus
+Misspelled: pequod
+Misspelled: cabalistics
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: corlaer
+Misspelled: popayan
+Misspelled: almanack
+Misspelled: almanack
+Misspelled: daboll
+Misspelled: curvicues
+Misspelled: jimimi
+Misspelled: daboll
+Misspelled: almanack
+Misspelled: capricornus
+Misspelled: waterbearer
+Misspelled: wiseish
+Misspelled: manxman
+Misspelled: ve
+Misspelled: queequeg
+Misspelled: fedallah
+Misspelled: tolland
+Misspelled: blackberrying
+Misspelled: pequod
+Misspelled: nantucket
+Misspelled: enderby
+Misspelled: goodnatured
+Misspelled: huzzar
+Misspelled: forgotton
+Misspelled: pequod
+Misspelled: hopte
+Misspelled: cleets
+Misspelled: starboad
+Misspelled: humoredly
+Misspelled: mounttop
+Misspelled: mounttop
+Misspelled: mounttop
+Misspelled: mounttop
+Misspelled: bedeadened
+Misspelled: sterning
+Misspelled: flailings
+Misspelled: ript
+Misspelled: enderby
+Misspelled: byeplay
+Misspelled: moby
+Misspelled: moby
+Misspelled: ve
+Misspelled: sawist
+Misspelled: fedallah
+Misspelled: fedallah
+Misspelled: pequod
+Misspelled: enderby
+Misspelled: enderby
+Misspelled: tudors
+Misspelled: maceys
+Misspelled: nantucket
+Misspelled: nantucketers
+Misspelled: enderbys
+Misspelled: nantucketer
+Misspelled: enderbies
+Misspelled: bullbeef
+Misspelled: enderby
+Misspelled: enderby
+Misspelled: leviathanic
+Misspelled: coopman
+Misspelled: swackhammer
+Misspelled: snodhead
+Misspelled: potts
+Misspelled: snodhead
+Misspelled: coopman
+Misspelled: snodhead
+Misspelled: friesland
+Misspelled: texel
+Misspelled: ankers
+Misspelled: spitzbergen
+Misspelled: texel
+Misspelled: esquimaux
+Misspelled: spitzbergen
+Misspelled: ankers
+Misspelled: harpooneers
+Misspelled: nantucket
+Misspelled: bedford
+Misspelled: arsacides
+Misspelled: untagging
+Misspelled: cheeseries
+Misspelled: tranque
+Misspelled: tranque
+Misspelled: arsacides
+Misspelled: tranque
+Misspelled: arsacidean
+Misspelled: tranque
+Misspelled: pupella
+Misspelled: tranquo
+Misspelled: pupella
+Misspelled: droopings
+Misspelled: fathomdeep
+Misspelled: pupella
+Misspelled: arsacidean
+Misspelled: toilings
+Misspelled: arsacidean
+Misspelled: tranquo
+Misspelled: arsacidean
+Misspelled: admeasurements
+Misspelled: admeasurements
+Misspelled: leviathanic
+Misspelled: clifford
+Misspelled: tranquo
+Misspelled: tranquo
+Misspelled: clifford
+Misspelled: clifford
+Misspelled: clifford
+Misspelled: scoresby
+Misspelled: tranque
+Misspelled: arsacides
+Misspelled: tranque
+Misspelled: eddyings
+Misspelled: habitatory
+Misspelled: lombardy
+Misspelled: tuileries
+Misspelled: cuvier
+Misspelled: leviathanic
+Misspelled: basilosaurus
+Misspelled: owen
+Misspelled: owen
+Misspelled: himmalehs
+Misspelled: antemosaic
+Misspelled: unsourced
+Misspelled: denderah
+Misspelled: layn
+Misspelled: jonas
+Misspelled: afric
+Misspelled: nantucketer
+Misspelled: pliny
+Misspelled: pliny
+Misspelled: aldrovandus
+Misspelled: cooke
+Misspelled: reydan
+Misspelled: siskur
+Misspelled: lacepede
+Misspelled: pliny
+Misspelled: pliny
+Misspelled: pliny
+Misspelled: nineveh
+Misspelled: nantucketers
+Misspelled: whaleships
+Misspelled: behring
+Misspelled: moccasined
+Misspelled: harto
+Misspelled: semiramis
+Misspelled: hannibal
+Misspelled: tuileries
+Misspelled: enderby
+Misspelled: pequod
+Misspelled: nantucket
+Misspelled: heartwoes
+Misspelled: primogenitures
+Misspelled: softcymballing
+Misspelled: pequod
+Misspelled: peleg
+Misspelled: pequod
+Misspelled: sultanically
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: landbird
+Misspelled: clingings
+Misspelled: unfractioned
+Misspelled: uncompromisedness
+Misspelled: manipulater
+Misspelled: parvo
+Misspelled: countersinkers
+Misspelled: omnitooled
+Misspelled: ve
+Misspelled: manmaker
+Misspelled: callest
+Misspelled: makest
+Misspelled: feelest
+Misspelled: uninterpenetratingly
+Misspelled: standest
+Misspelled: praetorians
+Misspelled: starbuck
+Misspelled: roly
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: pequod
+Misspelled: formosa
+Misspelled: bashee
+Misspelled: starbuck
+Misspelled: niphon
+Misspelled: matsmai
+Misspelled: sikoke
+Misspelled: pequod
+Misspelled: starbuck
+Misspelled: nantucket
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: pequod
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: harpooneers
+Misspelled: queequeg
+Misspelled: sweatings
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: nantucket
+Misspelled: nantucket
+Misspelled: nantucket
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: transferringly
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: yojo
+Misspelled: yojo
+Misspelled: queequeg
+Misspelled: rarmai
+Misspelled: sobbings
+Misspelled: queequeg
+Misspelled: starbuck
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: whimsiness
+Misspelled: queequeg
+Misspelled: queequeg
+Misspelled: bashee
+Misspelled: somnambulisms
+Misspelled: bashee
+Misspelled: perth
+Misspelled: harpooneers
+Misspelled: bowsmen
+Misspelled: pikeheads
+Misspelled: uncatastrophied
+Misspelled: postponedly
+Misspelled: technicals
+Misspelled: familyless
+Misspelled: pacifics
+Misspelled: perth
+Misspelled: perth
+Misspelled: perth
+Misspelled: perth
+Misspelled: liv
+Misspelled: perth
+Misspelled: smoothe
+Misspelled: perth
+Misspelled: smoothe
+Misspelled: smoothe
+Misspelled: unsmoothable
+Misspelled: perth
+Misspelled: stubbs
+Misspelled: stubbs
+Misspelled: stubbs
+Misspelled: perth
+Misspelled: perth
+Misspelled: perth
+Misspelled: perth
+Misspelled: perth
+Misspelled: perth
+Misspelled: tashtego
+Misspelled: queequeg
+Misspelled: daggoo
+Misspelled: baptizo
+Misspelled: patris
+Misspelled: diaboli
+Misspelled: strandings
+Misspelled: pequod
+Misspelled: unretracing
+Misspelled: starbuck
+Misspelled: pequod
+Misspelled: nantucket
+Misspelled: basketed
+Misspelled: harpooneers
+Misspelled: pequod
+Misspelled: harpooneers
+Misspelled: humoredly
+Misspelled: pequod
+Misspelled: homewardbound
+Misspelled: nantucket
+Misspelled: pequod
+Misspelled: spearings
+Misspelled: wanings
+Misspelled: niger
+Misspelled: speakest
+Misspelled: rainbowed
+Misspelled: strivest
+Misspelled: jettest
+Misspelled: intercedings
+Misspelled: imminglings
+Misspelled: tossings
+Misspelled: asphaltites
+Misspelled: moby
+Misspelled: tellest
+Misspelled: moby
+Misspelled: happenest
+Misspelled: insultest
+Misspelled: deadreckoning
+Misspelled: pointest
+Misspelled: horatii
+Misspelled: starbuck
+Misspelled: pequod
+Misspelled: starbuck
+Misspelled: actest
+Misspelled: pequod
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: flourishin
+Misspelled: jesty
+Misspelled: hoky
+Misspelled: flyin
+Misspelled: foamin
+Misspelled: spicin
+Misspelled: jesty
+Misspelled: hoky
+Misspelled: tastin
+Misspelled: jesty
+Misspelled: hoky
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: markest
+Misspelled: moby
+Misspelled: nantucket
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: himmalehs
+Misspelled: starbuck
+Misspelled: corpusants
+Misspelled: corpusants
+Misspelled: corpusants
+Misspelled: tekel
+Misspelled: daggoo
+Misspelled: tashtego
+Misspelled: corpusants
+Misspelled: queequeg
+Misspelled: pequod
+Misspelled: starbuck
+Misspelled: thinkest
+Misspelled: corpusants
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: corpusants
+Misspelled: herculaneum
+Misspelled: whenceso
+Misspelled: launchest
+Misspelled: madest
+Misspelled: leapest
+Misspelled: knowest
+Misspelled: callest
+Misspelled: knowest
+Misspelled: callest
+Misspelled: knowest
+Misspelled: unsuffusing
+Misspelled: starbuck
+Misspelled: perth
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: gluepots
+Misspelled: ve
+Misspelled: ve
+Misspelled: tashtego
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: moby
+Misspelled: scornest
+Misspelled: breathest
+Misspelled: ahabs
+Misspelled: howlings
+Misspelled: tindering
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: moby
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: pequod
+Misspelled: outbellying
+Misspelled: emblazonings
+Misspelled: mightest
+Misspelled: starbuck
+Misspelled: pequod
+Misspelled: starbuck
+Misspelled: transpointed
+Misspelled: pequod
+Misspelled: starbuck
+Misspelled: harpooneers
+Misspelled: starbuck
+Misspelled: transpointed
+Misspelled: shudderings
+Misspelled: starbuck
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: manxman
+Misspelled: manxman
+Misspelled: manxman
+Misspelled: reelman
+Misspelled: manxman
+Misspelled: manxman
+Misspelled: touchest
+Misspelled: perth
+Misspelled: manxman
+Misspelled: pequod
+Misspelled: wailings
+Misspelled: herod
+Misspelled: harpooneers
+Misspelled: manxman
+Misspelled: pequod
+Misspelled: manxman
+Misspelled: starbuck
+Misspelled: inuendoes
+Misspelled: queequeg
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: queequeg
+Misspelled: tinkerings
+Misspelled: aroostook
+Misspelled: ve
+Misspelled: starbuck
+Misspelled: queequeg
+Misspelled: ve
+Misspelled: ve
+Misspelled: ve
+Misspelled: albermarle
+Misspelled: gallipagos
+Misspelled: greyheaded
+Misspelled: pequod
+Misspelled: rachel
+Misspelled: rachel
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: manxman
+Misspelled: pequod
+Misspelled: nantucketer
+Misspelled: moby
+Misspelled: pequod
+Misspelled: rachel
+Misspelled: nantucketer
+Misspelled: nantucket
+Misspelled: prolongingly
+Misspelled: gardiner
+Misspelled: starbuck
+Misspelled: gardiner
+Misspelled: rachel
+Misspelled: speakest
+Misspelled: oceanfold
+Misspelled: moby
+Misspelled: starbuck
+Misspelled: fedallah
+Misspelled: shudderings
+Misspelled: fedallah
+Misspelled: forethrown
+Misspelled: rachel
+Misspelled: harpooneers
+Misspelled: basketed
+Misspelled: downwardreeved
+Misspelled: daggoo
+Misspelled: queequeg
+Misspelled: tashtego
+Misspelled: fedallah
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: untrackably
+Misspelled: circlings
+Misspelled: spiralized
+Misspelled: tarquin
+Misspelled: tanaquil
+Misspelled: tarquin
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: perth
+Misspelled: nantucketer
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: lowerings
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: moby
+Misspelled: starbuck
+Misspelled: nantucket
+Misspelled: nantucket
+Misspelled: nantucket
+Misspelled: lovings
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: fedallah
+Misspelled: handspikes
+Misspelled: daggoo
+Misspelled: moby
+Misspelled: tashtego
+Misspelled: tashtego
+Misspelled: prolongings
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: fedallah
+Misspelled: enticings
+Misspelled: glidest
+Misspelled: bejuggled
+Misspelled: tranquilities
+Misspelled: clappings
+Misspelled: moby
+Misspelled: moby
+Misspelled: tashtego
+Misspelled: moby
+Misspelled: fedallah
+Misspelled: perth
+Misspelled: moby
+Misspelled: sidelingly
+Misspelled: fedallah
+Misspelled: moby
+Misspelled: eddystone
+Misspelled: pitchpoling
+Misspelled: pitchpoling
+Misspelled: moby
+Misspelled: antiochus
+Misspelled: fedallah
+Misspelled: eved
+Misspelled: moby
+Misspelled: pequod
+Misspelled: pequod
+Misspelled: moby
+Misspelled: paltroon
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: nantucket
+Misspelled: nantucketers
+Misspelled: outspreadingly
+Misspelled: wavings
+Misspelled: moby
+Misspelled: moby
+Misspelled: spoutings
+Misspelled: moby
+Misspelled: starbuck
+Misspelled: moby
+Misspelled: fedallah
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: listered
+Misspelled: harpooneers
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: ve
+Misspelled: obeyest
+Misspelled: moby
+Misspelled: starbuck
+Misspelled: goest
+Misspelled: ve
+Misspelled: mississippies
+Misspelled: ve
+Misspelled: pequod
+Misspelled: rechurned
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: moby
+Misspelled: starbuck
+Misspelled: nantucket
+Misspelled: leewardings
+Misspelled: ve
+Misspelled: ve
+Misspelled: toldist
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: pequod
+Misspelled: starbuck
+Misspelled: fadest
+Misspelled: starbuck
+Misspelled: rainbowed
+Misspelled: moby
+Misspelled: daggoo
+Misspelled: queequeg
+Misspelled: goest
+Misspelled: moby
+Misspelled: starbuck
+Misspelled: moby
+Misspelled: seekest
+Misspelled: starbuck
+Misspelled: tashtego
+Misspelled: queequeg
+Misspelled: daggoo
+Misspelled: tashtego
+Misspelled: moby
+Misspelled: tashtego
+Misspelled: starbuck
+Misspelled: starbuck
+Misspelled: harpooneers
+Misspelled: tashtego
+Misspelled: unconquering
+Misspelled: fata
+Misspelled: morgana
+Misspelled: harpooneers
+Misspelled: lancepole
+Misspelled: pequod
+Misspelled: whelmings
+Misspelled: intermixingly
+Misspelled: coincidings
+Misspelled: tashtego
+Misspelled: halfspent
+Misspelled: rachel
+abednego(1)
+abjectus(1)
+aboriginalness(1)
+actest(1)
+actium(1)
+acushnet(1)
+admeasurements(2)
+affghanistan(1)
+afric(2)
+againe(1)
+agassiz(1)
+ahabs(1)
+ahasuerus(2)
+ahaz(1)
+airley(2)
+albermarle(1)
+aldrovandi(1)
+aldrovandus(1)
+ali(1)
+alleghanian(1)
+alleghanies(1)
+allurings(1)
+almanack(3)
+ambergriese(1)
+amittai(1)
+anacharsis(1)
+anak(1)
+angelo(1)
+ankers(2)
+annawon(1)
+antemosaic(1)
+antiochus(1)
+apprenhension(1)
+arboring(1)
+arion(1)
+aroostook(1)
+arrantest(1)
+arsacidean(4)
+arsacides(3)
+artedi(1)
+asa(1)
+ashantee(1)
+asiatics(2)
+asphaltites(1)
+atlantics(1)
+availle(1)
+azore(2)
+baden(2)
+balaene(1)
+baleine(1)
+balena(1)
+baliene(1)
+ballena(1)
+balmed(1)
+bamboozingly(1)
+banterings(1)
+baptizo(1)
+barbacued(1)
+bashee(3)
+basilosaurus(1)
+basketed(2)
+beale(7)
+bedarned(1)
+bedeadened(1)
+bedford(18)
+beholdest(1)
+behring(2)
+bejuggled(1)
+beliest(1)
+belisarius(1)
+belongest(1)
+belubed(1)
+bendigoes(1)
+bennett(4)
+bentham(1)
+besooted(1)
+bestreaked(1)
+bildad(76)
+birmah(1)
+bitin(1)
+blackberrying(1)
+blackling(1)
+blackstone(3)
+blang(1)
+blocksburg(1)
+boardingsword(1)
+bonapartes(1)
+bonneterre(1)
+booble(1)
+boone(1)
+bowes(1)
+bowsmen(1)
+bracton(1)
+breathest(1)
+breedeth(1)
+breezelessness(1)
+bremen(2)
+bress(1)
+bressed(2)
+brigger(1)
+brighggians(1)
+brigness(1)
+brisson(1)
+broadskirted(1)
+browne(6)
+bulkington(8)
+bullbeef(1)
+burstingly(1)
+byeplay(1)
+cabaco(6)
+cabalistics(1)
+cadiz(4)
+callao(1)
+callest(3)
+cambyses(1)
+canaris(1)
+capricornus(1)
+capsizings(1)
+capting(4)
+carrol(1)
+carthage(1)
+categut(1)
+cato(1)
+cattegat(1)
+caudam(1)
+cellini(1)
+champollion(2)
+chassee(1)
+chastisements(1)
+cheeseries(1)
+cheever(2)
+chilian(2)
+christenings(1)
+cibil(1)
+circlings(2)
+clappings(1)
+cleets(1)
+clifford(4)
+clingest(1)
+clingings(1)
+clootz(1)
+cluny(1)
+coenties(1)
+coincidings(1)
+coleman(2)
+coleridge(2)
+colnett(4)
+comest(1)
+concernments(1)
+congenialities(1)
+connexions(1)
+constantine(1)
+consternations(1)
+constrainings(1)
+cooke(4)
+cookes(1)
+coopman(2)
+corlaer(1)
+corlears(1)
+corpusants(6)
+costermongers(1)
+countersinkers(1)
+cowley(1)
+coyings(1)
+crackest(1)
+crappoes(1)
+cretan(2)
+crish(1)
+crockett(1)
+crosslights(1)
+crozetts(3)
+cruisings(2)
+cruize(1)
+crutchwise(1)
+cullest(1)
+cursings(1)
+curvicues(1)
+cuvier(11)
+daboll(2)
+daggoo(37)
+dampier(1)
+dardanelles(2)
+daresn(1)
+darien(1)
+darmonodes(1)
+davenant(1)
+deadreckoning(1)
+demigorgon(1)
+demselves(1)
+denderah(1)
+dention(2)
+derick(12)
+dericks(1)
+descartian(1)
+desmarest(2)
+dexterities(1)
+diaboli(1)
+diagonically(1)
+diaz(1)
+discourseth(1)
+divings(1)
+domineerings(1)
+dominic(2)
+dood(2)
+dorchester(1)
+dotings(1)
+downwardreeved(1)
+driftings(1)
+droopings(1)
+drugg(2)
+druggs(1)
+dryden(1)
+dumfoundered(1)
+dunfermline(1)
+dungeoned(1)
+duodecimoes(2)
+durand(1)
+durer(1)
+dut(1)
+dyspepsias(1)
+earthsman(1)
+eber(3)
+ebonness(1)
+eckerman(1)
+eckermann(1)
+eddyings(1)
+eddystone(2)
+edmund(3)
+ehrenbreitstein(1)
+elbe(1)
+eliza(1)
+ellenborough(2)
+ellery(1)
+emblazonings(2)
+enderbies(1)
+enderby(7)
+enderbys(1)
+engulphed(1)
+entablatures(1)
+enticings(1)
+errantism(1)
+erromanggoans(1)
+erromangoan(1)
+erskine(4)
+esquimaux(2)
+essex(3)
+esteemeth(1)
+eternam(1)
+eved(1)
+everpresent(1)
+everythings(1)
+exasperations(1)
+exegetists(1)
+eyest(1)
+fadest(1)
+familyless(1)
+farings(1)
+fashionables(1)
+fata(1)
+fathomdeep(1)
+feastest(1)
+fedallah(27)
+feegee(1)
+feegeeans(1)
+feegees(1)
+feelest(1)
+fegee(1)
+fejee(3)
+feminam(1)
+ferdinando(1)
+fernandes(1)
+figuera(1)
+fishspears(1)
+flailings(1)
+flavorish(1)
+flourishin(1)
+flourishings(1)
+flutterings(2)
+flyin(1)
+foamflakes(1)
+foamin(1)
+foie(1)
+folger(1)
+folgers(1)
+footmanism(1)
+forethrown(1)
+forgotton(1)
+formosa(1)
+forthing(2)
+frequendy(1)
+friesland(2)
+frobisher(1)
+froissart(1)
+fuego(1)
+fulller(1)
+gaffman(2)
+gallipagos(2)
+gallopingly(1)
+gardenny(1)
+gardiner(2)
+garnery(4)
+gaspings(1)
+gayhead(2)
+gesner(1)
+gettee(1)
+gettest(2)
+ghent(1)
+glarings(1)
+gleamings(1)
+gleig(1)
+glidest(1)
+gluepots(1)
+goadings(1)
+gobern(2)
+goberned(1)
+goest(2)
+goin(5)
+gondibert(1)
+goodnatured(1)
+goodwin(1)
+gorings(1)
+grandissimus(1)
+greenlanders(1)
+greenlandmen(1)
+greybeards(1)
+greyheaded(1)
+growlands(1)
+guernseyman(1)
+guido(2)
+gurglings(2)
+haarlem(1)
+habeat(1)
+habitatory(1)
+hackluyt(3)
+haint(1)
+hairoil(1)
+halfspent(1)
+halled(1)
+hampton(1)
+handfulls(1)
+handspikes(6)
+hannibal(1)
+happenest(1)
+har(1)
+hardearned(1)
+hardicanutes(1)
+harmattans(1)
+harpooneers(56)
+harpstring(1)
+harto(1)
+hartz(1)
+hc(1)
+headpeddling(1)
+heartwoes(1)
+hecla(1)
+heeva(2)
+heidelburgh(8)
+helter(2)
+herculaneum(1)
+hereafters(1)
+herod(1)
+higgledy(1)
+himmalehan(1)
+himmalehs(2)
+hindoos(1)
+hindostan(1)
+hintings(1)
+hobbes(1)
+hobomack(1)
+hogarth(1)
+hoky(3)
+holdest(1)
+homewardbound(1)
+hominum(1)
+hootings(1)
+hopte(1)
+horatii(1)
+hosmannus(1)
+howlings(1)
+huggins(2)
+humoredly(2)
+hussey(17)
+huzzar(1)
+hval(1)
+hvalt(2)
+hwal(1)
+hydriote(1)
+ian(1)
+icefield(1)
+idolator(3)
+idolators(1)
+imminglings(1)
+indignations(1)
+infantileness(1)
+ingin(1)
+inions(1)
+inlayings(1)
+insultest(1)
+insurances(1)
+intercedings(1)
+interflowing(1)
+interlacings(1)
+interluding(1)
+intermixingly(1)
+intrantem(1)
+inuendoes(1)
+invokingly(1)
+invunerable(1)
+isolato(1)
+isolatoes(2)
+jaffa(2)
+jago(2)
+jav(1)
+jebb(1)
+jesty(3)
+jesu(1)
+jettest(1)
+jimimi(1)
+jimmini(1)
+jollyboat(1)
+jonas(3)
+joosy(2)
+joppa(8)
+jub(2)
+judea(1)
+julys(1)
+jungfrau(5)
+kannakin(1)
+kedron(1)
+kee(2)
+ketos(1)
+kinross(1)
+knowest(6)
+koo(1)
+korah(1)
+krusenstern(2)
+krusensterns(1)
+lacepede(3)
+lactantem(1)
+lais(1)
+lakeman(24)
+lamatins(1)
+lancepole(1)
+landbird(1)
+langsdorff(5)
+laplandish(1)
+laugheth(1)
+launchest(1)
+lavater(3)
+layeth(1)
+layn(1)
+leapest(1)
+ledyard(2)
+leewardings(1)
+lents(1)
+leuwenhoeck(1)
+leviathanic(8)
+leviathanism(1)
+limeese(1)
+linnaeus(5)
+lirra(2)
+listered(1)
+littleton(1)
+liv(1)
+lobtailing(1)
+locke(1)
+lombardy(2)
+lookest(3)
+loomings(1)
+lovings(1)
+lowerings(2)
+maachah(1)
+macey(7)
+maceys(1)
+macy(3)
+madest(1)
+mainyard(3)
+makest(2)
+maketh(5)
+mammis(1)
+manhatto(1)
+manhattoes(1)
+manipulater(1)
+manmaker(1)
+manoeuvres(1)
+mansoul(1)
+manxman(12)
+mapple(9)
+marchant(4)
+marchings(1)
+marius(1)
+markest(1)
+marketless(1)
+marlinspikes(1)
+marmora(1)
+marrling(1)
+matse(1)
+matsmai(1)
+maury(1)
+mayhew(8)
+mazeppa(1)
+mcculloch(1)
+medes(1)
+melancthon(1)
+melville(1)
+mendanna(1)
+mephistophelean(1)
+meritoque(1)
+meshach(1)
+mightest(2)
+miguel(2)
+mississippies(1)
+mistifying(2)
+mizentop(1)
+moby(84)
+moccasined(1)
+moluccas(2)
+monongahela(1)
+monstrousest(1)
+montaigne(1)
+morgana(1)
+morquan(1)
+morrel(1)
+mortemizing(1)
+mounttop(4)
+mouts(1)
+muffledness(1)
+mustn(1)
+mysticetus(2)
+nailest(1)
+nantucket(96)
+nantucketer(22)
+nantucketers(10)
+nantuckois(1)
+narragansett(1)
+nate(1)
+nathan(2)
+natur(3)
+nescio(1)
+neskyeuna(2)
+newlanded(1)
+niger(1)
+nineveh(6)
+niphon(1)
+noder(1)
+nondescripts(1)
+nuee(4)
+oahu(1)
+oakes(1)
+obed(3)
+ober(1)
+obeyest(1)
+observest(1)
+oceanfold(1)
+oceanica(1)
+oceanwide(1)
+ochotsh(1)
+octavoes(1)
+octher(1)
+oder(1)
+oders(1)
+olassen(1)
+olmstead(1)
+oly(1)
+ombay(1)
+omnitooled(1)
+ork(1)
+outbellying(1)
+outspreadingly(1)
+overscorning(1)
+overwrapped(1)
+owen(6)
+owest(1)
+pacifics(2)
+pactolus(1)
+paley(1)
+paltroon(1)
+panellings(1)
+pannangians(1)
+paracelsan(1)
+paracelsus(1)
+parm(1)
+parmacetti(2)
+parmacetty(2)
+parvo(1)
+pastiles(1)
+patris(1)
+peddlin(1)
+pegu(1)
+pekee(2)
+peleg(74)
+penem(1)
+pequod(173)
+perisheth(1)
+perth(18)
+peterson(1)
+phaedon(1)
+phidias(1)
+philippe(1)
+phospher(1)
+piggledy(1)
+piglead(1)
+pikeheads(1)
+pirohitee(1)
+pitchpoled(1)
+pitchpoler(1)
+pitchpoling(6)
+pitferren(1)
+pizarro(1)
+plata(2)
+platonian(2)
+platonists(1)
+plazza(1)
+pliny(8)
+plowdon(2)
+plungings(1)
+pointest(1)
+ponderings(1)
+pontoppodan(1)
+popayan(1)
+postponedly(1)
+pottowottamie(1)
+potts(1)
+pottsfich(1)
+povelson(2)
+praetorians(1)
+preble(1)
+primogenitures(1)
+procopius(3)
+prolongingly(1)
+prolongings(1)
+provincialisms(1)
+provincials(1)
+pryed(1)
+prynne(2)
+puddingers(1)
+punchbowls(1)
+pupella(3)
+purchas(3)
+pusie(1)
+pyrrho(1)
+quakeress(2)
+quakerish(1)
+queequeg(252)
+quickley(1)
+quig(1)
+quog(1)
+quoggy(1)
+raal(1)
+rachel(6)
+radney(22)
+raimond(1)
+rainbowed(2)
+ramadans(2)
+randolphs(1)
+rarmai(1)
+rayther(1)
+razar(1)
+reasonest(1)
+rechurned(1)
+reddenest(1)
+reelman(1)
+regardings(1)
+reigneth(1)
+rensselaers(1)
+requirest(1)
+respose(1)
+returne(1)
+reydan(1)
+rinaldini(1)
+rinaldo(1)
+ript(1)
+rivallingly(1)
+rockings(1)
+rodmond(1)
+rokovoko(3)
+roly(1)
+rondeletius(1)
+ropeyarn(1)
+roundingly(1)
+rustlings(1)
+sabbee(4)
+sailmakers(1)
+salamed(1)
+sanctorum(1)
+sarmon(1)
+sartainty(1)
+sartin(1)
+savesoul(2)
+sawist(1)
+schmerenburgh(1)
+schouten(1)
+scoresby(10)
+scornest(1)
+scougin(1)
+scragg(1)
+sebastian(9)
+sebond(1)
+seekest(1)
+seethings(2)
+seeva(1)
+selectest(1)
+sellin(1)
+semiramis(1)
+sermonizings(1)
+serpentines(1)
+seychelle(1)
+sharppointed(1)
+shiftings(1)
+shipkeepers(3)
+shiverings(1)
+showest(1)
+shrinked(1)
+shudderings(2)
+sibbald(3)
+sidelingly(1)
+sidescreen(1)
+sikoke(1)
+silverspoons(1)
+siskur(1)
+sitteth(1)
+sittin(1)
+skirra(2)
+skrimmage(1)
+skrimshandering(1)
+slanderin(1)
+slantings(1)
+slappin(2)
+sleepe(1)
+slicings(1)
+slippering(1)
+slobgollion(1)
+smackin(1)
+smeerenberg(1)
+smoothe(3)
+snarles(1)
+snodhead(3)
+snortings(1)
+snowhowdahed(1)
+sobbings(1)
+softcymballing(1)
+sogger(1)
+soladoes(1)
+soloma(1)
+somnambulisms(1)
+soulbolts(1)
+soundingboard(1)
+sovereignest(1)
+speakest(2)
+spearings(1)
+specksynder(3)
+spermacetti(3)
+sphynx(2)
+spicin(1)
+spinoza(1)
+spiralizations(1)
+spiralized(1)
+spiralizes(1)
+spiralizing(1)
+spitzbergen(5)
+spos(1)
+spose(2)
+spoutings(7)
+spurzheim(1)
+squattings(1)
+stampedoes(1)
+stampings(1)
+standest(1)
+starboad(1)
+starbuck(198)
+steelkilt(40)
+sterning(2)
+stig(1)
+stiggs(2)
+stowe(1)
+strafford(1)
+strainings(2)
+strandings(1)
+streetdoor(1)
+strello(1)
+strivest(1)
+stubbs(3)
+suckingly(1)
+sufficit(1)
+suffusingly(1)
+sultanically(1)
+sunda(6)
+surmisings(2)
+surrenderest(1)
+surroundingly(1)
+swackhammer(1)
+swaine(1)
+swaller(1)
+swayings(1)
+sweatings(2)
+sylla(1)
+symbolizings(1)
+tahitan(1)
+talkest(1)
+tamerlane(1)
+tanaquil(1)
+tarquin(2)
+tarshish(7)
+tashtego(57)
+tastin(1)
+tattooings(2)
+tauntings(1)
+tearin(1)
+technicals(1)
+teenth(1)
+tekel(1)
+tellest(2)
+teneriffe(2)
+terri(1)
+terrorem(1)
+texel(2)
+thinkest(1)
+thorkill(1)
+throbbings(1)
+thunderings(1)
+timberheads(1)
+tindering(1)
+tinkerings(1)
+tisbury(1)
+tish(1)
+tistig(2)
+titlepages(1)
+toder(1)
+toilings(2)
+toldist(1)
+tolland(2)
+tongatobooarrs(1)
+tooke(1)
+tormentoto(1)
+tornadoed(1)
+tossings(2)
+touchest(1)
+trafalgar(1)
+tranque(6)
+tranquilities(1)
+tranquo(4)
+transferringly(1)
+transpointed(2)
+troil(1)
+trowers(1)
+trumpa(1)
+tubline(1)
+tudors(1)
+tuileries(3)
+twisk(1)
+twiske(1)
+tyerman(1)
+ulloa(1)
+umbrellasticks(1)
+unbiddenly(1)
+uncatastrophied(1)
+uncompromisedness(1)
+unconquering(1)
+unensanguined(1)
+unfort(2)
+unfractioned(1)
+unfulfilments(1)
+unicornism(1)
+uninterpenetratingly(1)
+unlimbed(1)
+unloitering(1)
+uno(1)
+unretracing(1)
+unrustlingly(1)
+unseaman(1)
+unsmoothable(1)
+unsourced(1)
+unsplinterable(1)
+unstaked(1)
+unsuffusing(1)
+unsuppressable(1)
+unsurrenderable(1)
+untagging(1)
+untrackably(1)
+untraditionally(1)
+upbraidings(1)
+upliftings(1)
+uttons(1)
+valparaiso(1)
+vaticans(1)
+ve(37)
+vedas(2)
+vendome(1)
+venetianly(1)
+verbalists(1)
+verdes(1)
+vero(1)
+vidocq(1)
+viiith(1)
+villany(1)
+vineyarder(2)
+vishnoo(8)
+visting(1)
+vitus(1)
+wailings(1)
+wal(1)
+walfish(1)
+wallen(1)
+walw(1)
+wandereth(1)
+wanings(1)
+wantest(3)
+warringly(1)
+waterbearer(1)
+wavings(1)
+weazel(1)
+weepons(1)
+wery(1)
+whaleboning(1)
+whaleships(4)
+whalesmen(1)
+whalin(1)
+wharton(1)
+wheelspokes(1)
+whelmings(1)
+whenceso(1)
+whimsiness(1)
+whirlpooles(1)
+whitenesses(1)
+whizzings(1)
+whoel(1)
+willains(1)
+willis(1)
+willoughby(1)
+winnebago(1)
+wiseish(1)
+witt(1)
+wonderfullest(1)
+wonderments(1)
+wonst(1)
+woracious(1)
+woraciousness(2)
+worryings(1)
+wrapall(1)
+xerxes(2)
+xxxix(1)
+yarman(7)
+yawingly(1)
+yojo(16)
+yourselbs(1)
+zay(1)
+zogranda(1)
+Words checked: 218199
+Words misspelled: 2726
+Words spelled correctly: 215473

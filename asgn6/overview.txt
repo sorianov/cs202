@@ -1,0 +1,5 @@
+In this assignment you will create a simple spell checker that lists all the words in a given file that are spelled incorrectly (making use of a set).  Then you’ll extend this program to count how many times each incorrectly spelled word appears (making use of a map).
+
+To determine if a word is spelled correctly, it will be compared against the list of words in this provided word list.  If it’s not in that word list, it’s assumed to be spelled incorrectly.
+
+Note: this is a fairly simple app (likely 1-4 functions and < 100 lines total), as the collection objects do all the heavy lifting.
