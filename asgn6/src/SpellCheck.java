@@ -9,6 +9,7 @@ public class SpellCheck {
 	private static final String DEFAULT_DICTIONARY_FILENAME = "words.txt";
 	private static HashSet<String> dictSet = null;
 	private static TreeMap<String, Integer> misspellings = new TreeMap<String, Integer>();
+	private static final String[] NO_WORDS = {};
 	private static int correct = 0;
 	private static int incorrect = 0;
 	private static int numChecked = 0;
@@ -70,7 +71,10 @@ public class SpellCheck {
 		// replace non lower case alphabetic characters with a space
 		String alphaOnly = line.toLowerCase().replaceAll("[^a-z]", " ");
 		// replace multiple side-by-side whitespace characters with a single space
-		String alphaTrimmed = alphaOnly.trim().replaceAll("( )+", " ");
+		String alphaTrimmed = alphaOnly.trim().replaceAll("\\s+", " ");
+		if (alphaTrimmed.isBlank()) {
+			return NO_WORDS;
+		}
 
 		return alphaTrimmed.split(" ");
 	}
@@ -96,16 +100,11 @@ public class SpellCheck {
 	
 	private static void spellcheck(String filename, String dictionary) {
 		Scanner file = null;
-
 		try {
 			File handle = new File(filename);
 			file = new Scanner(handle);
 			while (file.hasNext()) {
 				String line = file.nextLine();
-				if (line.isBlank()) {
-					// Skip blank lines
-					continue;
-				}
 				String[] words = getWords(line);
 				spellCheckWords(words);
 				
