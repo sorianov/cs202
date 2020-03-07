@@ -56,8 +56,8 @@ public class SpellCheck {
 	
 	private static void reportResults() {
 		System.out.printf("Words checked: %d\n", numChecked);
-		System.out.printf("Words misspelled: %d\n", incorrect);
-		System.out.printf("Words spelled correctly: %d\n", correct);
+		System.out.printf("Words misspelled: %d\n", misspellings.size());
+		System.out.printf("Total misspellings: %d\n", incorrect);
 	}
 	
 	private static void reportMisspellings() {
