@@ -48,8 +48,13 @@ public class SpellCheck {
 		} catch (FileNotFoundException e) {
 			System.err.printf("There was an error reading from %s\n",
 					dictionary);
+		} catch (Exception e) {
+			System.err.printf("An unknown error occurred while processing dictionary %s\n"
+					, dictionary);
 		} finally {
-			file.close();
+			if (file != null) {
+				file.close();
+			}
 		}
 		return dict;
 	}
@@ -112,8 +117,13 @@ public class SpellCheck {
 		} catch (FileNotFoundException e) {
 			System.err.printf("There was an error reading from %s\n",
 					filename);
+		} catch (Exception e) {
+			System.err.printf("An unknown exception ocurred while processing file %s\n",
+					filename);
 		} finally {
-			file.close();
+			if (file != null) {
+				file.close();
+			}
 		}
 		reportMisspellings();
 		reportResults();
