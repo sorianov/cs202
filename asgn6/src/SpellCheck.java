@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.TreeMap;
@@ -10,6 +11,7 @@ public class SpellCheck {
 	private static HashSet<String> dictSet = null;
 	private static TreeMap<String, Integer> misspellings = new TreeMap<String, Integer>();
 	private static final String[] NO_WORDS = {};
+	private static final String[] STRING_ARRAY = {};
 	private static int correct = 0;
 	private static int incorrect = 0;
 	private static int numChecked = 0;
@@ -72,16 +74,43 @@ public class SpellCheck {
 		misspellings.forEach(print);
 	}
 	
+//	private static String[] getWords(String line) {
+//		// replace non lower case alphabetic characters with a space
+//		String alphaOnly = line.toLowerCase().replaceAll("[^a-z]", " ");
+//		// replace multiple side-by-side whitespace characters with a single space
+//		String alphaTrimmed = alphaOnly.trim().replaceAll("\\s+", " ");
+//		if (alphaTrimmed.isBlank()) {
+//			return NO_WORDS;
+//		}
+//
+//		return alphaTrimmed.split(" ");
+//	}
+	
 	private static String[] getWords(String line) {
-		// replace non lower case alphabetic characters with a space
-		String alphaOnly = line.toLowerCase().replaceAll("[^a-z]", " ");
-		// replace multiple side-by-side whitespace characters with a single space
-		String alphaTrimmed = alphaOnly.trim().replaceAll("\\s+", " ");
-		if (alphaTrimmed.isBlank()) {
-			return NO_WORDS;
+		ArrayList<String> words = new ArrayList<String>();
+		
+		System.out.printf("Original line: %s\n", line);
+		System.out.println("BEGIN SPLIT LOOP");
+		for (String word : line.trim().split(" ")) {
+			System.out.printf("word [%s]\n", word);
+			// replace non lower case alphabetic characters with a space
+			String alphaOnly = word.toLowerCase().replaceAll("[^a-z]", " ");
+			System.out.printf("alphaOnly [%s]\n", alphaOnly);
+			// replace multiple side-by-side whitespace characters with a single space
+			String alphaTrimmed = alphaOnly.trim().replaceAll("\\s+", " ");
+			System.out.printf("alphaTrimmed [%s]\n", alphaTrimmed);
+			if (alphaTrimmed.isBlank()) {
+				System.out.println("alphaTrimmed is blank, skipping...");
+				continue;
+			} else {
+				for (String w : alphaTrimmed.split(" ")) {
+					System.out.printf("adding word [%s]\n", w);
+					words.add(w);
+				}
+			}
 		}
 
-		return alphaTrimmed.split(" ");
+		return words.toArray(STRING_ARRAY);
 	}
 	
 	private static void spellCheckWords(String[] words) {
